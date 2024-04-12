@@ -1,0 +1,10 @@
+# syncthing
+.stfolder
+.stignore
+
+# rime
+user.yaml
+installation.yaml
+
+# rime 用户输入习惯
+*.userdb/**
