@@ -6,5 +6,7 @@
 user.yaml
 installation.yaml
 
+default.custom.yaml
+
 # rime 用户输入习惯
 *.userdb/**
