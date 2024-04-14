@@ -5,8 +5,10 @@
 # rime
 user.yaml
 installation.yaml
-
 default.custom.yaml
+
+trime.yaml
+tongwenfeng.trime.yaml
 
 # rime 用户输入习惯
 *.userdb/**
