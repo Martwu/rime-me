@@ -103,7 +103,7 @@ patch:
       - { click: BackSpace, swipe_left: Escape, key_text_offset_x: 10, width: 15 }
       - { click: Keyboard_symbols, long_click: Menu, width: 15}
       - { click: Keyboard_number, long_click: liquid_keyboard_emoji, width: 15 }
-      - { click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 30 }
+      - { click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45 }
       - { click: Return, composing: Return1, width: 25}
 
   "preset_keyboards/number":
