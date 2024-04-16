@@ -5,7 +5,226 @@ patch:
   "style/comment_text_size": 10
   "style/comment_height": 12
 
-  "style/label_font": "LXGWWenKai-Bold.ttf"
   "style/text_font": "sarasa-fixed-slab-sc-semibold-nerd-font.ttf"
+  "style/key_text_size": 28
+  "style/label_font": "LXGWWenKai-Bold.ttf"
+  "style/hanb_font": "AlibabaPuHuiTi-3-55-RegularL3.ttf"
 
-  "preset_keyboards/qwerty/label_transform": uppercase
+  "style/round_corner": 20.0
+  "style/keyboard_padding": 10
+  "style/keyboard_padding_bottom": 5
+  "style/keyboard_height": 240
+  "style/vertical_gap": 2
+  "style/horizontal_gap": 2
+
+  "style/enter_labels/default": ⏎
+  "style/locale": "zh_CN"
+  "style/liquid_keyboard_window":
+    - {click: liquid_keyboard_exit, label: " ↙︎ ", start: ""}
+    - {click: space, label: " ␣ ", start: ""}
+    - {click: BackSpace, label: " ⌫ ", start: ""}
+    - {click: Return, label: " ⏎ ", start: ""}
+
+  "preset_keys/BackSpace/label": ⌫
+  "preset_keys/Shift_L/label": ⇧
+  "preset_keys/Return1/label": ⏎
+  "preset_keys/Hide/label": "🂠"
+  "preset_keys/Keyboard_symbols/label": "🔣"
+  "preset_keys/Keyboard_number/label": "🔢"
+  "preset_keys/Menu/label": "🧰"
+  "preset_keys/liquid_keyboard_math":
+    command: liquid_keyboard
+    label: "🟰"
+    option: "数学"
+    send: function
+  "preset_keys/liquid_keyboard_symbol":
+    command: liquid_keyboard
+    label: "*️⃣"
+    option: "特殊"
+    send: function
+
+
+  "preset_keys/paste/label": 粘贴
+  "preset_keys/select_all/label": 全选
+  "preset_keys/cut/label": 剪切
+  "preset_keys/copy/label": 复制
+  "preset_keys/CALCULATOR/label": 计算器
+
+  "preset_keyboards/radical_pinyin/import_preset": "rime_ice"
+  "preset_keyboards/melt_eng/import_preset": "rime_ice"
+
+  "preset_keyboards/rime_ice":
+    ascii_mode: 0
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "雾凇拼音键盘"
+    columns: 30
+    width: 10
+    lock: true
+    key_hint_offset_x: 0
+    key_hint_offset_y: 0
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    key_symbol_offset_x: -3
+    key_symbol_offset_y: 5
+    key_text_offset_x: 0
+    key_text_offset_y: 4
+    label_transform: uppercase
+    reset_ascii_mode: false
+    keys:
+      - { click: q, long_click: "!", swipe_up: 1 }
+      - { click: w, long_click: "@", swipe_up: 2 }
+      - { click: e, long_click: "#", swipe_up: 3 }
+      - { click: r, long_click: "$", swipe_up: 4 }
+      - { click: t, long_click: "%", swipe_up: 5 }
+      - { click: y, long_click: "^", swipe_up: 6 }
+      - { click: u, long_click: "&", swipe_up: 7 }
+      - { click: i, long_click: "*", swipe_up: 8 }
+      - { click: o, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: 9 }
+      - { click: p, long_click: Hide, key_symbol_offset_x: 10, key_symbol_offset_y: -1, swipe_up: 0 }
+      - { width: 5 }
+      - { click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
+      - { click: s, long_click: "-", swipe_down: "_" }
+      - { click: d, long_click: "+", swipe_down: "=" }
+      - { click: f, long_click: "\\", swipe_down: "|" }
+      - { click: g, long_click: "`", swipe_down: "~" }
+      - { click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]" }
+      - { click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}" }
+      - { click: k, long_click: ";", swipe_down: ":" }
+      - { click: l, long_click: "'", swipe_down: '"' }
+      - { width: 5 }
+      - { click: Shift_L, send_bindings: false, width: 15 }
+      - { click: z }
+      - { click: x, long_click: cut }
+      - { click: c, long_click: copy }
+      - { click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard }
+      - { click: b, long_click: ",", swipe_down: "<" }
+      - { click: n, long_click: '.', swipe_down: '>' }
+      - { click: m, long_click: "/", swipe_down: "?" }
+      - { click: BackSpace, swipe_left: Escape, key_text_offset_x: 10, width: 15 }
+      - { click: Keyboard_symbols, long_click: Menu, width: 15}
+      - { click: Keyboard_number, long_click: liquid_keyboard_emoji, width: 15 }
+      - { click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 30 }
+      - { click: Return, composing: Return1, width: 25}
+
+  "preset_keyboards/number":
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "雾凇数字键盘"
+    ascii_mode: 1
+    keyboard_height: 240
+    columns: 30
+    width: 16
+    keyboard_padding: 2
+    keyboard_padding_bottom: 2
+    key_hint_offset_x: 0
+    key_hint_offset_y: 0
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    key_symbol_offset_x: -3
+    key_symbol_offset_y: 5
+    key_text_offset_x: 0
+    key_text_offset_y: 4
+    keys:
+    # line 1
+      - {click: "√"}
+      - {click: "+"}
+      - {click: KP_1}
+      - {click: KP_2}
+      - {click: KP_3}
+      - {click: BackSpace ,width: 20}
+    # line 2
+      - {click: "²"}
+      - {click: "-"}
+      - {click: KP_4}
+      - {click: KP_5}
+      - {click: KP_6}
+      - { click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up ,width: 20}
+    # line 3
+      - {click: "️%"}
+      - {click: "*", long_click: "×"}
+      - {click: KP_7}
+      - {click: KP_8}
+      - {click: KP_9}
+      - {click: "=", long_click: "≠", width: 20}
+    # line 4
+      - {click: "π" ,long_click: CALCULATOR, swipe_up: liquid_keyboard_math}
+      - {click: "/", long_click: "÷"}
+      - {click: Keyboard_default, long_click: Keyboard_symbols}
+      - {click: KP_0}
+      - {click: .}
+      - {click: Return ,width: 20}
+
+  "preset_keyboards/symbols":
+    ascii_mode: 1
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "雾凇符号键盘"
+    keyboard_height: 240
+    columns: 30
+    width: 10
+    keyboard_padding: 2
+    keyboard_padding_bottom: 2
+    key_hint_offset_x: 0
+    key_hint_offset_y: 0
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    key_symbol_offset_x: -3
+    key_symbol_offset_y: 5
+    key_text_offset_x: 0
+    key_text_offset_y: 4
+    keys:
+      - {click: "~", long_click: "`"}
+      - {click: "!"}
+      - {click: "@"}
+      - {click: "#"}
+      - {click: "$"}
+      - {click: "￥"}
+      - {click: "%"}
+      - {click: "^"}
+      - {click: "&"}
+      - {click: "*"}
+      - {click: "(", long_click: "{"}
+      - {click: ")", long_click: "}"}
+      - {click: "[", long_click: "【"}
+      - {click: "]", long_click: "】"}
+      - {click: "「", long_click: "『"}
+      - {click: "」", long_click: "』"}
+      - {click: "、", long_click: "|"}
+      - {click: "/", long_click: "√"}
+      - {click: ":"}
+      - {click: ";"}
+      - {click: "+"}
+      - {click: "-", long_click: _}
+      - {click: "="}
+      - {click: "〈", long_click: "《"}
+      - {click: "〉", long_click: "》"}
+      - {click: "“", long_click: "‘"}
+      - {click: "”", long_click: "’"}
+      - {click: "，"}
+      - {click: "？"}
+      - {click: BackSpace}
+      - {click: Keyboard_default, long_click: Menu, width: 15}
+      - {click: Keyboard_number}
+      - {click: Keyboard_mini}
+      - {click: space, width: 30}
+      - {click: "。"}
+      - {click: liquid_keyboard_symbol}
+      - {click: Return, long_click: select_all, width: 15}
+
+  "liquid_keyboard/keyboards":
+    - yanwenzi
+    - unit
+    - ascii
+    - cn
+    - pinyin
+    - list
+    - ids
+    - table
+    - symbol
+    - yinbiao
+    - clipboard
+    - emoji
+    - math
+
+  "liquid_keyboard/emoji":
+    keys: "😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊😇🥰😍🤩😘😗☺😚😙🥲😋😛😜🤪😝🤑🤗🤭🫢🫣🤫🤔🫡🤐🤨😐😑😶🫥😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐😕🫤😟🙁☹😮😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬😈👿💀☠💩🤡👹👺👻👽👾🤖😺😸😹😻😼😽🙀😿😾🙈🙉🙊💌💘💝💖💗💓💞💕💟❣💔❤🧡💛💚💙💜🤎🖤🤍💋💯💢💥💫💦💨🕳💬🗨🗯💭💤👋🤚🖐✋🖖🫱🫲🫳🫴👌🤌🤏✌🤞🫰🤟🤘🤙👈👉👆🖕👇☝🫵👍👎✊👊🤛🤜👏🙌🫶👐🤲🤝🙏✍💅🤳💪🦾🦿🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👁👅👄🫦👶🧒👦👧🧑👱👨🧔👩🧓👴👵🙍🙎🙅🙆💁🙋🧏🙇🤦🤷👮🕵💂🥷👷🫅🤴👸👳👲🧕🤵👰🤰🫃🫄🤱👼🎅🤶🦸🦹🧙🧚🧛🧜🧝🧞🧟🧌💆💇🚶🧍🧎🏃💃🕺🕴👯🧖🧗🤺🏇⛷🏂🏌🏄🚣🏊⛹🏋🚴🚵🤸🤼🤽🤾🤹🧘🛀🛌👭👫👬💏💑👪🗣👤👥🫂👣🏻🏼🏽🏾🏿🦰🦱🦳🦲🐵🐒🦍🦧🐶🐕🦮🐩🐺🦊🦝🐱🐈🦁🐯🐅🐆🐴🐎🦄🦓🦌🦬🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦣🦏🦛🐭🐁🐀🐹🐰🐇🐿🦫🦔🦇🐻🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊🦅🦆🦢🦉🦤🪶🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🐌🦋🐛🐜🐝🪲🐞🦗🪳🕷🕸🦂🦟🪰🪱🦠💐🌸💮🪷🏵🌹🥀🌺🌻🌼🌷🌱🪴🌲🌳🌴🌵🌾🌿☘🍀🍁🍂🍃🪹🪺🍄🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥🥑🍆🥔🥕🌽🌶🫑🥒🥬🥦🧄🧅🥜🫘🌰🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🫔🥙🧆🥚🍳🥘🍲🫕🥣🥗🍿🧈🧂🥫🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥🥮🍡🥟🥠🥡🦀🦞🦐🦑🦪🍦🍧🍨🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🍼🥛☕🫖🍵🍶🍾🍷🍸🍹🍺🍻🥂🥃🫗🥤🧋🧃🧉🧊🥢🍽🍴🥄🔪🫙🏺🌍🌎🌏🌐🗺🗾🧭🏔⛰🌋🗻🏕🏖🏜🏝🏞🏟🏛🏗🧱🪨🪵🛖🏘🏚🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩🕋⛲⛺🌁🌃🏙🌄🌅🌆🌇🌉♨🎠🛝🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎🏍🛵🦽🦼🛺🚲🛴🛹🛼🚏🛣🛤🛢⛽🛞🚨🚥🚦🛑🚧⚓🛟⛵🛶🚤🛳⛴🛥🚢✈🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🚀🛸🛎🧳⌛⏳⌚⏰⏱⏲🕰🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡☀🌝🌞🪐⭐🌟🌠🌌☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌀🌈🌂☂☔⛱⚡❄☃⛄☄🔥💧🌊🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫🎖🏆🏅🥇🥈🥉⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸🎣🤿🎽🎿🛷🥌🎯🪀🪁🎱🔮🪄🎮🕹🎰🎲🧩🧸🪅🪩🪆♠♥♦♣♟🃏🀄🎴🔫🎭🖼🎨🧵🪡🧶🪢👓🕶🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍🎒🩴👞👟🥾🥿👠👡🩰👢👑👒🎩🎓🧢🪖⛑📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙🎚🎛🎤🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲☎📞📟📠🔋🪫🔌💻🖥🖨⌨🖱🖲💽💾💿📀🧮🎥🎞📽🎬📺📷📸📹📼🔍🔎🕯💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞📑🔖🏷💰🪙💴💵💶💷💸💳🧾💹✉📧📨📩📤📥📦📫📪📬📭📮🗳✏✒🖋🖊🖌🖍📝💼📁📂🗂📅📆🗒🗓📇📈📉📊📋📌📍📎🖇📏📐✂🗃🗄🗑🔒🔓🔏🔐🔑🗝💣🔨🪓⛏⚒🛠🗡⚔🪃🏹🛡🪚🔧🪛🔩⚙🗜⚖🦯🔗⛓🪝🧰🧲🪜⚗🧪🧫🧬🔬🔭📡💉🩸💊🩹🩼🩺🩻🚪🛗🪞🪟🛏🛋🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🫧🪥🧽🧯🛒🧿🪬🚬⚰🪦⚱🗿🪧🪪🏧🚮🚰♿🚹🚺🚻🚼🚾🛂🛃🛄🛅⚠🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢☣⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🛐⚛🕉✡☸☯✝☦☪☮🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎🔀🔁🔂▶⏩⏭⏯◀⏪⏮🔼⏫🔽⏬⏸⏹⏺⏏🎦🔅🔆📶📳📴♀♂⚧✖➕➖➗🟰♾‼⁉❓❔❕❗〰💱💲⚕♻⚜🔱📛🔰⭕✅☑✔❌❎➰➿〽✳✴❇©®™🔟🔠🔡🔢🔣🔤🅰🆎🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿🆘🆙🆚🈁🈂🈷🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼◻◾◽▪▫🔶🔷🔸🔹🔺🔻💠🔘🔳🔲🏁🚩🎌🏴🏳"
+    name: "emoji"
+    type: SINGLE
