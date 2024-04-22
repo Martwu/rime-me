@@ -25,4 +25,4 @@ rsync -av ${RIMEICE_PATH}/opencc/ ${CURRENT_PATH}/opencc
 rsync -av ${RIMEICE_PATH}/cn_dicts/ ${CURRENT_PATH}/cn_dicts
 rsync -av ${RIMEICE_PATH}/en_dicts/ ${CURRENT_PATH}/en_dicts
 
-(git add *; git commit -m "merge from rime-ice"; git push origin main)
+(cd ${CURRNET_PATH}; git add *; git commit -m "merge from rime-ice"; git push origin main)
