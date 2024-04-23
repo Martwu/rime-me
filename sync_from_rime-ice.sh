@@ -31,6 +31,7 @@ rsync -av ${RIMEICE_PATH}/en_dicts/ ${CURRENT_PATH}/en_dicts
 
 rsync -av ${RIMECAN_PATH}/opencc/ ${CURRENT_PATH}/opencc
 rsync -av ${RIMECAN_PATH}/symbols_cantonese.yaml ${CURRENT_PATH}/symbols_cantonese.yaml
+rsync -av ${RIMECAN_PATH}/essay-cantonese.txt ${CURRENT_PATH}/essay-cantonese.txt
 rsync -av ${RIMECAN_PATH}/jyut6ping3*.yaml ${CURRENT_PATH}/
 
 (cd ${CURRENT_PATH}; git add *; git commit -m "merge from rime-ice"; git push origin main)

@@ -64,6 +64,7 @@ patch:
 
   "preset_keyboards/radical_pinyin/import_preset": "rime_ice"
   "preset_keyboards/melt_eng/import_preset": "rime_ice"
+  "preset_keyboards/jyut6ping3/import_preset": "rime_ice"
 
   "preset_keyboards/rime_ice":
     ascii_mode: 0
