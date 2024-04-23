@@ -7,7 +7,7 @@ if [ -z "$RIMEICE_PATH" ]; then
     echo "rime-ice path is not set"
     exit 0
 fi
-if [ -z "$RIMECAN_APTH" ]; then
+if [ -z "$RIMECAN_PATH" ]; then
     echo "rime-cantonese path is not set"
     exit 0
 fi
