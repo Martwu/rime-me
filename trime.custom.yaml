@@ -17,6 +17,8 @@ patch:
   "style/vertical_gap": 12
   "style/horizontal_gap": 8
 
+  "style/candidate_padding": 10
+
   "style/enter_labels":
     default: "↵"
     done: "☑"
@@ -115,7 +117,7 @@ patch:
       - { click: BackSpace, swipe_left: Escape, width: 12, }
       - { click: Keyboard_symbols, long_click: Keyboard_number, swipe_down: IME_switch, composing: Left, width: 15 }
       - { click: liquid_keyboard_emoji, long_click: liquid_keyboard_yanwenzi, composing: Right, width: 15, }
-      - { click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45, }
+      - { click: space, preview: "", long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45, }
       - { click: Return, composing: Return1, key_text_offset_y: 0, width: 25, round_corner: 100.0 }
 
   "preset_keyboards/number":
@@ -148,7 +150,7 @@ patch:
       - { click: KP_4 }
       - { click: KP_5 }
       - { click: KP_6 }
-      - { click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20, }
+      - { click: space, preview: "", swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20, }
       # line 3
       - { click: "️%" }
       - { click: "*", long_click: "×" }
@@ -214,52 +216,10 @@ patch:
       - { click: Keyboard_default, long_click: Menu, width: 15 }
       - { click: Keyboard_number }
       - { click: Keyboard_mini }
-      - { click: space, width: 30 }
+      - { click: space, preview: "", width: 30 }
       - { click: select_all }
       - { click: liquid_keyboard_symbol }
       - { click: BackSpace, width: 15 }
-
-  # "preset_keyboards/t9":
-  #   author: "Martwu <martin.wu2dream@gmail.com>"
-  #   name: "仓·九宫格键盘"
-  #   ascii_mode: 1
-  #   columns: 30
-  #   width: 20
-  #   keyboard_padding: 2
-  #   keyboard_padding_bottom: 2
-  #   key_hint_offset_x: 0
-  #   key_hint_offset_y: 0
-  #   key_press_offset_x: 2
-  #   key_press_offset_y: 2
-  #   key_symbol_offset_x: -3
-  #   key_symbol_offset_y: 5
-  #   key_text_offset_x: 0
-  #   key_text_offset_y: 4
-  #   keys:
-  #   #第一行
-  #     - {click: ",", long_click: ";"}
-  #     - {click: 1, label: "'", composing: "'", long_click: Zdic, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 2, label: abc, long_click: select_all, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 3, label: def, long_click: "+", swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: BackSpace, long_click: "-"}
-  #   #第二行
-  #     - {click: ".", long_click: ":", swipe_left: Left, swipe_right: Right}
-  #     - {click: 4, label: ghi, long_click: Home, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 5, label: jkl, long_click: Escape, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 6, label: mno, long_click: End, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: "@", composing: Up, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right, long_click: "#"}
-  #   #第三行
-  #     - {click: "?", long_click: "!"}
-  #     - {click: 7, label: pqrs, long_click: copy, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 8, label: tuv, long_click: paste, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: 9, label: wxyz, long_click: cut, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #     - {click: Keyboard_eng, composing: Down, long_click: '"', swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
-  #   #第四行
-  #     - {click: Keyboard_symbols, long_click: Keyboard_number}
-  #     - {click: Menu, long_click: Theme_settings, swipe_up: Up, swipe_down: Down}
-  #     - {click: space, swipe_up: Up, swipe_down: Down, long_click: Settings}
-  #     - {click: 0, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: Up, swipe_down: Down}
-  #     - {click: Return, swipe_up: Up, swipe_down: Down}
 
   "liquid_keyboard/keyboards":
     - yanwenzi
