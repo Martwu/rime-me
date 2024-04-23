@@ -13,7 +13,7 @@ patch:
   "style/round_corner": 20.0
   "style/keyboard_padding": 10
   "style/keyboard_padding_bottom": 5
-  "style/keyboard_height": 260
+  "style/keyboard_height": 280
   "style/vertical_gap": 12
   "style/horizontal_gap": 8
 
@@ -102,7 +102,8 @@ patch:
       - { click: k, long_click: ";", swipe_down: ":" }
       - { click: l, long_click: "'", swipe_down: '"' }
       - { width: 5 }
-      - { click: Shift_L, send_bindings: false, width: 15 }
+      - { click: Shift_L, send_bindings: false, width: 12 }
+      - { width: 3}
       - { click: z }
       - { click: x, long_click: cut }
       - { click: c, long_click: copy }
@@ -110,7 +111,8 @@ patch:
       - { click: b, long_click: ",", swipe_down: "<" }
       - { click: n, long_click: ".", swipe_down: ">" }
       - { click: m, long_click: "/", swipe_down: "?" }
-      - { click: BackSpace, swipe_left: Escape, key_text_offset_x: 10, width: 15, }
+      - { width: 3}
+      - { click: BackSpace, swipe_left: Escape, width: 12, }
       - { click: Keyboard_symbols, long_click: Keyboard_number, swipe_down: IME_switch, composing: Left, width: 15 }
       - { click: liquid_keyboard_emoji, long_click: liquid_keyboard_yanwenzi, composing: Right, width: 15, }
       - { click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45, }
