@@ -29,6 +29,7 @@ rsync -av ${RIMEICE_PATH}/opencc/ ${CURRENT_PATH}/opencc
 rsync -av ${RIMEICE_PATH}/cn_dicts/ ${CURRENT_PATH}/cn_dicts
 rsync -av ${RIMEICE_PATH}/en_dicts/ ${CURRENT_PATH}/en_dicts
 
+(cd ${RIMECAN_PATH} && proxychains git pull)
 rsync -av ${RIMECAN_PATH}/opencc/ ${CURRENT_PATH}/opencc
 rsync -av ${RIMECAN_PATH}/symbols_cantonese.yaml ${CURRENT_PATH}/symbols_cantonese.yaml
 rsync -av ${RIMECAN_PATH}/essay-cantonese.txt ${CURRENT_PATH}/essay-cantonese.txt
