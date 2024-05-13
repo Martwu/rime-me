@@ -28,10 +28,6 @@ patch:
     search: "⌕"
     send: "✉"
   "style/locale": "zh_CN"
-  "style/liquid_keyboard_window":
-    - { click: space, label: " ␣ ", start: "" }
-    - { click: BackSpace, label: " ⌫ ", start: "" }
-    - { click: Return, label: " ↵ ", start: "" }
 
   "preset_keys/BackSpace/label": ⌫
   "preset_keys/Shift_L/label": ⇧
