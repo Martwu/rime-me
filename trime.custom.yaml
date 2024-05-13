@@ -10,7 +10,7 @@ patch:
   "style/label_font": "LXGWWenKai-Bold.ttf"
   "style/hanb_font": "AlibabaPuHuiTi-3-55-RegularL3.ttf"
 
-  "style/round_corner": 20.0
+  "style/layout/round_corner": 20.0
   "style/keyboard_padding": 10
   "style/keyboard_padding_bottom": 5
   "style/keyboard_height": 280
@@ -121,8 +121,8 @@ patch:
       - { click: m, long_click: "/", swipe_down: "?" }
       - { width: 3}
       - { click: BackSpace, swipe_left: Escape, width: 12, }
-      - { click: Keyboard_symbols, long_click: Keyboard_number, swipe_down: IME_switch, composing: Left, width: 15 }
-      - { click: liquid_keyboard_emoji, long_click: liquid_keyboard_yanwenzi, composing: Right, width: 15, }
+      - { click: Keyboard_symbols, long_click: Keyboard_number, swipe_down: IME_switch, composing: Page_Up, width: 15 }
+      - { click: liquid_keyboard_emoji, long_click: liquid_keyboard_yanwenzi, composing: Page_Down, width: 15, }
       - { click: space, preview: "", long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45, }
       - { click: Return, composing: Return1, key_text_offset_y: 0, width: 25, round_corner: 100.0 }
 
@@ -261,7 +261,7 @@ patch:
     m3c_07: 0x992f3f38
 
     label_color: m3c_01
-    back_color: m3c_05
+    back_color: m3c_06
     hilited_back_color: m3c_04
 
     border_color: m3c_02
@@ -276,7 +276,7 @@ patch:
 
     hilited_key_back_color: m3c_03
     key_back_color: m3c_05
-    key_symbol_color: m3c_04
+    key_symbol_color: m3c_03
     key_text_color: m3c_01
 
     hilited_off_key_back_color: m3c_04
