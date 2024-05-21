@@ -31,7 +31,7 @@ android_keys:
     swipe_right: "右滑"
     swipe_up: "上滑"
 author: BlackFat
-config_version: 3.0
+config_version: "3.0"
 fallback_colors:
   candidate_text_color: text_color
 liquid_keyboard:
@@ -177,7 +177,7 @@ preset_color_schemes:
     shadow_color: 0x000000
     text_back_color: 0xcce4e7e9
     text_color: 0x5a676e
-  androidm:
+  blackme:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You"
     m3c_00: 0xfdfdfd
@@ -215,8 +215,7 @@ preset_color_schemes:
     shadow_color: 0x000000
     text_back_color: m3c_07
     text_color: m3c_01
-    # light_scheme: androidml
-  androidml:
+  lightme:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You Light"
     #m3c_00: 0x020202
@@ -227,32 +226,38 @@ preset_color_schemes:
     #m3c_05: 0xb0f9dc
     #m3c_06: 0xf9f9f9
     #m3c_07: 0xffffff
-    m3c_00: 0xfdfdfd
-    m3c_01: 0x8dc5ae
-    m3c_02: 0x74a28f
-    m3c_03: 0x547f6e
-    m3c_04: 0x3b594d
-    m3c_05: 0x0c110f
-    m3c_06: 0x080808
-    m3c_07: 0x992f3f38
-    back_color: m3c_06
-    border_color: m3c_02
-    candidate_separator_color: m3c_01
-    candidate_text_color: m3c_01
-    comment_text_color: m3c_03
-    hilited_back_color: m3c_04
-    hilited_candidate_back_color: m3c_07
-    hilited_candidate_text_color: m3c_02
-    hilited_comment_text_color: m3c_05
-    hilited_key_back_color: m3c_03
-    hilited_off_key_back_color: m3c_02
-    hilited_off_key_text_color: m3c_06
-    hilited_on_key_back_color: m3c_04
-    hilited_on_key_text_color: m3c_06
-    hilited_text_color: m3c_02
-    key_back_color: m3c_05
-    key_symbol_color: m3c_03
-    # dark_scheme: androidm
+    back_color: 0xffE6E8EA #候選區背景
+    border_color: 0xc1c7ca #邊框
+    candidate_separator_color: 0xDFE2E5 #候選分割背景
+    candidate_text_color: 0x5a676e #候選文字
+    comment_text_color: 0x7b868c #提示
+    hilited_back_color: 0xccd3d7da #標明編碼背景
+    hilited_candidate_back_color: 0xBFC2C3 #標明候選背景
+    hilited_candidate_text_color: 0x000000 #標明候選文字
+    hilited_comment_text_color: 0x000000 #標明提示
+    hilited_key_back_color: 0xffA4B2B7 #標明按鍵背景
+    hilited_key_symbol_color: 0x000000 #標明按鍵符號
+    hilited_key_text_color: 0x000000 #標明按鍵文字
+    hilited_off_key_back_color: 0xd3d7da #標明按鍵關閉狀態背景
+    hilited_off_key_text_color: 0x000000 #標明按鍵關閉狀態文字
+    hilited_on_key_back_color: 0xd3d7da #標明按鍵打開狀態背景
+    hilited_on_key_text_color: 0x000000 #標明按鍵打開狀態文字
+    hilited_text_color: 0x23948e #標明編碼
+    key_back_color: 0xECEEEF #按鍵背景
+    key_border_color: 0xeceff1 #按鍵邊框
+    key_symbol_color: 0x5f6b73 #按鍵符號
+    key_text_color: 0x37474f #按鍵文字
+    keyboard_back_color: 0xffD3D7DA #鍵盤背景
+    label_color: 0x000000 #標籤
+    off_key_back_color: 0xd3d7da #按鍵關閉狀態背景
+    off_key_text_color: 0x000000 #按鍵關閉狀態文字
+    on_key_back_color: 0x23948e #按鍵打開狀態背景
+    on_key_text_color: 0x37474f #按鍵打開狀態文字
+    preview_back_color: 0x55bfbfbf #按鍵提示背景
+    preview_text_color: 0x23948e #按鍵提示文字
+    shadow_color: 0x000000 #按鍵文字陰影
+    text_color: 0x5a676e #編碼
+    text_back_color: 0xffe4e7e9 #編碼區背景
 preset_keyboards:
   jyut6ping3:
     import_preset: rime_ice
@@ -300,7 +305,43 @@ preset_keyboards:
     key_symbol_offset_y: 3
     key_text_offset_x: 0
     key_text_offset_y: 3
-    keys: [{click: q, long_click: "!", swipe_up: 1}, {click: w, long_click: "@", swipe_up: 2}, {click: e, long_click: "#", swipe_up: 3}, {click: r, long_click: "$", swipe_up: 4}, {click: t, long_click: "%", swipe_up: 5}, {click: y, long_click: "^", swipe_up: 6}, {click: u, long_click: "&", swipe_up: 7}, {click: i, long_click: "*", swipe_up: 8}, {click: o, long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: 9}, {click: p, key_symbol_offset_x: 10, key_symbol_offset_y: 0, long_click: Hide, swipe_up: 0}, {width: 5}, {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}, {click: s, long_click: "-", swipe_down: _}, {click: d, long_click: "+", swipe_down: "="}, {click: f, long_click: "\\", swipe_down: "|"}, {click: g, long_click: "`", swipe_down: "~"}, {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}, {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}, {click: k, long_click: ";", swipe_down: ":"}, {click: l, long_click: "'", swipe_down: "\""}, {width: 5}, {click: Shift_L, has_menu: "'", width: 12}, {width: 3}, {click: z}, {click: x, long_click: cut}, {click: c, long_click: copy}, {click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard}, {click: b, long_click: ",", swipe_down: "<"}, {click: n, long_click: ., swipe_down: ">"}, {click: m, long_click: "/", swipe_down: "?"}, {width: 3}, {click: BackSpace, swipe_left: Escape, width: 12}, {click: Keyboard_symbols, composing: Page_Up, long_click: Keyboard_number, swipe_down: IME_switch, width: 15}, {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 15}, {click: space, long_click: Menu, preview: "", swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45}, {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}]
+    keys:
+      - {click: "q", long_click: "!", swipe_up: "1"}
+      - {click: "w", long_click: "@", swipe_up: "2"}
+      - {click: "e", long_click: "#", swipe_up: "3"}
+      - {click: "r", long_click: "$", swipe_up: "4"}
+      - {click: "t", long_click: "%", swipe_up: "5"}
+      - {click: "y", long_click: "^", swipe_up: "6"}
+      - {click: "u", long_click: "&", swipe_up: "7"}
+      - {click: "i", long_click: "*", swipe_up: "8"}
+      - {click: "o", long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: "9"}
+      - {click: "p", key_symbol_offset_x: 10, key_symbol_offset_y: 0, long_click: Hide, swipe_up: "0"}
+      - {width: 5}
+      - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
+      - {click: s, long_click: "-", swipe_down: _}
+      - {click: d, long_click: "+", swipe_down: "="}
+      - {click: f, long_click: "\\", swipe_down: "|"}
+      - {click: g, long_click: "`", swipe_down: "~"}
+      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+      - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
+      - {click: k, long_click: ";", swipe_down: ":"}
+      - {click: l, long_click: "'", swipe_down: "\""}
+      - {width: 5}
+      - {click: Shift_L, has_menu: "'", width: 12}
+      - {width: 3}
+      - {click: z}
+      - {click: x, long_click: cut}
+      - {click: c, long_click: copy}
+      - {click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard}
+      - {click: b, long_click: ",", swipe_down: "<"}
+      - {click: n, long_click: ., swipe_down: ">"}
+      - {click: m, long_click: "/", swipe_down: "?"}
+      - {width: 3}
+      - {click: BackSpace, swipe_left: Escape, width: 12}
+      - {click: Keyboard_symbols, composing: Page_Up, long_click: Keyboard_number, swipe_down: IME_switch, width: 15}
+      - {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 15}
+      - {click: space, long_click: Menu, preview: "", swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45}
+      - {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}
     label_transform: uppercase
     lock: false
     name: "雾凇拼音键盘"
@@ -720,7 +761,7 @@ style:
   horizontal_gap: 8
   key_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
   key_height: 44
-  key_long_text_border: 1
+  key_long_text_border: "1"
   key_long_text_size: 14
   key_text_size: 24
   key_width: 10.0
@@ -771,7 +812,7 @@ style:
   long_text_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
   preview_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
   preview_height: 60
-  preview_offset: "-12"
+  preview_offset: -12
   preview_text_size: 40
   proximity_correction: true
   reset_ascii_mode: true
@@ -782,7 +823,7 @@ style:
   symbol_text_size: 10
   text_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
   text_size: 14
-  vertical_correction: "-10"
+  vertical_correction: -10
   vertical_gap: 12
   window:
     - {end: "", move: "ϟ ", start: ""}
