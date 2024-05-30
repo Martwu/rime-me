@@ -472,7 +472,7 @@ preset_keys:
     states: ["漢字", "汉字"]
     toggle: simplification
   Hide:
-    label: "⌨"
+    label: "⇲"
     send: BACK
   Hint_switch:
     send: Mode_switch
@@ -802,7 +802,7 @@ style:
     min_length: 5
     min_width: 40
     movable: false
-    position: bottom_right
+    position: fixed
     real_margin: 3
     round_corner: 20.0
     spacing: 1
