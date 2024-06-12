@@ -338,7 +338,7 @@ preset_keyboards:
       - {click: m, long_click: "/", swipe_down: "?"}
       - {width: 3}
       - {click: BackSpace, swipe_left: Escape, width: 12}
-      - {click: Keyboard_symbols, composing: Page_Up, long_click: Keyboard_number, swipe_down: IME_switch, width: 15}
+      - {click: Keyboard_number, composing: Page_Up, long_click: Keyboard_symbols, swipe_down: IME_switch, width: 15}
       - {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 15}
       - {click: space, long_click: Menu, preview: "", swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 45}
       - {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}
@@ -515,15 +515,15 @@ preset_keys:
     select: mini
     send: Eisu_toggle
   Keyboard_number:
-    label: "🔢"
+    label: "数字"
     select: number
     send: Eisu_toggle
   Keyboard_switch:
-    label: "鍵盤"
+    label: "键盘"
     select: .next
     send: Eisu_toggle
   Keyboard_symbols:
-    label: "🔣"
+    label: "符号"
     select: symbols
     send: Eisu_toggle
   Left:
