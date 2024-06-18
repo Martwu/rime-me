@@ -1,0 +1,16 @@
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 粵, 英 ]
+    - name: ascii_punct  # 中英标点
+      states: [ "，。", ", . " ]
+      reset: 1
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - options: [ noop, variants_hk, trad_tw, simplification ]
+      states: [ 傳統, 香港傳統, 臺灣傳統, 大陆简化 ]
+      reset: 1
+    - name: emoji_suggestion
+      reset: 1
+      states: [ "💀", "😀" ]
