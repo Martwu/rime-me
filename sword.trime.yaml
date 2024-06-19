@@ -296,26 +296,26 @@ preset_keyboards:
     key_text_offset_x: 0
     key_text_offset_y: 3
     keys:
-      - {click: "q", long_click: "!", swipe_up: "1"}
-      - {click: "w", long_click: "@", swipe_up: "2"}
-      - {click: "e", long_click: "#", swipe_up: "3"}
-      - {click: "r", long_click: "$", swipe_up: "4"}
-      - {click: "t", long_click: "%", swipe_up: "5"}
-      - {click: "y", long_click: "^", swipe_up: "6"}
-      - {click: "u", long_click: "&", swipe_up: "7"}
-      - {click: "i", long_click: "*", swipe_up: "8"}
-      - {click: "o", long_click: "(){Left}", swipe_left: "(", swipe_right: ")", swipe_up: "9"}
-      - {click: "p", key_symbol_offset_x: 10, key_symbol_offset_y: 0, long_click: Hide, swipe_up: "0"}
+      - {click: "q", long_click: "1", swipe_up: "1"}
+      - {click: "w", long_click: "2", swipe_up: "2"}
+      - {click: "e", long_click: "3", swipe_up: "3"}
+      - {click: "r", long_click: "4", swipe_up: "4"}
+      - {click: "t", long_click: "5", swipe_up: "5"}
+      - {click: "y", long_click: "6", swipe_up: "6"}
+      - {click: "u", long_click: "7", swipe_up: "7"}
+      - {click: "i", long_click: "8", swipe_up: "8"}
+      - {click: "o", long_click: "9", swipe_up: "9"}
+      - {click: "p", long_click: "0", swipe_up: "0"}
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
-      - {click: s}
-      - {click: d}
-      - {click: f}
-      - {click: g, long_click: "~"}
-      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+      - {click: s, long_click: "$"}
+      - {click: d, long_click: "*"}
+      - {click: f, long_click: "~"}
+      - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
       - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
       - {click: k, long_click: ":"}
-      - {click: l, long_click: "\""}
+      - {click: l, long_click: "^"}
       - {width: 5}
       - {click: Shift_L, has_menu: "'", width: 12}
       - {width: 3}
@@ -323,16 +323,16 @@ preset_keyboards:
       - {click: x, long_click: cut}
       - {click: c, long_click: copy}
       - {click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard}
-      - {click: b}
-      - {click: n, long_click: "|"}
-      - {click: m, long_click: "?"}
+      - {click: b, long_click: "@"}
+      - {click: n, long_click: "&"}
+      - {click: m, long_click: "%"}
       - {width: 3}
       - {click: BackSpace, swipe_left: Escape, width: 12}
       - {click: Keyboard_number, composing: Page_Up, long_click: Keyboard_symbols, swipe_down: IME_switch, width: 15}
       - {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 10}
-      - {click: ",", label: "，", width: 10}
-      - {click: space, long_click: Menu, preview: "", swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 35}
-      - {click: ".",label: "。", width: 10}
+      - {click: ",", label: "，", long_click: "!", width: 10}
+      - {click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 35}
+      - {click: ".",label: "。", long_click: "?", width: 10}
       - {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 20}
     label_transform: uppercase
     lock: false
@@ -363,7 +363,7 @@ preset_keyboards:
           {click: ","}, {click: "."}, {click: "?"}, {click: BackSpace},
           # 第4行
           {click: Keyboard_default, long_click: Menu, width: 15}, {click: Keyboard_number},
-          {click: space, preview: "", width: 50}, {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}
+          {click: space,label: "␣", width: 50}, {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}
           ]
     name: "雾凇符号键盘"
     width: 10
@@ -738,6 +738,7 @@ preset_keys:
     functional: false
     repeatable: false
     send: space
+    preview: "␣"
   undo:
     label: "撤銷"
     send: "Control+z"
