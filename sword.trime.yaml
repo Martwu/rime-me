@@ -333,6 +333,11 @@ liquid_keyboard:
   key_height_land: 40
   margin_x: 0.5
   single_width: 60
+  fixed_key_bar:  # 固定按键条
+    position: left  # 摆放位置（在滚动区域的……） top|bottom|left|right （上/下/左/右）
+    keys:
+      - BackSpace  # 退格键
+      - liquid_keyboard_exit  # 返回键（在preset_keys内定义，同下）
   keyboards:
     - yanwenzi
     - unit
