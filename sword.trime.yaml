@@ -260,8 +260,8 @@ preset_keyboards:
       - {click: "p", long_click: "0", swipe_up: "0"}
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
-      - {click: s, long_click: "$"}
-      - {click: d, long_click: "*"}
+      - {click: s}
+      - {click: d}
       - {click: f, long_click: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
@@ -275,9 +275,9 @@ preset_keyboards:
       - {click: x, long_click: cut}
       - {click: c, long_click: copy}
       - {click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard}
-      - {click: b, long_click: "@"}
-      - {click: n, long_click: "&"}
-      - {click: m, long_click: "%"}
+      - {click: b}
+      - {click: n}
+      - {click: m, long_click: "+",swipe_up: "-"}
       - {width: 3}
       - {click: BackSpace, swipe_left: Escape, width: 12}
       - {click: Keyboard_number, composing: Page_Up, long_click: Keyboard_symbols, swipe_down: IME_switch, width: 15}
