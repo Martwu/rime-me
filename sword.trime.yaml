@@ -132,6 +132,43 @@ preset_color_schemes:
     shadow_color: 0x000000
     text_back_color: 0xcce4e7e9
     text_color: 0x5a676e
+  blackmeBook:
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "安卓书／Android You Book"
+    m3c_00: 0xfff2e9
+    m3c_01: 0xffdcc3
+    m3c_02: 0xffdcc3
+    m3c_03: 0x382f28
+    m3c_04: 0xffb77e
+    m3c_05: 0x221a14
+    m3c_06: 0x090604
+    back_color: m3c_06
+    border_color: m3c_02
+    candidate_separator_color: m3c_01
+    candidate_text_color: m3c_01
+    comment_text_color: m3c_03
+    hilited_back_color: m3c_04
+    hilited_candidate_back_color: m3c_04
+    hilited_candidate_text_color: m3c_02
+    hilited_comment_text_color: m3c_05
+    hilited_key_back_color: m3c_03
+    hilited_off_key_back_color: m3c_01
+    hilited_off_key_text_color: m3c_06
+    hilited_on_key_back_color: m3c_04
+    hilited_on_key_text_color: m3c_06
+    hilited_text_color: m3c_02
+    key_back_color: m3c_05
+    key_symbol_color: m3c_03
+    key_text_color: m3c_00
+    keyboard_back_color: m3c_06
+    label_color: m3c_01
+    off_key_back_color: m3c_04
+    off_key_text_color: m3c_06
+    on_key_back_color: m3c_01
+    on_key_text_color: m3c_06
+    shadow_color: 0x000000
+    text_back_color: m3c_02
+    text_color: m3c_01
   blackme:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You"
