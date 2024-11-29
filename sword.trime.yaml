@@ -9,7 +9,7 @@ style:
   candidate_font: "LXGWWenKai-Bold.ttf"
   candidate_padding: 10
   candidate_spacing: 0.5
-  candidate_text_size: 20
+  candidate_text_size: 24
   candidate_use_cursor: true
   candidate_view_height: 28
   comment_font: "NotoEmoji-Bold.ttf"
@@ -135,76 +135,75 @@ preset_color_schemes:
   blackmeBook:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓书／Android You Book"
-    m3c_00: 0xfff2e9
-    m3c_01: 0xffdcc3
-    m3c_02: 0xffdcc3
-    m3c_03: 0x382f28
-    m3c_04: 0xffb77e
-    m3c_05: 0x221a14
-    m3c_06: 0x090604
-    back_color: m3c_06
-    border_color: m3c_02
-    candidate_separator_color: m3c_01
-    candidate_text_color: m3c_01
-    comment_text_color: m3c_03
+    m3c_00: 0xffffff
+    m3c_05: 0xdadee1
+    m3c_06: 0x3a4145
+    m3c_03: 0x090604
+    m3c_01: 0xabd2e3
+    m3c_04: 0x4e899f
+    back_color: m3c_03
+    border_color: m3c_01
+    candidate_separator_color: m3c_04
+    candidate_text_color: m3c_00
+    comment_text_color: m3c_01
     hilited_back_color: m3c_04
-    hilited_candidate_back_color: m3c_04
-    hilited_candidate_text_color: m3c_02
+    hilited_candidate_back_color: m3c_01
+    hilited_candidate_text_color: m3c_04
     hilited_comment_text_color: m3c_05
     hilited_key_back_color: m3c_03
     hilited_off_key_back_color: m3c_01
     hilited_off_key_text_color: m3c_06
     hilited_on_key_back_color: m3c_04
     hilited_on_key_text_color: m3c_06
-    hilited_text_color: m3c_02
-    key_back_color: m3c_05
-    key_symbol_color: m3c_03
+    hilited_text_color: m3c_01
+    key_back_color: m3c_06
+    key_symbol_color: m3c_05
     key_text_color: m3c_00
-    keyboard_back_color: m3c_06
+    keyboard_back_color: m3c_03
     label_color: m3c_01
     off_key_back_color: m3c_04
     off_key_text_color: m3c_06
     on_key_back_color: m3c_01
     on_key_text_color: m3c_06
     shadow_color: 0x000000
-    text_back_color: m3c_02
+    text_back_color: m3c_01
     text_color: m3c_01
   blackme:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You"
-    m3c_00: 0xf2eff7
-    m3c_01: 0xdfe0ff
-    m3c_02: 0xdfe0ff
-    m3c_03: 0x818190
-    m3c_04: 0xa9a9c1
-    m3c_05: 0x303036
-    m3c_06: 0x1b1b21
-    back_color: m3c_06
-    border_color: m3c_02
-    candidate_separator_color: m3c_01
-    candidate_text_color: m3c_01
-    comment_text_color: m3c_03
+    dark_scheme: blackmeBook
+    m3c_00: 0x3a4145
+    m3c_05: 0xdadee1
+    m3c_03: 0xe6e6e6
+    m3c_06: 0xffffff
+    m3c_04: 0x4e899f
+    m3c_01: 0xabd2e3
+    back_color: m3c_03
+    border_color: m3c_01
+    candidate_separator_color: m3c_04
+    candidate_text_color: m3c_00
+    comment_text_color: m3c_01
     hilited_back_color: m3c_04
-    hilited_candidate_back_color: m3c_04
-    hilited_candidate_text_color: m3c_02
+    hilited_candidate_back_color: m3c_01
+    hilited_candidate_text_color: m3c_04
     hilited_comment_text_color: m3c_05
     hilited_key_back_color: m3c_03
     hilited_off_key_back_color: m3c_01
     hilited_off_key_text_color: m3c_06
     hilited_on_key_back_color: m3c_04
     hilited_on_key_text_color: m3c_06
-    hilited_text_color: m3c_02
-    key_back_color: m3c_05
-    key_symbol_color: m3c_03
+    hilited_text_color: m3c_01
+    key_back_color: m3c_06
+    key_symbol_color: m3c_05
     key_text_color: m3c_00
-    keyboard_back_color: m3c_06
+    keyboard_back_color: m3c_03
     label_color: m3c_01
     off_key_back_color: m3c_04
     off_key_text_color: m3c_06
     on_key_back_color: m3c_01
     on_key_text_color: m3c_06
     shadow_color: 0x000000
-    text_back_color: m3c_02
+    text_back_color: m3c_01
     text_color: m3c_01
 preset_keyboards:
   mini:
@@ -264,10 +263,10 @@ preset_keyboards:
     keyboard_padding: 2
     keyboard_padding_bottom: 2
     keys: [
-            {click: "√"}, {click: "+"}, {click: 1, key_back_color: m3c_04}, {click: 2, key_back_color: m3c_04}, {click: 3, key_back_color: m3c_04}, {click: BackSpace, width: 20},
-            {click: "^2", long_click: "²"}, {click: "-"}, {click: 4, key_back_color: m3c_04}, {click: 5, key_back_color: m3c_04}, {click: 6, key_back_color: m3c_04}, {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20},
-            {click: "️%"}, {click: "*", long_click: "×"}, {click: 7, key_back_color: m3c_04}, {click: 8, key_back_color: m3c_04}, {click: 9, key_back_color: m3c_04}, {click: "=", long_click: "≠", width: 20},
-            {click: Keyboard_default, long_click: Keyboard_symbols}, {click: "/", long_click: "÷"}, {click: "π", long_click: liquid_keyboard_math, swipe_up: CALCULATOR}, {click: 0,long_click: "0000", key_back_color: m3c_04}, {click: .}, {click: Return, key_text_offset_y: 0, round_corner: 100.0, width: 20}]
+            {click: "√"}, {click: "+"}, {click: 1, key_back_color: m3c_01}, {click: 2, key_back_color: m3c_01}, {click: 3, key_back_color: m3c_01}, {click: BackSpace, width: 20},
+            {click: "^2", long_click: "²"}, {click: "-"}, {click: 4, key_back_color: m3c_01}, {click: 5, key_back_color: m3c_01}, {click: 6, key_back_color: m3c_01}, {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20},
+            {click: "️%"}, {click: "*", long_click: "×"}, {click: 7, key_back_color: m3c_01}, {click: 8, key_back_color: m3c_01}, {click: 9, key_back_color: m3c_01}, {click: "=", long_click: "≠", width: 20},
+            {click: Keyboard_default, long_click: Keyboard_symbols}, {click: "/", long_click: "÷"}, {click: "π", long_click: liquid_keyboard_math, swipe_up: CALCULATOR}, {click: 0,long_click: "0000", key_back_color: m3c_01}, {click: .}, {click: Return, key_text_offset_y: 0, round_corner: 100.0, width: 20}]
     name: "数字键盘"
     reset_ascii_mode: true
     width: 16
@@ -298,7 +297,7 @@ preset_keyboards:
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
       - {click: s}
-      - {click: d}
+      - {click: d, swipe_down: RimeIceMD}
       - {click: f, long_click: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
@@ -306,7 +305,7 @@ preset_keyboards:
       - {click: k, long_click: ":"}
       - {click: l, long_click: "^"}
       - {width: 5}
-      - {click: Shift_L, has_menu: "'", width: 12}
+      - {click: Shift_L, width: 12}
       - {width: 3}
       - {click: z, long_click: Keyboard_editor}
       - {click: x, long_click: cut}
@@ -317,7 +316,7 @@ preset_keyboards:
       - {click: m, long_click: "+",swipe_up: "-"}
       - {width: 3}
       - {click: BackSpace, swipe_left: Escape, width: 12}
-      - {click: Keyboard_number, composing: Page_Up, long_click: Keyboard_symbols, swipe_down: IME_switch, width: 15}
+      - {click: Keyboard_symbols, composing: Page_Up, long_click: Keyboard_number, swipe_down: IME_switch, width: 15}
       - {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 10}
       - {click: ",", label: "，", long_click: "!", width: 10}
       - {click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 35}
@@ -591,6 +590,10 @@ preset_keys:
     command: run
     label: "同文主頁"
     option: "https://github.com/osfans/trime"
+  RimeIceMD:
+    command: run
+    label: "ICE文档"
+    option: "https://github.com/iDvel/rime-ice/blob/main/README.md"
   IME_last:
     label: "上一输入法"
     select: .last
