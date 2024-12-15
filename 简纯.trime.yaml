@@ -191,7 +191,7 @@ style:
   key_height: 62 #键高
   key_width: 10.2 #键宽，占屏幕宽的百分比
   round_corner: 10 #按键圆角半径
-  shadow_radius: 0.0#按键阴影半径
+  shadow_radius: 0.0 #按键阴影半径
   key_font: symbol.ttf #键盘字型
   latin_font: latin.ttf #西文字型
   hanb_font: hanb.ttf #扩充字型
@@ -592,7 +592,7 @@ liquid_keyboard:
       - space1
       - BackSpace
       - Return1
- #     - liquid_keyboard_clipboard  
+ #     - liquid_keyboard_clipboard
  #     - liquid_keyboard_switch    #进入更多
   keyboards: [clipboard, history, emoji, math, ascii, cn, unit, list, symbol]  #tab列表
   history:
@@ -3069,7 +3069,7 @@ preset_keyboards:
     label_transform: uppercase   #键盘字母转化为大写
     lock: true #切换程序时记忆键盘
     width: 10
-    __patch: 
+    __patch:
       - conf/main
       - plus
       - pure/plus
@@ -3080,70 +3080,22 @@ preset_keyboards:
       - { click: 'q', long_click: '!', swipe_down: 1, __include: styl/key }
       - { click: 'w', long_click: '@', swipe_down: 2, __include: styl/key }
       - { click: 'e', long_click: '#', swipe_down: 3, __include: styl/key }
-      - {
-          click: 'r',
-          long_click: '$',
-          swipe_down: 4,
-          hint: 4,
-          __include: styl/key,
-        }
+      - { click: 'r', long_click: '$', swipe_down: 4, hint: 4, __include: styl/key, }
       - { click: 't', long_click: '%', swipe_down: 5, __include: styl/key }
       - { click: 'y', long_click: '^', swipe_down: 6, __include: styl/key }
-      - {
-          click: 'u',
-          long_click: '&',
-          swipe_down: 7,
-          hint: 7,
-          __include: styl/key,
-        }
+      - { click: 'u', long_click: '&', swipe_down: 7, hint: 7, __include: styl/key, }
       - { click: 'i', long_click: '°C', swipe_down: 8, __include: styl/key }
       - { click: 'o', long_click: '(', swipe_down: 9, __include: styl/key }
       - { click: 'p', long_click: ')', swipe_down: 0, __include: styl/key }
       # 第 2 行
       - { width: 5 }
       - { click: 'a', long_click: select_all, __include: styl/key }
-      - {
-          click: 's',
-          long_click: '_',
-          swipe_down: '~',
-          hint: '~',
-          __include: styl/key,
-        }
-      - {
-          click: 'd',
-          long_click: 'jianhao',
-          swipe_down: '<',
-          hint: '<',
-          __include: styl/key,
-        }
-      - {
-          click: 'f',
-          long_click: '+',
-          swipe_down: '>',
-          hint: '>',
-          __include: styl/key,
-        }
-      - {
-          click: 'g',
-          long_click: 'dengyu',
-          swipe_down: kb_edit,
-          hint: '<ɪ>',
-          __include: styl/key,
-        }
-      - {
-          click: 'h',
-          long_click: '*',
-          swipe_down: '×',
-          hint: '×',
-          __include: styl/key,
-        }
-      - {
-          click: 'j',
-          long_click: 'xiegang',
-          swipe_down: '÷',
-          hint: '÷',
-          __include: styl/key,
-        }
+      - { click: 's', long_click: '_', swipe_down: '~', hint: '~', __include: styl/key, }
+      - { click: 'd', long_click: 'jianhao', swipe_down: '<', hint: '<', __include: styl/key, }
+      - { click: 'f', long_click: '+', swipe_down: '>', hint: '>', __include: styl/key, }
+      - { click: 'g', long_click: 'dengyu', swipe_down: kb_edit, hint: '<ɪ>', __include: styl/key, }
+      - { click: 'h', long_click: '*', swipe_down: '×', hint: '×', __include: styl/key, }
+      - { click: 'j', long_click: 'xiegang', swipe_down: '÷', hint: '÷', __include: styl/key, }
       - { click: 'k', long_click: '"', swipe_down: '￥', hint: '￥', __include: styl/key }
       - { click: 'l', long_click: "danyinhao", __include: styl/key }
       # 第 3 行
@@ -3153,56 +3105,15 @@ preset_keyboards:
       - { click: 'x', long_click: cut, __include: styl/key }
       - { click: 'c', long_click: copy, __include: styl/key }
       - { click: 'v', long_click: paste, __include: styl/key }
-      - {
-          click: 'b',
-          long_click: '√',
-#          swipe_down: '|',
-#          hint: '|',
-          __include: styl/key,
-        }
-      - {
-          click: 'n',
-          long_click: ':',
-#          hint: '✜',
-#          swipe_up: Up,
-#          swipe_down: Down,
-#          swipe_left: Left,
-#          swipe_right: Right,
-          __include: styl/key,
-        }
+      - { click: 'b', long_click: '√', __include: styl/key, }
+      - { click: 'n', long_click: ':', hint: '✜', swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right, __include: styl/key, }
       - { click: 'm', long_click: 'fenhao', __include: styl/key }
       - { click: BS, width: 15 }
       # 第 4 行
-      - {
-          click: Keyboard_symbols,
-          long_click: Color_switch,
-          composing: Tab,
-          width: 11,
-          __include: styl/off_key,
-        }     
-      - {
-          click: Keyboard_number,
-          composing: "/",
-          width: 12,      
-          __include: styl/off_key,
-          __patch: conf/key_height_last,
-        }  
-      - { click: 'douhao', 
-          label: ' ，',
-          long_click: '、', 
-          width: 11, 
-          __include: styl/key, 
-          } 
-      - {
-          click: space,                        
-#          long_click: VOICE_ASSIST,
-          swipe_up: Clear,
-          swipe_down: liquid_keyboard_clipboard,
-          key_symbol_offset_x: 0,
-          width: 29,
-          key_back_color: space_back_color,
-          hilited_key_back_color: hilited_space_back_color,
-        }      
+      - { click: Keyboard_symbols, long_click: Color_switch, composing: Tab, width: 11, __include: styl/off_key, }
+      - { click: Keyboard_number, composing: "/", width: 12,      __include: styl/off_key, __patch: conf/key_height_last, }
+      - { click: 'douhao', label: ' ，', long_click: '、', width: 11, __include: styl/key, }
+      - { click: space, swipe_up: Clear, swipe_down: liquid_keyboard_clipboard, key_symbol_offset_x: 0, width: 29, key_back_color: space_back_color, hilited_key_back_color: hilited_space_back_color, }
       - {
           click: 'juhao',
           label: ' 。',
@@ -3214,7 +3125,7 @@ preset_keyboards:
           click: 'Mode_switch',
           composing: Escape,
           width: 11,
-          __include: styl/off_key,  
+          __include: styl/off_key,
         }
       - {
           click: Return,
@@ -3231,16 +3142,16 @@ preset_keyboards:
 #下面新增最后一排按钮
       - {
           click: IME_switch1,
-          width: 20,      
+          width: 20,
           __include: styl/menu,
           height: 25,
         }
       - {
           click: Left,
-          width: 20, 
-          height: 25,     
+          width: 20,
+          height: 25,
           __include: styl/menu,
-        }  
+        }
       - {
           click: 'VOICE_ASSIST',
           width: 20,
@@ -3249,10 +3160,10 @@ preset_keyboards:
         }
       - {
           click: Right,
-          width: 20, 
-          height: 25,     
+          width: 20,
+          height: 25,
           __include: styl/menu,
-        } 
+        }
       - {
           click: 'Back1',
           width: 20,
@@ -3421,7 +3332,7 @@ preset_keys:
   SEARCH: { label: 搜寻, send: Find }
   SLEEP: { label: 休眠, send: SLEEP }
 
-  VOICE_ASSIST: { label: 🎤, send: VOICE_ASSIST } #用于底部语音输入按钮  
+  VOICE_ASSIST: { label: 🎤, send: VOICE_ASSIST } #用于底部语音输入按钮
   Back1: { label: 🔽, send: BACK }  #用于底部收起键盘
   IME_switch1: { label: 🌐, send: LANGUAGE_SWITCH } #用于底部弹出对话框选择输入法
 

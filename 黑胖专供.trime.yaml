@@ -1,5 +1,82 @@
+name: "黑胖键盘侠"
 author: "Martwu <martin.wu2dream@gmail.com>"
 config_version: "3.0"
+
+conf:
+  # 数字、编辑、功能键盘
+  num_height:
+    height: 71 #按键高度
+  # 添加数字行
+  num_line:
+    height: 39 # 数字行按键高度
+  # 主键盘
+  main:
+    height: 52 #按键高度
+    horizontal_gap: 3 #按键水平间距
+    vertical_gap: 5 #按键行距
+    key_symbol_offset_x: 3
+    key_hint_offset_y: -1.3
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    keys/+:
+      - width: 0 #底部留白开关，0为关，1~100开
+        height: 1 #底部留白
+  key_height_last: # 第4行 按键高度
+    height: 50
+  # 数字、编辑、功能键盘配置
+  num:
+    height: 60 #按键高度
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    round_corner: 0
+    keys/+:
+      - width: 0 #底部留白开关
+        height: 1 #底部留白
+  # 符号、颜文字键盘
+  sym_height: 50 #按键高度
+  menu_height: 41 #菜单高度
+  sym_bottom_switch: 0 #底部留白开关
+  sym_bottom: 1 #底部留白
+  sym_long_text_size: 20 #长标签字号
+  # 符号键盘配置
+  sym:
+    ascii_mode: 1
+    width: 12 #按键宽度
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    round_corner: 0
+  # 颜文字键盘配置
+  ywz:
+    __include: conf/sym
+    width: 28 #颜文字键盘按键宽度
+  # 底部留白
+  bottom:
+    keys/+:
+      - width: { __include: conf/sym_bottom_switch }
+        height: { __include: conf/sym_bottom }
+
+plus:
+  'keys/@4/hint': ' '
+  'keys/@7/hint': ' '
+  'keys/@0/': { click: num1, __include: conf/num_line }
+  'keys/@after 0/': { click: num2 }
+  'keys/@after 1/': { click: num3 }
+  'keys/@after 2/': { click: num4 }
+  'keys/@after 3/': { click: num5 }
+  'keys/@after 4/': { click: num6 }
+  'keys/@after 5/': { click: num7 }
+  'keys/@after 6/': { click: num8 }
+  'keys/@after 7/': { click: num9 }
+  'keys/@after 8/': { click: num0 }
+
+pure:
+  plus:
+    height: 47 #按键高度
+    horizontal_gap: 6 #按键水平间距
+    vertical_gap: 7 #按键行距
+    key_hint_offset_y: 0
+  key_height_last: 46
+
 fallback_colors:
   candidate_text_color: text_color
 style:
@@ -136,11 +213,11 @@ preset_color_schemes:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓书／Android You Book"
     m3c_00: 0xffffff
-    m3c_05: 0xbacee3
-    m3c_06: 0x646e78
-    m3c_03: 0x292c2f
-    m3c_01: 0x8ca4b6
-    m3c_04: 0x446f90
+    m3c_05: 0xdadee1
+    m3c_06: 0x3a4145
+    m3c_03: 0x090604
+    m3c_01: 0xabd2e3
+    m3c_04: 0x4e899f
     back_color: m3c_03
     border_color: m3c_01
     candidate_separator_color: m3c_04
@@ -154,7 +231,7 @@ preset_color_schemes:
     hilited_off_key_back_color: m3c_01
     hilited_off_key_text_color: m3c_06
     hilited_on_key_back_color: m3c_04
-    hilited_on_key_text_color: m3c_05
+    hilited_on_key_text_color: m3c_06
     hilited_text_color: m3c_01
     key_back_color: m3c_06
     key_symbol_color: m3c_05
@@ -172,12 +249,12 @@ preset_color_schemes:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You"
     dark_scheme: blackmeBook
-    m3c_00: 0x646e78
+    m3c_00: 0x3a4145
     m3c_05: 0xdadee1
-    m3c_03: 0xbacee3
+    m3c_03: 0xe6e6e6
     m3c_06: 0xffffff
-    m3c_04: 0x446f90
-    m3c_01: 0x8ca4b6
+    m3c_04: 0x4e899f
+    m3c_01: 0xabd2e3
     back_color: m3c_03
     border_color: m3c_01
     candidate_separator_color: m3c_04
@@ -220,20 +297,30 @@ preset_keyboards:
     key_text_offset_x: 0
     key_text_offset_y: 2
     keys:
-      - {click: "q", long_click: "1", swipe_up: "1"}
-      - {click: "w", long_click: "2", swipe_up: "2"}
-      - {click: "e", long_click: "3", swipe_up: "3"}
-      - {click: "r", long_click: "4", swipe_up: "4"}
-      - {click: "t", long_click: "5", swipe_up: "5"}
-      - {click: "y", long_click: "6", swipe_up: "6"}
-      - {click: "u", long_click: "7", swipe_up: "7"}
-      - {click: "i", long_click: "8", swipe_up: "8"}
-      - {click: "o", long_click: "9", swipe_up: "9"}
-      - {click: "p", long_click: "0", swipe_up: "0"}
+      - {click: "1"}
+      - {click: "2"}
+      - {click: "3"}
+      - {click: "4"}
+      - {click: "5"}
+      - {click: "6"}
+      - {click: "7"}
+      - {click: "8"}
+      - {click: "9"}
+      - {click: "0"}
+      - {click: "q"}
+      - {click: "w"}
+      - {click: "e"}
+      - {click: "r"}
+      - {click: "t"}
+      - {click: "y"}
+      - {click: "u"}
+      - {click: "i"}
+      - {click: "o"}
+      - {click: "p"}
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
       - {click: s}
-      - {click: d, swipe_down: RimeIceMD}
+      - {click: d, swipe_down: RimeIceMD, hint: "⭐"}
       - {click: f, long_click: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
@@ -260,7 +347,7 @@ preset_keyboards:
       - {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 20}
     label_transform: uppercase
     lock: false
-    name: "26全键盘"
+    name: "全键盘"
     width: 10
   mini:
     ascii_mode: 0
@@ -280,30 +367,29 @@ preset_keyboards:
     name: "精简键盘"
     width: 10
   editor:
-    ascii_mode: 1
-    author: "Martwu <martin.wu2dream@gmail.com>"
-    columns: 30
-    width: 15
-    key_hint_offset_x: 0
-    key_hint_offset_y: 0
-    key_press_offset_x: 2
-    key_press_offset_y: 2
-    key_symbol_offset_x: 0
-    key_symbol_offset_y: 0
-    key_text_offset_x: 0
-    key_text_offset_y: 0
-    keyboard_padding: 2
-    keyboard_padding_bottom: 2
-    horizontal_gap: 5
-    vertical_gap: 5
-    keys: [
-            {click: Escape, width: 15}, {click: DuckDuckGo, width: 15}, {click: undo, width: 15}, {click: copy, width: 15}, {click: Up, width: 40},
-            {click: Zdic, width: 15}, {click: Google, width: 15}, {click: redo, width: 15}, {click: cut, width: 15}, {click: Left}, {click: select_all,width: 10}, {click: Right},
-            {click: Wiki, width: 15},{click: MoeDict, width: 15},{click: paste_text, width: 15}, {click: paste,width: 15}, {click: Down, width: 40},
-            {click: Keyboard_default}, {click: Home, width: 20}, {click: End, width: 20}, {click: Page_Up, width: 22.5},{click: Page_Down, width: 22.5}
-           ]
-    name: "编辑键盘"
-    reset_ascii_mode: true
+    ascii_mode: 0
+    width: 25
+    __patch:
+      - conf/num
+      - conf/num_height
+    keys:
+      - { click: Home, __include: styl/off_func }
+      - { click: Up, __include: styl/off_func }
+      - { click: cut, __include: styl/off_func }
+      - { click: Back, __include: styl/off_func }
+      - { click: Left, __include: styl/off_func }
+      - { click: Shift_L, label: 选择, key_back_color: off_sym_back_color, hilited_key_back_color: hilited_off_sym_back_color, }
+      - { click: Right, __include: styl/off_func }
+      - { click: Delete, __include: styl/off_func }
+      - { click: End, __include: styl/off_func }
+      - { click: Down, __include: styl/off_func }
+      - { click: Tab, __include: styl/off_func }
+      - { click: BackSpace, __include: styl/off_func }
+      - { click: select_all, __include: styl/off_func }
+      - { click: copy, __include: styl/off_func }
+      - { click: paste, __include: styl/off_func }
+      - { click: Return, __include: styl/off_func }
+
   number:
     ascii_mode: 1
     author: "Martwu <martin.wu2dream@gmail.com>"
