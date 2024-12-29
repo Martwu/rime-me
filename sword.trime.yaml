@@ -154,7 +154,7 @@ preset_color_schemes:
     hilited_off_key_back_color: m3c_01
     hilited_off_key_text_color: m3c_06
     hilited_on_key_back_color: m3c_04
-    hilited_on_key_text_color: m3c_05
+    hilited_on_key_text_color: m3c_06
     hilited_text_color: m3c_01
     key_back_color: m3c_06
     key_symbol_color: m3c_05
@@ -162,7 +162,7 @@ preset_color_schemes:
     keyboard_back_color: m3c_03
     label_color: m3c_01
     off_key_back_color: m3c_04
-    off_key_text_color: m3c_06
+    off_key_text_color: m3c_00
     on_key_back_color: m3c_01
     on_key_text_color: m3c_06
     shadow_color: 0x000000
