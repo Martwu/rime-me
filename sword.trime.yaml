@@ -135,12 +135,12 @@ preset_color_schemes:
   blackmeBook:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓书／Android You Book"
-    m3c_00: 0xffffff
     m3c_05: 0xbacee3
-    m3c_06: 0x646e78
-    m3c_03: 0x292c2f
     m3c_01: 0x8ca4b6
     m3c_04: 0x446f90
+    m3c_06: 0x646e78
+    m3c_00: 0xffffff # 不变
+    m3c_03: 0x292c2f # 不变
     back_color: m3c_03
     border_color: m3c_01
     candidate_separator_color: m3c_04
@@ -172,12 +172,12 @@ preset_color_schemes:
     author: "Martwu <martin.wu2dream@gmail.com>"
     name: "安卓／Android You"
     dark_scheme: blackmeBook
-    m3c_00: 0x646e78
-    m3c_05: 0xdadee1
-    m3c_03: 0xbacee3
-    m3c_06: 0xffffff
+    m3c_01: 0xbacee3
+    m3c_05: 0x8ca4b6
     m3c_04: 0x446f90
-    m3c_01: 0x8ca4b6
+    m3c_00: 0x646e78
+    m3c_06: 0xffffff # 不变
+    m3c_03: 0xdadee1 # 不变
     back_color: m3c_03
     border_color: m3c_01
     candidate_separator_color: m3c_04
