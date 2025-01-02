@@ -2,6 +2,26 @@ author: "Martwu <martin.wu2dream@gmail.com>"
 config_version: "3.0"
 fallback_colors:
   candidate_text_color: text_color
+# 按键样式
+style_custom:
+  key:
+    key_back_color: main_back_color
+    hilited_key_back_color: hilited_main_back_color
+  off_key:
+    key_symbol_color: off_key_symbol_color
+    hilited_key_symbol_color: off_key_symbol_color
+    key_symbol_offset_x: 0
+  off_func:
+    key_back_color: off_sym_back_color
+    hilited_key_back_color: hilited_off_sym_back_color
+    key_text_color: off_sym_text_color
+    hilited_key_text_color: hilited_off_sym_text_color
+  # 数字、编辑、功能键盘
+  num_height:
+    height: 71 #按键高度
+  # 添加数字行
+  num_line:
+    height: 39 # 数字行按键高度
 style:
   color_scheme: default
   auto_caps: false
@@ -207,7 +227,7 @@ preset_color_schemes:
     text_color: m3c_01
 preset_keyboards:
   default:
-    ascii_mode: 0
+    ascii_mode: 1
     reset_ascii_mode: false
     author: "Martwu <martin.wu2dream@gmail.com>"
     columns: 30
@@ -220,20 +240,30 @@ preset_keyboards:
     key_text_offset_x: 0
     key_text_offset_y: 2
     keys:
-      - {click: "q", long_click: "1", swipe_up: "1"}
-      - {click: "w", long_click: "2", swipe_up: "2"}
-      - {click: "e", long_click: "3", swipe_up: "3"}
-      - {click: "r", long_click: "4", swipe_up: "4"}
-      - {click: "t", long_click: "5", swipe_up: "5"}
-      - {click: "y", long_click: "6", swipe_up: "6"}
-      - {click: "u", long_click: "7", swipe_up: "7"}
-      - {click: "i", long_click: "8", swipe_up: "8"}
-      - {click: "o", long_click: "9", swipe_up: "9"}
-      - {click: "p", long_click: "0", swipe_up: "0"}
+      - {click: 1, height: 24, key_text_size: 12}
+      - {click: 2, height: 24, key_text_size: 12}
+      - {click: 3, height: 24, key_text_size: 12}
+      - {click: 4, height: 24, key_text_size: 12}
+      - {click: 5, height: 24, key_text_size: 12}
+      - {click: 6, height: 24, key_text_size: 12}
+      - {click: 7, height: 24, key_text_size: 12}
+      - {click: 8, height: 24, key_text_size: 12}
+      - {click: 9, height: 24, key_text_size: 12}
+      - {click: 0, height: 24, key_text_size: 12}
+      - {click: "q"}
+      - {click: "w"}
+      - {click: "e"}
+      - {click: "r"}
+      - {click: "t"}
+      - {click: "y"}
+      - {click: "u"}
+      - {click: "i"}
+      - {click: "o"}
+      - {click: "p"}
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
       - {click: s}
-      - {click: d, swipe_down: RimeIceMD}
+      - {click: d, swipe_down: RimeIceMD, hint: "文档"}
       - {click: f, long_click: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
@@ -279,7 +309,7 @@ preset_keyboards:
     lock: true
     name: "精简键盘"
     width: 10
-  editor:
+  editor_dup:
     ascii_mode: 1
     author: "Martwu <martin.wu2dream@gmail.com>"
     columns: 30
@@ -297,13 +327,43 @@ preset_keyboards:
     horizontal_gap: 5
     vertical_gap: 5
     keys: [
-            {click: Escape, width: 15}, {click: DuckDuckGo, width: 15}, {click: undo, width: 15}, {click: copy, width: 15}, {click: Up, width: 40},
-            {click: Zdic, width: 15}, {click: Google, width: 15}, {click: redo, width: 15}, {click: cut, width: 15}, {click: Left}, {click: select_all,width: 10}, {click: Right},
-            {click: Wiki, width: 15},{click: MoeDict, width: 15},{click: paste_text, width: 15}, {click: paste,width: 15}, {click: Down, width: 40},
+            {click: Escape, width: 15}, {click: "", width: 15}, {click: undo, width: 15}, {click: copy, width: 15}, {click: Up, width: 40},
+            {click: "", width: 15}, {click: "", width: 15}, {click: redo, width: 15}, {click: cut, width: 15}, {click: Left}, {click: select_all,width: 10}, {click: Right},
+            {click: "", width: 15},{click: "", width: 15},{click: paste_text, width: 15}, {click: paste,width: 15}, {click: Down, width: 40},
             {click: Keyboard_default}, {click: Home, width: 20}, {click: End, width: 20}, {click: Page_Up, width: 22.5},{click: Page_Down, width: 22.5}
            ]
     name: "编辑键盘"
     reset_ascii_mode: true
+  editor:
+    name: 编辑
+    author: 'amzxyz'
+    ascii_mode: 0
+    width: 25
+    __patch:
+      - style_custom/num
+      - style_custom/num_height
+    keys:
+      - { click: Home, __include: style_custom/off_func }
+      - { click: Up, __include: style_custom/off_func }
+      - { click: cut, __include: style_custom/off_func }
+      - { click: Back, __include: style_custom/off_func }
+      - { click: Left, __include: style_custom/off_func }
+      - {
+          click: Shift_L,
+          label: 选择,
+          key_back_color: off_sym_back_color,
+          hilited_key_back_color: hilited_off_sym_back_color,
+        }
+      - { click: Right, __include: style_custom/off_func }
+      - { click: Delete, __include: style_custom/off_func }
+      - { click: End, __include: style_custom/off_func }
+      - { click: Down, __include: style_custom/off_func }
+      - { click: Tab, __include: style_custom/off_func }
+      - { click: BackSpace, __include: style_custom/off_func }
+      - { click: select_all, __include: style_custom/off_func }
+      - { click: copy, __include: style_custom/off_func }
+      - { click: paste, __include: style_custom/off_func }
+      - { click: Return, __include: style_custom/off_func }
   number:
     ascii_mode: 1
     author: "Martwu <martin.wu2dream@gmail.com>"
@@ -469,12 +529,6 @@ liquid_keyboard:
     name: "音标"
     type: SINGLE
 preset_keys:
-  BRIGHTNESS_DOWN:
-    label: "亮度-"
-    send: BRIGHTNESS_DOWN
-  BRIGHTNESS_UP:
-    label: "亮度+"
-    send: BRIGHTNESS_UP
   BackSpace:
     label: "⌫"
     repeatable: true
@@ -482,19 +536,6 @@ preset_keys:
   BackToPreviousSyllable:
     label: "刪音節"
     send: "Control+BackSpace"
-  DuckDuckGo:
-    command: run
-    label: "赶鸭"
-    option: "https://duckduckgo.com/%4$s"
-  CALCULATOR:
-    label: "计算器"
-    send: CALCULATOR
-  CALENDAR:
-    label: "日曆"
-    send: CALENDAR
-  CONTACTS:
-    label: "電話簿"
-    send: CONTACTS
   Candidate_switch:
     send: Mode_switch
     states: ["有候選", "無候選"]
@@ -503,10 +544,6 @@ preset_keys:
     send: Mode_switch
     states: ["常用", "增廣"]
     toggle: extended_charset
-  ChineseDate:
-    command: date
-    label: "農曆"
-    option: "zh_CN@calendar=chinese"
   Clear:
     label: "清除"
     text: "{Control+a}{BackSpace}"
@@ -524,19 +561,12 @@ preset_keys:
   CommitComment:
     label: "編碼"
     send: "Control+Shift+Return"
-  CommitHomepage:
-    commit: "https://github.com/osfans/trime"
-    label: "同文網址"
   CommitRawInput:
     label: "編碼"
     send: "Control+Return"
   CommitScriptText:
     label: "編碼"
     send: "Shift+Return"
-  Date:
-    command: date
-    label: "日期"
-    option: "yyyy-MM-dd"
   Delete:
     label: "刪除"
     send: Delete
@@ -586,10 +616,6 @@ preset_keys:
   Home:
     label: "行首"
     send: Home
-  Homepage:
-    command: run
-    label: "同文主頁"
-    option: "https://github.com/osfans/trime"
   RimeIceMD:
     command: run
     label: "ICE文档"
@@ -642,9 +668,6 @@ preset_keys:
   Left:
     label: "⬅"
     send: Left
-  MUSIC:
-    label: "音樂"
-    send: MUSIC
   Menu:
     label: "❖"
     send: Menu
@@ -652,13 +675,6 @@ preset_keys:
     send: Mode_switch
     states: ["中文", "西文"]
     toggle: ascii_mode
-  MoeDict:
-    command: run
-    label: "萌典"
-    option: "https://www.moedict.tw/%3$s"
-  POWER:
-    label: "電源"
-    send: POWER
   Page_Down:
     label: "下頁"
     send: Page_Down
@@ -682,12 +698,6 @@ preset_keys:
   Right:
     label: "⮕"
     send: Right
-  SEARCH:
-    label: "搜尋"
-    send: Find
-  SLEEP:
-    label: "休眠"
-    send: SLEEP
   Schema_settings:
     label: "方案"
     option: schema
@@ -710,18 +720,10 @@ preset_keys:
     label: "⇧"
     send: Shift_L
     shift_lock: long
-  Sync:
-    command: broadcast
-    label: "同步"
-    option: com.osfans.trime.sync
   Theme_settings:
     label: "主題"
     option: theme
     send: SETTINGS
-  Time:
-    command: date
-    label: "時間"
-    option: "HH:mm:ss"
   TrimeApp:
     command: run
     label: "同文"
@@ -736,31 +738,6 @@ preset_keys:
   VOICE_ASSIST:
     label: "語音"
     send: VOICE_ASSIST
-  VOLUME_DOWN:
-    label: "音量-"
-    send: VOLUME_DOWN
-  VOLUME_MUTE:
-    label: "靜音"
-    send: VOLUME_MUTE
-  VOLUME_UP:
-    label: "音量+"
-    send: VOLUME_UP
-  WebSearch:
-    command: web_search
-    label: "网页搜索"
-    option: "%4$s"
-  Wiki:
-    command: run
-    label: "維基"
-    option: "https://zh.wikipedia.org/wiki/%1$s"
-  Zdic:
-    command: run
-    label: "漢典"
-    option: "http://www.zdic.net/hans/%1$s"
-  Zdic2:
-    command: run
-    label: "漢典"
-    option: "http://www.zdic.net/sousuo/?q=%2$s"
   Zenkaku_Hankaku:
     send: Mode_switch
     states: ["半角", "全角"]
