@@ -1,19 +1,22 @@
 author: "Martwu <martin.wu2dream@gmail.com>"
+name: "黑胖专供"
 config_version: "3.0"
 # 按键样式
 style_custom:
-  key:
-    key_back_color: main_back_color
-    hilited_key_back_color: hilited_main_back_color
-  off_key:
-    key_symbol_color: off_key_symbol_color
-    hilited_key_symbol_color: off_key_symbol_color
-    key_symbol_offset_x: 0
-  off_func:
-    key_back_color: off_sym_back_color
-    hilited_key_back_color: hilited_off_sym_back_color
-    key_text_color: off_sym_text_color
-    hilited_key_text_color: hilited_off_sym_text_color
+  key_editor:
+    key_back_color: keyboard_back_color
+    hilited_key_back_color: keyboard_back_color
+    key_text_color: color_bw_opposite
+    hilited_key_text_color: color_bw_opposite
+  key_enter:
+    key_text_offset_y: 0
+    round_corner: 100.0
+    width: 20
+  key_num:
+    key_back_color: color_m_level2
+    key_text_color: color_bw_main
+
+conf_custom:
   # 数字、编辑、功能键盘
   num_height:
     height: 71 #按键高度
@@ -22,68 +25,52 @@ style_custom:
     height: 39 # 数字行按键高度
 
 fallback_colors:
-  # 悬浮窗
-  border_color: back_color #悬浮窗边框
-  label_color: hilited_text_color #标签（候选序号）
-  text_back_color: back_color #编码区背景
-  # text_color:  #编码
-  hilited_back_color: back_color #高亮编码背景
-  hilited_text_color: text_color #高亮编码
+    keyboard_back_color: color_bw_main
+    # 候选区主文本颜色
+    candidate_text_color: color_bw_opposite
+    hilited_candidate_text_color: color_bw_opposite
+    # 候选区注释文本颜色
+    comment_text_color: color_m_level2
+    hilited_comment_text_color: color_m_level2
+    # 候选区背景
+    back_color: keyboard_back_color
+    hilited_back_color: color_m_level2
+    candidate_back_color: keyboard_back_color
+    hilited_candidate_back_color: color_m_level2
+    # 候选区分隔线
+    candidate_separator_color: keyboard_back_color
 
-  # 候选栏
-  candidate_separator_color: back_color #候选分割线
-  # back_color:  #候选栏背景
-  candidate_text_color: hilited_text_color #候选文字
-  comment_text_color: candidate_text_color #提示
-  hilited_candidate_back_color: back_color #高亮候选背景
-  hilited_candidate_text_color: text_color #高亮候选文字
-  hilited_comment_text_color: hilited_candidate_text_color #高亮提示
+    # 悬浮窗文本颜色
+    text_color: color_bw_opposite
+    hilited_text_color: color_bw_opposite
+    # 悬浮窗候选项序号文本颜色
+    label_color: color_bw_opposite
+    hilited_label_color: color_bw_opposite
+    # 悬浮窗边框
+    border_color: hilited_candidate_back_color
 
-  # 键盘通用
-  keyboard_back_color: back_color #键盘背景
-  key_border_color: back_color #按键边框
-  shadow_color: back_color #按键文字阴影
-  preview_back_color: back_color #按键提示背景
-  preview_text_color: key_text_color #按键提示文字
-  key_text_color: candidate_text_color #按键文字
-  key_symbol_color: comment_text_color #按键符号
-  hilited_key_text_color: key_text_color #高亮按键文字
-  hilited_key_symbol_color: key_symbol_color #高亮按键符号
+    # 上标符号文本颜色
+    key_symbol_color: color_bw_main
+    hilited_key_symbol_color: key_symbol_color
+    # 按键文本颜色
+    key_text_color: color_bw_opposite
+    hilited_key_text_color: key_text_color
+    # 按键背景颜色
+    key_back_color: color_bw_mid
+    hilited_key_back_color: color_m_level1
+    # 功能键文本颜色
+    off_key_text_color: color_bw_main
+    hilited_off_key_text_color: off_key_text_color
+    # 功能键背景颜色
+    off_key_back_color: color_m_level3
+    hilited_off_key_back_color: color_m_level1
+    # Shift 键锁定时文本
+    on_key_text_color: color_bw_main
+    hilited_on_key_text_color: color_bw_main
+    # Shift 键锁定时背景
+    on_key_back_color: color_m_level2
+    hilited_on_key_back_color: color_m_level1
 
-  # 主键盘
-  main_back_color: back_color #按键背景 ※
-  hilited_main_back_color: back_color #高亮按键背景 ※
-  space_back_color: main_back_color #空格背景 ※
-  hilited_space_back_color: hilited_main_back_color #高亮空格背景 ※
-  off_key_back_color: hilited_main_back_color #功能键背景
-  off_key_text_color: key_text_color #功能键文字
-  off_key_symbol_color: off_key_text_color #功能键符号 高亮功能键符号※
-  hilited_off_key_back_color: main_back_color #高亮功能键背景
-  hilited_off_key_text_color: off_key_text_color #高亮功能键文字
-  on_key_back_color: hilited_off_key_back_color #shift锁定时背景
-  on_key_text_color: hilited_key_text_color #shift锁定时文字
-  hilited_on_key_back_color: off_key_back_color #高亮shift锁定时背景
-  hilited_on_key_text_color: on_key_text_color #高亮shift锁定时文字
-  enter_back_color: on_key_back_color #enter背景 ※
-  enter_text_color: on_key_text_color #enter文字 高亮enter文字※
-  enter_symbol_color: enter_text_color #enter符号 高亮enter符号※
-  hilited_enter_back_color: hilited_on_key_back_color #高亮enter背景 ※
-
-  # 附键盘
-  key_back_color: back_color #按键背景
-  hilited_key_back_color: back_color #高亮按键背景
-  off_sym_back_color: hilited_key_back_color #功能键背景 ※
-  off_sym_text_color: off_key_text_color #功能键文字 ※
-  off_sym_fy_text_color: hilited_off_sym_back_color #翻页停止箭头文字 高亮※
-  hilited_off_sym_back_color: key_back_color #高亮功能键背景 ※
-  hilited_off_sym_text_color: hilited_off_key_text_color #高亮功能键文字 ※
-  enter_sym_back_color: off_sym_back_color # enter背景 ※
-  enter_sym_text_color: on_key_text_color #enter文字 高亮enter文字※
-  hilited_enter_sym_back_color: hilited_off_sym_back_color #高亮enter背景 ※
-  menu_back_color: off_sym_back_color #菜单背景 ※
-  menu_text_color: off_sym_text_color #菜单文字 ※
-  hilited_menu_back_color: key_back_color #高亮菜单背景 ※
-  hilited_menu_text_color: enter_sym_back_color #高亮菜单文字 ※
 
 style:
   color_scheme: default
@@ -98,7 +85,7 @@ style:
   comment_font: "NotoEmoji-Bold.ttf"
   comment_height: 12
   comment_on_top: true
-  comment_text_size: 10
+  comment_text_size: 8
   hanb_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
   key_font: "PatuaOne-Regular.ttf"
   key_height: 44
@@ -143,10 +130,22 @@ style:
     - number
     - symbols
     - mini
+  locale: zh_CN
+  latin_locale: en_US
+  proximity_correction: true
+  reset_ascii_mode: true
+  round_corner: 20
+  shadow_radius: 0.0
+  speech_opencc_config: s2t.json
+  vertical_correction: -10
+  window:
+    - {end: "", move: "ϟ ", start: ""}
+    - {composition: "%s", end: "", letter_spacing: 0, start: ""}
+    - {candidate: "%s", comment: " %s", end: "", label: "%s.", sep: " ", start: "\n"}
   layout:
-    all_phrases: false
-    alpha: 0xdd
-    border: 2
+    all_phrases: true
+    alpha: 0xff
+    border: 0
     elevation: 5
     line_spacing: 0
     line_spacing_multiplier: 1.0
@@ -164,130 +163,45 @@ style:
     movable: false
     position: fixed
     real_margin: 3
-    round_corner: 30.0
+    round_corner: 0.0
     spacing: 1
     sticky_lines: 0
     sticky_lines_land: 0
-  locale: zh_CN
-  latin_locale: en_US
-  proximity_correction: true
-  reset_ascii_mode: true
-  round_corner: 20
-  shadow_radius: 0.0
-  speech_opencc_config: s2t.json
-  vertical_correction: -10
-  window:
-    - {end: "", move: "ϟ ", start: ""}
-    - {composition: "%s", end: "", letter_spacing: 0, start: ""}
-    - {candidate: "%s", comment: " %s", end: "", label: "%s.", sep: " ", start: "\n"}
 preset_color_schemes:
+  defaultBlack:
+    name: "B 默认的黑"
+    c_color_l1: 0xb1e1e5
+    c_color_l2: 0x63bece
+    c_color_l3: 0x498b98
+    b_color_main: 0x292c2f
+    b_color_mid: 0x646e78
+    b_color_back: 0xffffff
+
+    color_m_level1: c_color_l1
+    color_m_level2: c_color_l2
+    color_m_level3: c_color_l3
+    color_bw_main: b_color_main
+    color_bw_opposite: b_color_back
+    color_bw_mid: b_color_mid
+
   default:
-    author: osfans
-    back_color: 0xe4e7e9
-    border_color: 0xc1c7ca
-    candidate_separator_color: 0xc1c7ca
-    candidate_text_color: 0x5a676e
-    comment_text_color: 0x7b868c
-    hilited_back_color: 0xccd3d7da
-    hilited_candidate_back_color: 0xd3d7da
-    hilited_candidate_text_color: 0x000000
-    hilited_comment_text_color: 0x000000
-    hilited_key_back_color: 0xd3d7da
-    hilited_key_symbol_color: 0x000000
-    hilited_key_text_color: 0x000000
-    hilited_off_key_back_color: 0xd3d7da
-    hilited_off_key_text_color: 0x000000
-    hilited_on_key_back_color: 0xd3d7da
-    hilited_on_key_text_color: 0x000000
-    hilited_text_color: 0x23948e
-    key_back_color: 0xeceff1
-    key_symbol_color: 0x5f6b73
-    key_text_color: 0x37474f
-    keyboard_back_color: 0xffffff
-    label_color: 0x000000
-    name: "預設／default"
-    off_key_back_color: 0xd3d7da
-    off_key_text_color: 0x000000
-    on_key_back_color: 0x23948e
-    on_key_text_color: 0x37474f
-    preview_back_color: 0x55bfbfbf
-    preview_text_color: 0x23948e
-    shadow_color: 0x000000
-    text_back_color: 0xcce4e7e9
-    text_color: 0x5a676e
-  blackmeBook:
     author: "Martwu <martin.wu2dream@gmail.com>"
-    name: "安卓书／Android You Book"
-    m3c_05: 0xbacee3
-    m3c_01: 0x8ca4b6
-    m3c_04: 0x446f90
-    m3c_06: 0x646e78
-    m3c_00: 0xffffff # 不变
-    m3c_03: 0x292c2f # 不变
-    back_color: m3c_03
-    border_color: m3c_01
-    candidate_separator_color: m3c_04
-    candidate_text_color: m3c_00
-    comment_text_color: m3c_01
-    hilited_back_color: m3c_04
-    hilited_candidate_back_color: m3c_01
-    hilited_candidate_text_color: m3c_04
-    hilited_comment_text_color: m3c_05
-    hilited_key_back_color: m3c_03
-    hilited_off_key_back_color: m3c_01
-    hilited_off_key_text_color: m3c_06
-    hilited_on_key_back_color: m3c_04
-    hilited_on_key_text_color: m3c_06
-    hilited_text_color: m3c_01
-    key_back_color: m3c_06
-    key_symbol_color: m3c_05
-    key_text_color: m3c_00
-    keyboard_back_color: m3c_03
-    label_color: m3c_01
-    off_key_back_color: m3c_04
-    off_key_text_color: m3c_00
-    on_key_back_color: m3c_01
-    on_key_text_color: m3c_06
-    shadow_color: 0x000000
-    text_back_color: m3c_01
-    text_color: m3c_01
-  blackme:
-    author: "Martwu <martin.wu2dream@gmail.com>"
-    name: "安卓／Android You"
-    dark_scheme: blackmeBook
-    m3c_01: 0xbacee3
-    m3c_05: 0x8ca4b6
-    m3c_04: 0x446f90
-    m3c_00: 0x646e78
-    m3c_06: 0xffffff # 不变
-    m3c_03: 0xdadee1 # 不变
-    back_color: m3c_03
-    border_color: m3c_01
-    candidate_separator_color: m3c_04
-    candidate_text_color: m3c_00
-    comment_text_color: m3c_01
-    hilited_back_color: m3c_04
-    hilited_candidate_back_color: m3c_01
-    hilited_candidate_text_color: m3c_04
-    hilited_comment_text_color: m3c_05
-    hilited_key_back_color: m3c_03
-    hilited_off_key_back_color: m3c_01
-    hilited_off_key_text_color: m3c_06
-    hilited_on_key_back_color: m3c_04
-    hilited_on_key_text_color: m3c_06
-    hilited_text_color: m3c_01
-    key_back_color: m3c_06
-    key_symbol_color: m3c_05
-    key_text_color: m3c_00
-    keyboard_back_color: m3c_03
-    label_color: m3c_01
-    off_key_back_color: m3c_04
-    off_key_text_color: m3c_06
-    on_key_back_color: m3c_01
-    on_key_text_color: m3c_06
-    shadow_color: 0x000000
-    text_back_color: m3c_01
-    text_color: m3c_01
+    name: "W 默认的白"
+    dark_scheme: defaultBlack
+    c_color_l1: 0xb1e1e5
+    c_color_l2: 0x63bece
+    c_color_l3: 0x498b98
+    w_color_main: 0xf0f0f0
+    w_color_mid: 0xdadee1
+    w_color_back: 0x31363a
+
+    color_m_level1: c_color_l1
+    color_m_level2: c_color_l2
+    color_m_level3: c_color_l3
+    color_bw_main: w_color_main
+    color_bw_opposite: w_color_back
+    color_bw_mid: w_color_mid
+
 preset_keyboards:
   default:
     ascii_mode: 1
@@ -350,14 +264,13 @@ preset_keyboards:
       - {click: ",", label: "，", long_click: "!", width: 10}
       - {click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
-      - {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 20}
+      - {click: Return, composing: Return1, __include: style_custom/key_enter}
     label_transform: uppercase
     lock: false
     name: "26全键盘"
     width: 10
   mini:
     ascii_mode: 0
-    author: "Martwu <martin.wu2dream@gmail.com>"
     height: 44
     keyboard_height: 120
     keys: [
@@ -373,30 +286,32 @@ preset_keyboards:
     name: "精简键盘"
     width: 10
   editor:
-    ascii_mode: 1
-    author: "Martwu <martin.wu2dream@gmail.com>"
-    columns: 30
-    width: 15
-    key_hint_offset_x: 0
-    key_hint_offset_y: 0
-    key_press_offset_x: 2
-    key_press_offset_y: 2
-    key_symbol_offset_x: 0
-    key_symbol_offset_y: 0
-    key_text_offset_x: 0
-    key_text_offset_y: 0
-    keyboard_padding: 2
-    keyboard_padding_bottom: 2
-    horizontal_gap: 5
-    vertical_gap: 5
-    keys: [
-            {click: Escape, width: 15}, {click: "", width: 15}, {click: undo, width: 15}, {click: copy, width: 15}, {click: Up, width: 40},
-            {click: "", width: 15}, {click: "", width: 15}, {click: redo, width: 15}, {click: cut, width: 15}, {click: Left}, {click: select_all,width: 10}, {click: Right},
-            {click: "", width: 15},{click: "", width: 15},{click: paste_text, width: 15}, {click: paste,width: 15}, {click: Down, width: 40},
-            {click: Keyboard_default}, {click: Home, width: 20}, {click: End, width: 20}, {click: Page_Up, width: 22.5},{click: Page_Down, width: 22.5}
-           ]
-    name: "编辑键盘"
-    reset_ascii_mode: true
+    name: 编辑
+    ascii_mode: 0
+    width: 20
+    __patch:
+      - conf_custom/num_height
+    keys:
+      - { __include: style_custom/key_editor, click: "" }
+      - { __include: style_custom/key_editor, click: "" }
+      - { __include: style_custom/key_editor, click: Up }
+      - { __include: style_custom/key_editor, click: cut }
+      - { __include: style_custom/key_editor, click: copy }
+      - { __include: style_custom/key_editor, click: Keyboard_symbols }
+      - { __include: style_custom/key_editor, click: Left }
+      - { __include: style_custom/key_editor, click: select_all }
+      - { __include: style_custom/key_editor, click: Right }
+      - { __include: style_custom/key_editor, click: paste }
+      - { __include: style_custom/key_editor, click: Keyboard_number }
+      - { __include: style_custom/key_editor, click: "" }
+      - { __include: style_custom/key_editor, click: Down }
+      - { __include: style_custom/key_editor, click: Tab }
+      - { __include: style_custom/key_editor, click: BackSpace }
+      - { __include: style_custom/key_editor, click: Keyboard_default }
+      - { __include: style_custom/key_editor, click: "" }
+      - { __include: style_custom/key_editor, click: Home }
+      - { __include: style_custom/key_editor, click: End }
+      - { click: Return , __include: style_custom/key_enter}
   number:
     ascii_mode: 1
     author: "Martwu <martin.wu2dream@gmail.com>"
@@ -411,11 +326,31 @@ preset_keyboards:
     key_text_offset_y: 2
     keyboard_padding: 2
     keyboard_padding_bottom: 2
-    keys: [
-            {click: "√"}, {click: "+"}, {click: 1, key_back_color: m3c_01}, {click: 2, key_back_color: m3c_01}, {click: 3, key_back_color: m3c_01}, {click: BackSpace, width: 20},
-            {click: "^2", long_click: "²"}, {click: "-"}, {click: 4, key_back_color: m3c_01}, {click: 5, key_back_color: m3c_01}, {click: 6, key_back_color: m3c_01}, {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20},
-            {click: "️%"}, {click: "*", long_click: "×"}, {click: 7, key_back_color: m3c_01}, {click: 8, key_back_color: m3c_01}, {click: 9, key_back_color: m3c_01}, {click: "=", long_click: "≠", width: 20},
-            {click: Keyboard_default, long_click: Keyboard_symbols}, {click: "/", long_click: "÷"}, {click: "π", long_click: liquid_keyboard_math, swipe_up: CALCULATOR}, {click: 0,long_click: "0000", key_back_color: m3c_01}, {click: .}, {click: Return, key_text_offset_y: 0, round_corner: 100.0, width: 20}]
+    keys:
+      - {click: "√"}
+      - {click: "+"}
+      - {click: 1, __include: style_custom/key_num}
+      - {click: 2, __include: style_custom/key_num}
+      - {click: 3, __include: style_custom/key_num}
+      - {click: BackSpace, width: 20}
+      - {click: "^2", long_click: "²"}
+      - {click: "-"}
+      - {click: 4, __include: style_custom/key_num}
+      - {click: 5, __include: style_custom/key_num}
+      - {click: 6, __include: style_custom/key_num}
+      - {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20}
+      - {click: "️%"}
+      - {click: "*", long_click: "×"}
+      - {click: 7, __include: style_custom/key_num}
+      - {click: 8, __include: style_custom/key_num}
+      - {click: 9, __include: style_custom/key_num}
+      - {click: "=", long_click: "≠", width: 20}
+      - {click: Keyboard_default, long_click: Keyboard_symbols}
+      - {click: "/", long_click: "÷"}
+      - {click: "π", long_click: liquid_keyboard_math, swipe_up: CALCULATOR}
+      - {click: 0,long_click: "0000", __include: style_custom/key_num}
+      - {click: .}
+      - {click: Return, key_text_offset_y: 0, round_corner: 100.0, width: 20}
     name: "数字键盘"
     reset_ascii_mode: true
     width: 16
@@ -610,9 +545,12 @@ preset_keys:
     command: broadcast
     label: "部署"
     option: com.osfans.trime.deploy
-  Down:
-    label: "⬇"
-    send: Down
+  Page_Up: { label: '⇐', send: Page_Up }
+  Page_Down: { label: '⇒', send: Page_Down }
+  Left: { label: '←', send: Left }
+  Down: { label: '↓', send: Down }
+  Up: { label: '↑', send: Up }
+  Right: { label: '→', send: Right }
   ENVELOPE:
     label: "信箱"
     send: ENVELOPE
@@ -698,9 +636,6 @@ preset_keys:
     label: "符号"
     select: symbols
     send: Eisu_toggle
-  Left:
-    label: "⬅"
-    send: Left
   Menu:
     label: "❖"
     send: Menu
@@ -708,12 +643,6 @@ preset_keys:
     send: Mode_switch
     states: ["中文", "西文"]
     toggle: ascii_mode
-  Page_Down:
-    label: "下頁"
-    send: Page_Down
-  Page_Up:
-    label: "上頁"
-    send: Page_Up
   Punct_switch:
     send: Mode_switch
     states: ["。，", "．，"]
@@ -728,9 +657,6 @@ preset_keys:
   Return1:
     label: "↵"
     send: Return
-  Right:
-    label: "⮕"
-    send: Right
   Schema_settings:
     label: "方案"
     option: schema
@@ -765,9 +691,6 @@ preset_keys:
     command: run
     label: "同文組件"
     option: "com.osfans.trime/.Pref"
-  Up:
-    label: "⬆"
-    send: Up
   VOICE_ASSIST:
     label: "語音"
     send: VOICE_ASSIST
