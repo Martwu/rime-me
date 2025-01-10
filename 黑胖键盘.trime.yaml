@@ -8,6 +8,11 @@ style_custom:
     hilited_key_back_color: keyboard_back_color
     key_text_color: color_bw_opposite
     hilited_key_text_color: color_bw_opposite
+  key_normal:
+    key_back_color: color_bw_mid
+    hilited_key_back_color: color_bw_mid
+    key_text_color: color_bw_opposite
+    hilited_key_text_color: color_bw_opposite
   key_enter:
     key_text_offset_y: 0
     round_corner: 100.0
@@ -15,6 +20,14 @@ style_custom:
   key_num:
     key_back_color: color_m_level2
     key_text_color: color_bw_main
+  key_firstline:
+    height: 24
+  key_occupy:
+    __include: style_custom/key_firstline
+    key_back_color: color_bw_mid
+    hilited_key_back_color: key_back_color
+    key_text_color: color_bw_opposite
+    hilited_key_text_color: color_bw_opposite
 
 conf_custom:
   # 数字、编辑、功能键盘
@@ -50,7 +63,7 @@ fallback_colors:
     border_color: hilited_candidate_back_color
 
     # 上标符号文本颜色
-    key_symbol_color: color_bw_main
+    key_symbol_color: color_m_level2
     hilited_key_symbol_color: key_symbol_color
     # 按键文本颜色
     key_text_color: color_bw_opposite
@@ -114,7 +127,7 @@ style:
     send: "✉"
   horizontal: true
   horizontal_gap: 6
-  vertical_gap: 8
+  vertical_gap: 4
   key_width: 10.0
   keyboard_height: 280
   keyboard_height_land: 200
@@ -134,7 +147,7 @@ style:
   latin_locale: en_US
   proximity_correction: true
   reset_ascii_mode: true
-  round_corner: 20
+  round_corner: 10
   shadow_radius: 0.0
   speech_opencc_config: s2t.json
   vertical_correction: -10
@@ -169,7 +182,7 @@ style:
     sticky_lines_land: 0
 preset_color_schemes:
   defaultBlack:
-    name: "B 默认的黑"
+    name: "默认的黑 / B"
     c_color_l1: 0xb1e1e5
     c_color_l2: 0x63bece
     c_color_l3: 0x498b98
@@ -185,8 +198,7 @@ preset_color_schemes:
     color_bw_mid: b_color_mid
 
   default:
-    author: "Martwu <martin.wu2dream@gmail.com>"
-    name: "W 默认的白"
+    name: "默认的白 / W"
     dark_scheme: defaultBlack
     c_color_l1: 0xb1e1e5
     c_color_l2: 0x63bece
@@ -204,15 +216,14 @@ preset_color_schemes:
 
 preset_keyboards:
   default:
-    ascii_mode: 1
+    ascii_mode: 0
     reset_ascii_mode: false
-    author: "Martwu <martin.wu2dream@gmail.com>"
     columns: 30
-    key_hint_offset_x: 0
-    key_hint_offset_y: 0
+    key_hint_offset_x: -2
+    key_hint_offset_y: -2
     key_press_offset_x: 2
     key_press_offset_y: 2
-    key_symbol_offset_x: "-2"
+    key_symbol_offset_x: 4
     key_symbol_offset_y: 2
     key_text_offset_x: 0
     key_text_offset_y: 2
@@ -236,7 +247,7 @@ preset_keyboards:
       - {click: "u"}
       - {click: "i"}
       - {click: "o"}
-      - {click: "p"}
+      - {click: "p", long_click: Escape }
       - {width: 5}
       - {click: a, long_click: select_all, swipe_down: Page_Down, swipe_left: Home, swipe_right: End, swipe_up: Page_Up}
       - {click: s}
@@ -245,8 +256,8 @@ preset_keyboards:
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: Hide}
       - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
-      - {click: k, long_click: ":"}
-      - {click: l, long_click: "^"}
+      - {click: k, long_click: ":", swipe_down: "/", hint: "/"}
+      - {click: l, long_click: "^", swipe_down: "_", hint: "_"}
       - {width: 5}
       - {click: Shift_L, width: 12}
       - {width: 3}
@@ -256,10 +267,10 @@ preset_keyboards:
       - {click: v, long_click: paste, swipe_up: liquid_keyboard_clipboard}
       - {click: b}
       - {click: n}
-      - {click: m, long_click: "+",swipe_up: "-"}
+      - {click: m, long_click: "+",swipe_down: "-", hint: "-"}
       - {width: 3}
-      - {click: BackSpace, swipe_left: Escape, width: 12}
-      - {click: Keyboard_symbols, composing: Page_Up, long_click: Keyboard_number, swipe_down: IME_switch, width: 15}
+      - {click: BackSpace, swipe_left: Clear, width: 12}
+      - {click: Keyboard_number, composing: Page_Up, long_click: Keyboard_symbols, swipe_down: IME_switch, width: 15}
       - {click: liquid_keyboard_yanwenzi, composing: Page_Down, long_click: liquid_keyboard_emoji, width: 10}
       - {click: ",", label: "，", long_click: "!", width: 10}
       - {click: space, long_click: Menu, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 35}
@@ -292,6 +303,7 @@ preset_keyboards:
     __patch:
       - conf_custom/num_height
     keys:
+      - { __include: style_custom/key_occupy }
       - { __include: style_custom/key_editor, click: "" }
       - { __include: style_custom/key_editor, click: "" }
       - { __include: style_custom/key_editor, click: Up }
@@ -306,7 +318,7 @@ preset_keyboards:
       - { __include: style_custom/key_editor, click: "" }
       - { __include: style_custom/key_editor, click: Down }
       - { __include: style_custom/key_editor, click: Tab }
-      - { __include: style_custom/key_editor, click: BackSpace }
+      - { __include: style_custom/key_editor, click: BackSpace , swipe_left: Clear}
       - { __include: style_custom/key_editor, click: Keyboard_default }
       - { __include: style_custom/key_editor, click: "" }
       - { __include: style_custom/key_editor, click: Home }
@@ -314,7 +326,6 @@ preset_keyboards:
       - { click: Return , __include: style_custom/key_enter}
   number:
     ascii_mode: 1
-    author: "Martwu <martin.wu2dream@gmail.com>"
     columns: 30
     key_hint_offset_x: 0
     key_hint_offset_y: 0
@@ -327,18 +338,21 @@ preset_keyboards:
     keyboard_padding: 2
     keyboard_padding_bottom: 2
     keys:
+      - { __include: style_custom/key_occupy, click: select_all, width: 30}
+      - { __include: style_custom/key_occupy, click: copy, width: 30}
+      - { __include: style_custom/key_occupy, click: paste, width: 40}
       - {click: "√"}
       - {click: "+"}
       - {click: 1, __include: style_custom/key_num}
       - {click: 2, __include: style_custom/key_num}
       - {click: 3, __include: style_custom/key_num}
-      - {click: BackSpace, width: 20}
+      - {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20, __include: style_custom/key_normal}
       - {click: "^2", long_click: "²"}
       - {click: "-"}
       - {click: 4, __include: style_custom/key_num}
       - {click: 5, __include: style_custom/key_num}
       - {click: 6, __include: style_custom/key_num}
-      - {click: space, swipe_down: Down, swipe_left: Left, swipe_right: Right, swipe_up: Up, width: 20}
+      - {click: BackSpace,swipe_left: Clear,   width: 20}
       - {click: "️%"}
       - {click: "*", long_click: "×"}
       - {click: 7, __include: style_custom/key_num}
@@ -356,7 +370,6 @@ preset_keyboards:
     width: 16
   symbols:
     ascii_mode: 1
-    author: "Martwu <martin.wu2dream@gmail.com>"
     columns: 30
     key_hint_offset_x: 0
     key_hint_offset_y: 0
@@ -369,15 +382,12 @@ preset_keyboards:
     keyboard_padding: 2
     keyboard_padding_bottom: 2
     keys: [
-          # 第1行
+          { __include: style_custom/key_occupy, click: liquid_keyboard_symbol, width: 100 },
           {click: "~",long_click: "`"}, {click: "!"}, {click: "@"}, {click: "#"}, {click: "$"}, {click: "¥"}, {click: "%"}, {click: "^"}, {click: "&"}, {click: "*"},
-          # 第2行
           {click: "(", long_click: "{"}, {click: ")", long_click: "}"}, {click: "[", long_click: "【"}, {click: "]", long_click: "】"},
           {click: "「", long_click: "『"}, {click: "」", long_click: "』"}, {click: "、", long_click: "|"}, {click: "/", long_click: "√"}, {click: ":"}, {click: ";"},
-          # 第3行
           {click: "+"}, {click: "-", long_click: _}, {click: "="}, {click: "<", long_click: "《"}, {click: ">", long_click: "》"}, {click: "\"", long_click: "'"},
-          {click: ","}, {click: "."}, {click: "?"}, {click: BackSpace},
-          # 第4行
+          {click: ","}, {click: "."}, {click: "?"}, {click: BackSpace, swipe_left: Clear},
           {click: Keyboard_default, long_click: Menu, width: 15}, {click: Keyboard_number},
           {click: space, long_click: Menu, width: 50}, {click: Return, composing: Return1, key_text_offset_y: 0, round_corner: 100.0, width: 25}
           ]
@@ -392,7 +402,6 @@ preset_keyboards:
   rime_ice:
     import_preset: default
 liquid_keyboard:
-  author: "Martwu <martin.wu2dream@gmail.com>"
   key_height: 40
   key_height_land: 40
   margin_x: 0.5
@@ -400,10 +409,11 @@ liquid_keyboard:
   fixed_key_bar:  # 固定按键条
     position: left  # 摆放位置（在滚动区域的……） top|bottom|left|right （上/下/左/右）
     keys:
-      - BackSpace # 退格键
-      - Page_Up  # 上翻页
-      - Page_Down # 下翻页
-      - liquid_keyboard_exit  # 返回键（在preset_keys内定义，同下）
+      - Liquid_Page_Up
+      - Liquid_Page_Down
+      - Liquid_Select_All
+      - Liquid_BackSpace
+      - liquid_keyboard_exit
   keyboards:
     - yanwenzi
     - unit
@@ -497,6 +507,15 @@ liquid_keyboard:
     name: "音标"
     type: SINGLE
 preset_keys:
+  Liquid_BackSpace:
+    label: "  删除  "
+    repeatable: true
+    send: BackSpace
+  Liquid_Page_Up: { label: '上翻页', send: Page_Up }
+  Liquid_Page_Down: { label: '下翻页', send: Page_Down }
+  Liquid_Select_All:
+    label: "  全选  "
+    send: "Control+a"
   BackSpace:
     label: "⌫"
     repeatable: true
@@ -625,7 +644,7 @@ preset_keys:
     select: editor
     send: Eisu_toggle
   Keyboard_number:
-    label: "数字"
+    label: "🔢"
     select: number
     send: Eisu_toggle
   Keyboard_switch:
@@ -633,7 +652,7 @@ preset_keys:
     select: .next
     send: Eisu_toggle
   Keyboard_symbols:
-    label: "符号"
+    label: "⁉️"
     select: symbols
     send: Eisu_toggle
   Menu:
@@ -722,12 +741,12 @@ preset_keys:
     send: function
   liquid_keyboard_exit:
     command: liquid_keyboard
-    label: "返回"
+    label: "  返回  "
     option: "-1"
     send: function
   liquid_keyboard_math:
     command: liquid_keyboard
-    label: "🟰"
+    label: "数学符号"
     option: "数学"
     send: function
   liquid_keyboard_switch:
@@ -737,7 +756,7 @@ preset_keys:
     send: function
   liquid_keyboard_symbol:
     command: liquid_keyboard
-    label: "♟"
+    label: "特殊符号"
     option: "殊"
     send: function
   liquid_keyboard_yanwenzi:
@@ -774,7 +793,7 @@ preset_keys:
     send: "Control+Alt+s"
   space:
     functional: false
-    repeatable: false
+    repeatable: true
     send: space
     preview: "␣"
     ascii: "␣"
