@@ -38,57 +38,57 @@ style_custom:
     key_text_color: color_bw_opposite
     hilited_key_text_color: color_bw_opposite
   editor_conf:
-    height: 71 #按键高度
+    height: 71
     round_corner: 0
     horizontal_gap: 0
     vertical_gap: 0
 
 fallback_colors:
-    keyboard_back_color: color_bw_main
-    # 候选区主文本颜色
-    candidate_text_color: color_bw_opposite
-    hilited_candidate_text_color: color_bw_opposite
-    # 候选区注释文本颜色
-    comment_text_color: color_m_level2
-    hilited_comment_text_color: color_m_level2
-    # 候选区背景
-    back_color: keyboard_back_color
-    hilited_back_color: color_m_level2
-    candidate_back_color: keyboard_back_color
-    hilited_candidate_back_color: color_m_level2
-    # 候选区分隔线
-    candidate_separator_color: keyboard_back_color
+  keyboard_back_color: color_bw_main
+  # 候选区主文本颜色
+  candidate_text_color: color_bw_opposite
+  hilited_candidate_text_color: color_bw_opposite
+  # 候选区注释文本颜色
+  comment_text_color: color_m_level2
+  hilited_comment_text_color: color_m_level2
+  # 候选区背景
+  back_color: keyboard_back_color
+  hilited_back_color: color_m_level2
+  candidate_back_color: keyboard_back_color
+  hilited_candidate_back_color: color_m_level2
+  # 候选区分隔线
+  candidate_separator_color: keyboard_back_color
 
-    # 悬浮窗文本颜色
-    text_color: color_bw_opposite
-    hilited_text_color: color_bw_opposite
-    # 悬浮窗候选项序号文本颜色
-    label_color: color_bw_opposite
-    hilited_label_color: color_bw_opposite
-    # 悬浮窗边框
-    border_color: hilited_candidate_back_color
+  # 悬浮窗文本颜色
+  text_color: color_bw_opposite
+  hilited_text_color: color_bw_opposite
+  # 悬浮窗候选项序号文本颜色
+  label_color: color_bw_opposite
+  hilited_label_color: color_bw_opposite
+  # 悬浮窗边框
+  border_color: hilited_candidate_back_color
 
-    # 上标符号文本颜色
-    key_symbol_color: color_m_level2
-    hilited_key_symbol_color: key_symbol_color
-    # 按键文本颜色
-    key_text_color: color_bw_opposite
-    hilited_key_text_color: key_text_color
-    # 按键背景颜色
-    key_back_color: color_bw_mid
-    hilited_key_back_color: color_m_level1
-    # 功能键文本颜色
-    off_key_text_color: color_bw_main
-    hilited_off_key_text_color: off_key_text_color
-    # 功能键背景颜色
-    off_key_back_color: color_m_level3
-    hilited_off_key_back_color: color_m_level1
-    # Shift 键锁定时文本
-    on_key_text_color: color_bw_main
-    hilited_on_key_text_color: color_bw_main
-    # Shift 键锁定时背景
-    on_key_back_color: color_m_level2
-    hilited_on_key_back_color: color_m_level1
+  # 上标符号文本颜色
+  key_symbol_color: color_m_level2
+  hilited_key_symbol_color: key_symbol_color
+  # 按键文本颜色
+  key_text_color: color_bw_opposite
+  hilited_key_text_color: key_text_color
+  # 按键背景颜色
+  key_back_color: color_bw_mid
+  hilited_key_back_color: color_m_level1
+  # 功能键文本颜色
+  off_key_text_color: color_bw_main
+  hilited_off_key_text_color: off_key_text_color
+  # 功能键背景颜色
+  off_key_back_color: color_m_level3
+  hilited_off_key_back_color: color_m_level1
+  # Shift 键锁定时文本
+  on_key_text_color: color_bw_main
+  hilited_on_key_text_color: color_bw_main
+  # Shift 键锁定时背景
+  on_key_back_color: color_m_level2
+  hilited_on_key_back_color: color_m_level1
 
 
 style:
@@ -189,11 +189,14 @@ style:
 preset_color_schemes:
   defaultBlack:
     name: "默认的黑 / B"
-    c_color_l1: 0x98d5e3
-    c_color_l2: 0x6f9ca5
-    c_color_l3: 0x2c7380
-    b_color_main: 0x292c2f
-    b_color_mid: 0x646e78
+    # c_color_l1: 0x98d5e3
+    # c_color_l2: 0x6f9ca5
+    # c_color_l3: 0x2c7380
+    c_color_l1: 0xe3c5c2
+    c_color_l2: 0xe3938c
+    c_color_l3: 0xb54648
+    b_color_main: 0x322a29
+    b_color_mid: 0x7d6b69
     b_color_back: 0xffffff
 
     color_m_level1: c_color_l1
@@ -206,11 +209,14 @@ preset_color_schemes:
   default:
     name: "默认的白 / W"
     dark_scheme: defaultBlack
-    c_color_l1: 0x98d5e3
-    c_color_l2: 0x6f9ca5
-    c_color_l3: 0x2c7380
-    w_color_main: 0xf0f0f0
-    w_color_mid: 0xd0d8d9
+    # c_color_l1: 0x98d5e3
+    # c_color_l2: 0x6f9ca5
+    # c_color_l3: 0x2c7380
+    c_color_l1: 0xe3c5c2
+    c_color_l2: 0xe3938c
+    c_color_l3: 0xb54648
+    w_color_main: 0xffeeed
+    w_color_mid: 0xd3c5c4
     w_color_back: 0x31363a
 
     color_m_level1: c_color_l3
@@ -251,7 +257,7 @@ preset_keyboards:
       - {click: "r"}
       - {click: "t"}
       - {click: "y"}
-      - {click: "u"}
+      - {click: "u", long_click: PK_LiquidKB_collection}
       - {click: "i", swipe_down: PK_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up}
       - {click: "o"}
       - {click: "p", long_click: PK_Escape }
@@ -306,8 +312,7 @@ preset_keyboards:
     name: "编辑触控板"
     ascii_mode: 0
     width: 16
-    __include:
-      - style_custom/editor_conf
+    __include: style_custom/editor_conf
     keys:
       - { __include: style_custom/key_occupy , width: 100}
       - { __include: style_custom/key_editor_menu, click: PK_LiquidKB_clipboard }
@@ -319,7 +324,7 @@ preset_keyboards:
       - { __include: style_custom/key_editor_menu, click: PK_toKB_symbols}
       - { __include: style_custom/key_editor_touchpad, click: PK_Copy }
       - { __include: style_custom/key_editor_touchpad, click: PK_Left }
-      - { __include: style_custom/key_editor_touchpad, click: PK_Shift1, hint: "click!" }
+      - { __include: style_custom/key_editor_touchpad, click: PK_Shift1, hint: "click?" }
       - { __include: style_custom/key_editor_touchpad, click: PK_Right }
       - { __include: style_custom/key_editor_touchpad, click: PK_SelectAll }
       - { __include: style_custom/key_editor_menu, click: PK_toKB_number}
@@ -357,7 +362,7 @@ preset_keyboards:
       - {click: 1, __include: style_custom/key_num}
       - {click: 2, __include: style_custom/key_num}
       - {click: 3, __include: style_custom/key_num}
-      - {click: PK_SpaceBar, swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, width: 20, __include: style_custom/key_normal}
+      - {click: PK_SpaceBarNoName, swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, width: 20, __include: style_custom/key_normal}
       - {click: "^2", long_click: "²"}
       - {click: "-"}
       - {click: 4, __include: style_custom/key_num}
@@ -400,7 +405,7 @@ preset_keyboards:
           {click: "+"}, {click: "-", long_click: _}, {click: "="}, {click: "<", long_click: "《"}, {click: ">", long_click: "》"}, {click: "\"", long_click: "'"},
           {click: ","}, {click: "."}, {click: "?"}, {click: PK_BackSpace, swipe_left: PK_Clear},
           {click: PK_toKB_default, long_click: PK_Menu, width: 15}, {click: PK_toKB_number},
-          {click: PK_SpaceBar, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+          {click: PK_SpaceBarNoName, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
           ]
     width: 10
   jyut6ping3:
@@ -414,10 +419,10 @@ preset_keyboards:
 liquid_keyboard:
   key_height: 40
   key_height_land: 30
-  margin_x: 0.5
+  margin_x: 2
   single_width: 60
   fixed_key_bar:  # 固定按键条
-    position: right  # 摆放位置（在滚动区域的……） top|bottom|left|right （上/下/左/右）
+    position: left  # 摆放位置（在滚动区域的……） top|bottom|left|right （上/下/左/右）
     keys:
       - PK_Liquid_Page_Up
       - PK_Liquid_Page_Down
@@ -437,7 +442,6 @@ liquid_keyboard:
     - emoji_human
     - draft
     - collection
-    - candidate
   collection:
     name: "收藏"
     type: COLLECTION
@@ -753,12 +757,14 @@ preset_keys:
   PK_Shift1: {functional: false, label: ☩, preview: ☩, send: Shift_L, shift_lock: click}
 
   PK_SpaceBar: {functional: false, repeatable: true, send: space, preview: "␣", ascii: "␣"}
+  PK_SpaceBarNoName: {functional: false, repeatable: true, send: space, preview: "␣", ascii: "␣", label: "␣"}
 
   PK_LiquidKB_clipboard: { command: liquid_keyboard, label: "粘贴板", option: "粘贴板", send: function}
   PK_LiquidKB_emoji: { command: liquid_keyboard, label: "🙂", option: "🙂", send: function}
   PK_LiquidKB_math: { command: liquid_keyboard, label: "数学符号", option: "数学", send: function}
   PK_LiquidKB_symbol: { command: liquid_keyboard, label: "特殊符号", option: "殊", send: function }
   PK_LiquidKB_yanwenzi: { command: liquid_keyboard, label: "^_^", option: "^_^", send: function }
+  PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
 
 android_keys:
   action:
