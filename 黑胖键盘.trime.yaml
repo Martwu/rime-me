@@ -284,7 +284,7 @@ preset_keyboards:
       - {width: 3}
       - {click: PK_BackSpace, swipe_left: PK_Clear, width: 12}
       - {click: PK_toKB_number, composing: PK_Page_Up, long_click: PK_toKB_symbols, swipe_down: PK_IME_Switch, width: 15}
-      - {click: PK_LiquidKB_yanwenzi, composing: Page_Down, long_click: PK_LiquidKB_emoji, width: 10}
+      - {click: PK_LiquidKB_yanwenzi, composing: PK_Page_Down, long_click: PK_LiquidKB_emoji, width: 10}
       - {click: ",", label: "，", long_click: "!", width: 10}
       - {click: PK_SpaceBar, long_click: PK_Menu, swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
