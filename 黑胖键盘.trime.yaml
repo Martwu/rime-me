@@ -195,12 +195,15 @@ preset_color_schemes:
     #c_color_l1: 0xe3c5c2
     #c_color_l2: 0xe3938c
     #c_color_l3: 0xb54648
-    c_color_l3: 0x88642b
-    c_color_l2: 0xe3c7a4
-    c_color_l1: 0xdcd8d2
-    b_color_main: 0x302a24
-    b_color_mid: 0x675a4d
-    b_color_back: 0xffffff
+    #c_color_l3: 0x88642b
+    #c_color_l2: 0xe3c7a4
+    #c_color_l1: 0xdcd8d2
+    c_color_l3: 0x3662a8
+    c_color_l2: 0x8ab0e2
+    c_color_l1: 0xaad3ff
+    b_color_main: 0x15191d
+    b_color_mid: 0x67788b
+    b_color_back: 0xe4f2ff
 
     color_m_level1: c_color_l1
     color_m_level2: c_color_l2
@@ -212,15 +215,9 @@ preset_color_schemes:
   default:
     name: "默认的白 / W"
     dark_scheme: defaultBlack
-    # c_color_l1: 0x98d5e3
-    # c_color_l2: 0x6f9ca5
-    # c_color_l3: 0x2c7380
-    #c_color_l1: 0xe3c5c2
-    #c_color_l2: 0xe3938c
-    #c_color_l3: 0xb54648
-    c_color_l3: 0x88642b
-    c_color_l2: 0xe3c7a4
-    c_color_l1: 0xdcd8d2
+    c_color_l3: 0x3662a8
+    c_color_l2: 0x8ab0e2
+    c_color_l1: 0xaad3ff
     w_color_main: 0xe5e5e5
     w_color_mid: 0x6b6b6b
     w_color_back: 0x141414
