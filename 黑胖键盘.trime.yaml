@@ -202,7 +202,7 @@ preset_color_schemes:
     c_color_l2: 0x8ab0e2
     c_color_l1: 0xaad3ff
     b_color_main: 0x15191d
-    b_color_mid: 0x67788b
+    b_color_mid: 0x576575
     b_color_back: 0xe4f2ff
 
     color_m_level1: c_color_l1
@@ -260,7 +260,7 @@ preset_keyboards:
       - {click: "r"}
       - {click: "t"}
       - {click: "y"}
-      - {click: "u", long_click: PK_LiquidKB_collection}
+      - {click: "u"}
       - {click: "i", swipe_down: PK_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up}
       - {click: "o"}
       - {click: "p", long_click: PK_Escape }
@@ -280,7 +280,7 @@ preset_keyboards:
       - {click: z, long_click: PK_toKB_editor, swipe_down: PK_Undo, hint: "撤销"}
       - {click: x, long_click: PK_Cut}
       - {click: c, long_click: PK_Copy}
-      - {click: v, long_click: PK_Paste, swipe_up: PK_LiquidKB_clipboard}
+      - {click: v, long_click: PK_Paste, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
       - {click: b}
       - {click: n}
       - {click: m, long_click: "+",swipe_down: "-", hint: "-"}
