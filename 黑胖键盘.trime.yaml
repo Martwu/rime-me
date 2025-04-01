@@ -233,6 +233,74 @@ preset_color_schemes:
     color_bw_mid: w_color_mid
 
 preset_keyboards:
+  terminal:
+    name: "终端键盘"
+    ascii_mode: 1
+    reset_ascii_mode: true
+    columns: 30
+    key_hint_offset_x: -2
+    key_hint_offset_y: -2
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    key_symbol_offset_x: 4
+    key_symbol_offset_y: 2
+    key_text_offset_x: 0
+    key_text_offset_y: 2
+    keys:
+      - {click: 1, height: 24, key_text_size: 12}
+      - {click: 2, height: 24, key_text_size: 12}
+      - {click: 3, height: 24, key_text_size: 12}
+      - {click: 4, height: 24, key_text_size: 12}
+      - {click: 5, height: 24, key_text_size: 12}
+      - {click: 6, height: 24, key_text_size: 12}
+      - {click: 7, height: 24, key_text_size: 12}
+      - {click: 8, height: 24, key_text_size: 12}
+      - {click: 9, height: 24, key_text_size: 12}
+      - {click: 0, height: 24, key_text_size: 12}
+      - {click: "q", long_click: PK_Escape}
+      - {click: "w"}
+      - {click: "e"}
+      - {click: "r"}
+      - {click: "t"}
+      - {click: "y"}
+      - {click: "u"}
+      - {click: "i", swipe_down: P_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "⇋⥮"}
+      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "↕↔︎"}
+      - {click: "p" }
+      - {width: 5}
+      - {click: a}
+      - {click: s}
+      - {click: d}
+      - {click: f, long_click: "~"}
+      - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: PK_Hide, hint: "收起"}
+      - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
+      - {click: k, long_click: ":"}
+      - {click: l}
+      - {width: 5}
+      - {click: PK_Shift_L, width: 12}
+      - {width: 3}
+      - {click: z}
+      - {click: x}
+      - {click: c}
+      - {click: v}
+      - {click: b}
+      - {click: n}
+      - {click: m, long_click: "+"}
+      - {width: 3}
+      - {click: PK_BackSpace, swipe_left: PK_Clear, width: 12}
+      - {click: PK_Tab, width: 15}
+      - {click: "/", width: 8}
+      - {click: "-", width: 8}
+      - {click: "'", width: 8}
+      - {click: PK_SpaceBar, long_click: PK_Menu, width: 17}
+      - {click: "\\", width: 8}
+      - {click: ",", width: 8}
+      - {click: ".", width: 8}
+      - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+    label_transform: uppercase
+    lock: false
+    width: 10
   default:
     name: "36全键盘"
     ascii_mode: 0
@@ -257,23 +325,23 @@ preset_keyboards:
       - {click: 8, height: 24, key_text_size: 12}
       - {click: 9, height: 24, key_text_size: 12}
       - {click: 0, height: 24, key_text_size: 12}
-      - {click: "q"}
+      - {click: "q", long_click: PK_Escape}
       - {click: "w"}
       - {click: "e"}
       - {click: "r"}
       - {click: "t"}
       - {click: "y"}
       - {click: "u"}
-      - {click: "i", swipe_down: PK_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up}
-      - {click: "o"}
-      - {click: "p", long_click: PK_Escape }
+      - {click: "i", swipe_down: P_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "⇋⥮"}
+      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "↕↔︎"}
+      - {click: "p" }
       - {width: 5}
       - {click: a, long_click: PK_SelectAll}
       - {click: s}
       - {click: d}
       - {click: f, long_click: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
-      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: PK_Hide}
+      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: PK_Hide, hint: "收起"}
       - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
       - {click: k, long_click: ":", swipe_down: "/", hint: "/"}
       - {click: l, long_click: "^", swipe_down: "_", hint: "_"}
@@ -284,15 +352,15 @@ preset_keyboards:
       - {click: x, long_click: PK_Cut}
       - {click: c, long_click: PK_Copy}
       - {click: v, long_click: PK_Paste, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
-      - {click: b}
-      - {click: n}
+      - {click: b, swipe_down: "\"", hint: "\""}
+      - {click: n, swipe_down: "'", hint: "'"}
       - {click: m, long_click: "+",swipe_down: "-", hint: "-"}
       - {width: 3}
       - {click: PK_BackSpace, swipe_left: PK_Clear, width: 12}
       - {click: PK_toKB_number, composing: PK_Page_Up, long_click: PK_toKB_symbols, swipe_down: PK_IME_Switch, width: 15}
       - {click: PK_LiquidKB_yanwenzi, composing: PK_Page_Down, long_click: PK_LiquidKB_emoji, width: 10}
       - {click: ",", label: "，", long_click: "!", width: 10}
-      - {click: PK_SpaceBar, long_click: PK_Menu, swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, width: 35}
+      - {click: PK_SpaceBar, long_click: PK_Menu, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
     label_transform: uppercase

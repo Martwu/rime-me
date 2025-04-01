@@ -1,0 +1,32 @@
+schema:
+  schema_id: terminal
+  name: Terminal
+  version: "2025-03-28"
+  author:
+    - BlackFat <martin.wu2dream@gmail.com>
+  description: 纯字符输出
+
+switches:
+  - name: test_some_feature
+    states: [ 终端专用键盘，只有输出字符功能, Terminal Only Keyboard ]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - recognizer
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - matcher
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+    - punct_translator
+  filters:
+    - uniquifier
