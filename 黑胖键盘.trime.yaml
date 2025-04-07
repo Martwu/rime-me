@@ -198,12 +198,12 @@ preset_color_schemes:
     #c_color_l3: 0x88642b
     #c_color_l2: 0xe3c7a4
     #c_color_l1: 0xdcd8d2
-    #c_color_l3: 0x3662a8
-    #c_color_l2: 0x8ab0e2
-    #c_color_l1: 0xaad3ff
-    c_color_l3: 0x5c6f74
-    c_color_l2: 0x9aa4a7
-    c_color_l1: 0xd4d6d7
+    c_color_l3: 0x4178ca
+    c_color_l2: 0x8ab0e2
+    c_color_l1: 0xaad3ff
+    # c_color_l3: 0x5c6f74
+    # c_color_l2: 0x9aa4a7
+    # c_color_l1: 0xd4d6d7
     b_color_main: 0x15191d
     b_color_mid: 0x576575
     b_color_back: 0xe4f2ff
@@ -218,9 +218,9 @@ preset_color_schemes:
   default:
     name: "默认的白 / W"
     dark_scheme: defaultBlack
-    c_color_l3: 0x5c6f74
-    c_color_l2: 0x9aa4a7
-    c_color_l1: 0xd4d6d7
+    c_color_l3: 0x4178ca
+    c_color_l2: 0x8ab0e2
+    c_color_l1: 0xaad3ff
     w_color_main: 0xe5e5e5
     w_color_mid: 0xc3c3c3
     w_color_back: 0x141414
@@ -257,25 +257,25 @@ preset_keyboards:
       - {click: 8, height: 24, key_text_size: 12}
       - {click: 9, height: 24, key_text_size: 12}
       - {click: 0, height: 24, key_text_size: 12}
-      - {click: "q", long_click: PK_Escape}
+      - {click: "q", long_click: PK_Escape, swipe_up: PK_Escape, swipe_down: PK_Escape, swipe_left: PK_Escape, swipe_right: PK_Escape}
       - {click: "w"}
       - {click: "e"}
       - {click: "r"}
       - {click: "t"}
       - {click: "y"}
       - {click: "u"}
-      - {click: "i", swipe_down: P_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "⇋⥮"}
-      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "↕↔︎"}
+      - {click: "i", swipe_down: PK_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "翻页"}
+      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "❖"}
       - {click: "p" }
       - {width: 5}
       - {click: a}
       - {click: s}
       - {click: d}
-      - {click: f, long_click: "~"}
+      - {click: f, long_click: "~", swipe_up: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: PK_Hide, hint: "收起"}
       - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
-      - {click: k, long_click: ":"}
+      - {click: k, long_click: ":", swipe_up: ":"}
       - {click: l}
       - {width: 5}
       - {click: PK_Shift_L, width: 12}
@@ -283,18 +283,18 @@ preset_keyboards:
       - {click: z}
       - {click: x}
       - {click: c}
-      - {click: v}
+      - {click: v, long_click: PK_LiquidKB_clipboard, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
       - {click: b}
-      - {click: n}
-      - {click: m, long_click: "+"}
+      - {click: n, long_click: "=", swipe_up: "="}
+      - {click: m}
       - {width: 3}
       - {click: PK_BackSpace, swipe_left: PK_Clear, width: 12}
-      - {click: PK_Tab, width: 15}
+      - {click: PK_Tab, width: 15, long_click: PK_LiquidKB_term_snippet, swipe_up: PK_LiquidKB_term_snippet}
       - {click: "/", width: 8}
+      - {click: "\\", width: 8}
       - {click: "-", width: 8}
       - {click: "'", width: 8}
       - {click: PK_SpaceBar, long_click: PK_Menu, width: 17}
-      - {click: "\\", width: 8}
       - {click: ",", width: 8}
       - {click: ".", width: 8}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
@@ -332,19 +332,19 @@ preset_keyboards:
       - {click: "t"}
       - {click: "y"}
       - {click: "u"}
-      - {click: "i", swipe_down: P_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "⇋⥮"}
-      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "↕↔︎"}
+      - {click: "i", swipe_down: PK_Page_Down, swipe_left: PK_Home, swipe_right: PK_End, swipe_up: PK_Page_Up, hint: "翻页"}
+      - {click: "o", swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, swipe_up: PK_Up, hint: "️❖"}
       - {click: "p" }
       - {width: 5}
       - {click: a, long_click: PK_SelectAll}
       - {click: s}
       - {click: d}
-      - {click: f, long_click: "~"}
+      - {click: f, long_click: "~", swipe_up: "~"}
       - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
       - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]", swipe_down: PK_Hide, hint: "收起"}
       - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
-      - {click: k, long_click: ":", swipe_down: "/", hint: "/"}
-      - {click: l, long_click: "^", swipe_down: "_", hint: "_"}
+      - {click: k, long_click: ":",swipe_up: ":", swipe_down: "/", hint: "/"}
+      - {click: l, long_click: "^",swipe_up: "^", swipe_down: "_", hint: "_"}
       - {width: 5}
       - {click: PK_Shift_L, width: 12}
       - {width: 3}
@@ -354,7 +354,7 @@ preset_keyboards:
       - {click: v, long_click: PK_Paste, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
       - {click: b, swipe_down: "\"", hint: "\""}
       - {click: n, swipe_down: "'", hint: "'"}
-      - {click: m, long_click: "+",swipe_down: "-", hint: "-"}
+      - {click: m, long_click: "+",swipe_up: "+",swipe_down: "-", hint: "-"}
       - {width: 3}
       - {click: PK_BackSpace, swipe_left: PK_Clear, width: 12}
       - {click: PK_toKB_number, composing: PK_Page_Up, long_click: PK_toKB_symbols, swipe_down: PK_IME_Switch, width: 15}
@@ -516,6 +516,7 @@ liquid_keyboard:
     - emoji_human
     - draft
     - collection
+    - term_snippet
   collection:
     name: "收藏"
     type: COLLECTION
@@ -785,6 +786,12 @@ liquid_keyboard:
           ]
     name: "^_^"
     type: VAR_LENGTH
+  term_snippet:
+    keys: [
+            "${HOME}", " > /dev/null 2>&1"
+          ]
+    name: ">_"
+    type: VAR_LENGTH
 preset_keys:
   PK_Liquid_BackSpace: { label: "  删除  ", repeatable: true, send: BackSpace}
   PK_Liquid_Page_Up: { label: '上翻页', send: Page_Up }
@@ -807,8 +814,9 @@ preset_keys:
   PK_toKB_editor: { label: "编辑", select: editor, send: Eisu_toggle}
   PK_toKB_number: { label: "🔢", select: number, send: Eisu_toggle}
   PK_toKB_symbols: { label: "🔣", select: symbols, send: Eisu_toggle}
+  PK_toKB_terminal_snippet: { label: ">_", select: term_snippet, send: Eisu_toggle}
 
-  PK_Menu: { label: "❖", send: Menu}
+  PK_Menu: { label:   "⌨", send: Menu}
   PK_IME_Switch: { label: "🌐", send: LANGUAGE_SWITCH}
   PK_Return: { label: enter_labels, send: Return}
   PK_Return1: { label: "↵", send: Return}
@@ -839,6 +847,8 @@ preset_keys:
   PK_LiquidKB_symbol: { command: liquid_keyboard, label: "特殊符号", option: "殊", send: function }
   PK_LiquidKB_yanwenzi: { command: liquid_keyboard, label: "^_^", option: "^_^", send: function }
   PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
+  PK_LiquidKB_term_snippet: { command: liquid_keyboard, label: ">_", option: ">_", send: function }
+
 
 android_keys:
   action:
