@@ -3,28 +3,26 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2025-02-24'
+config_version: '2024-07-12'
 
 
 # 方案列表
 schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
-  # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
-  - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: t9                     # 九宫格（仓输入法）
-  - schema: double_pinyin          # 自然码双拼
-  - schema: double_pinyin_abc      # 智能 ABC 双拼
-  - schema: double_pinyin_mspy     # 微软双拼
-  - schema: double_pinyin_sogou    # 搜狗双拼
-  - schema: double_pinyin_flypy    # 小鹤双拼
-  - schema: double_pinyin_ziguang  # 紫光双拼
+  - schema: rime_frost             # 白霜拼音（全拼）
+  - schema: rime_frost_double_pinyin          # 自然码双拼
+  - schema: rime_frost_double_pinyin_mspy     # 微软双拼
+  - schema: rime_frost_double_pinyin_sogou    # 搜狗双拼
+  - schema: rime_frost_double_pinyin_flypy    # 小鹤双拼
+  # - schema: rime_frost_double_pinyin_abc      # 智能 ABC 双拼
+  # - schema: rime_frost_double_pinyin_ziguang  # 紫光双拼
 
 
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 8  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
-  # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键（注意在雾凇中，大写字母也作为编码了）
+  # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
 
 
 # 方案选单相关
@@ -85,8 +83,6 @@ ascii_composer:
 #              '~' 是半角的，
 #              '`'（反引号）没有改成 '·'（间隔号）。
 punctuator:
-  digit_separators: ",.:"  # 在此处指定的字符，在数字后被输入，若再次输入数字，则连同数字直接上屏；若双击，则恢复映射。 # librime >= 28a234f
-  # digit_separator_action: commit  # 关闭上述行为 librime >= 1.13.1
   full_shape:
     ' ' : { commit: '　' }
     ',' : { commit: ， }
@@ -126,7 +122,7 @@ punctuator:
     '.' : '。'
     '<' : '《'
     '>' : '》'
-    '/' : '/'
+    '/' : [ /, ÷ ]
     '?' : '？'
     ';' : '；'
     ':' : '：'
@@ -186,14 +182,14 @@ key_binder:
     - { when: composing, accept: Alt+Right, send: Shift+Right }
 
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }  # 上一页设置为 paging 时会导致直接上屏并输出减号
+    - { when: has_menu, accept: minus, send: Page_Up }
     - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
     # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
-    # 翻页 [ ]  ⚠️ 开启时请修改上面以词定字的快捷键
+    # 翻页 [ ]
     # - { when: paging, accept: bracketleft, send: Page_Up }
     # - { when: has_menu, accept: bracketright, send: Page_Down }
 
@@ -218,7 +214,7 @@ key_binder:
     # - { when: composing, accept: Control+a, send: Home }
     # - { when: composing, accept: Control+e, send: End }
     # - { when: composing, accept: Control+d, send: Delete }
-    # - { when: composing, accept: Control+k, send: Shift+Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete }
     # - { when: composing, accept: Control+h, send: BackSpace }
     # - { when: composing, accept: Control+g, send: Escape }
     # - { when: composing, accept: Control+bracketleft, send: Escape }
@@ -245,11 +241,6 @@ key_binder:
     - {accept: KP_8, send: 8, when: composing}
     - {accept: KP_9, send: 9, when: composing}
     - {accept: KP_Decimal, send: period, when: composing}
-    # 将小键盘 + - * / 映射到主键盘，使计算器 如 1+2-3*4 可使用小键盘输入
-    - {accept: KP_Multiply, send: asterisk, when: composing}
-    - {accept: KP_Add,      send: plus,     when: composing}
-    - {accept: KP_Subtract, send: minus,    when: composing}
-    - {accept: KP_Divide,   send: slash,    when: composing}
 
 
 # 按键速查

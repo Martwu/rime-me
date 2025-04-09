@@ -4,7 +4,6 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 英文主词库 -------
-# 20k 左右的常见单词
 #
 #
 # 来源：
@@ -15,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-03-30"
+version: "2024-05-31"
 sort: by_weight
 ...
 # +_+
@@ -221,6 +220,7 @@ activated	activated
 activation	activation
 active	active
 actively	actively
+ActiveX	ActiveX
 activism	activism
 activist	activist
 activists	activists
@@ -320,6 +320,7 @@ admissions	admissions
 admit	admit
 admits	admits
 admitted	admitted
+Adobe	Adobe
 adobe	adobe
 adolescent	adolescent
 adolescents	adolescents
@@ -537,7 +538,6 @@ album	album
 albums	albums
 Albuquerque	Albuquerque
 Alcatel	Alcatel
-alchemist	alchemist
 alchemy	alchemy
 alcohol	alcohol
 alcoholic	alcoholic
@@ -603,7 +603,6 @@ alliance	alliance
 alliances	alliances
 allied	allied
 allies	allies
-alligator	alligator
 Allison	Allison
 allocate	allocate
 allocated	allocated
@@ -820,7 +819,6 @@ animations	animations
 anime	anime
 Aniston	Aniston
 Anita	Anita
-ankh	ankh
 ankle	ankle
 Ann	Ann
 Anna	Anna
@@ -1156,6 +1154,7 @@ artists	artists
 arts	arts
 artwork	artwork
 Aruba	Aruba
+arXiv	arXiv
 as	as
 # asa	asa
 ASAP	ASAP
@@ -1359,7 +1358,7 @@ attribution	attribution
 ATV	ATV
 # atx	atx
 # au	au
-auburn	auburn
+Auburn	Auburn
 Auch	Auch
 Auckland	Auckland
 auction	auction
@@ -1415,7 +1414,6 @@ auth	auth
 authentic	authentic
 authenticated	authenticated
 authentication	authentication
-authenticator	authenticator
 authenticity	authenticity
 author	author
 authored	authored
@@ -1454,6 +1452,7 @@ autumn	autumn
 AUX	AUX
 auxiliary	auxiliary
 AV	AV
+Ava	Ava
 avail	avail
 availability	availability
 available	available
@@ -1707,7 +1706,6 @@ baskets	baskets
 basque	basque
 bass	bass
 bastard	bastard
-bastion	bastion
 bat	bat
 batch	batch
 bates	bates
@@ -2787,6 +2785,7 @@ cancellation	cancellation
 cancellations	cancellations
 cancelled	cancelled
 cancer	cancer
+Cancer	Cancer
 cancers	cancers
 # Cancun	Cancun
 candid	candid
@@ -2846,7 +2845,6 @@ capture	capture
 captured	captured
 captures	captures
 capturing	capturing
-capybara	capybara
 car	car
 carat	carat
 caravan	caravan
@@ -2935,6 +2933,7 @@ carved	carved
 carver	carver
 carving	carving
 Cary	Cary
+CAS	CAS
 casa	casa
 cascade	cascade
 cascading	cascading
@@ -3208,7 +3207,6 @@ chaser	chaser
 chasing	chasing
 chassis	chassis
 chat	chat
-chatbot	chatbot
 chateau	chateau
 Chatham	Chatham
 chats	chats
@@ -3303,7 +3301,6 @@ chili	chili
 chill	chill
 ChillSeph	ChillSeph
 chimney	chimney
-chimpanzee	chimpanzee
 chin	chin
 China	China
 china	china
@@ -3525,7 +3522,6 @@ CLI	CLI
 clic	clic
 click	click
 clicked	clicked
-clicker	clicker
 clicking	clicking
 clicks	clicks
 client	client
@@ -4759,7 +4755,6 @@ cutting	cutting
 # cy	cy
 cyan	cyan
 cyber	cyber
-cyberpunk	cyberpunk
 cyberspace	cyberspace
 cycle	cycle
 cycles	cycles
@@ -4820,7 +4815,6 @@ dancer	dancer
 dancers	dancers
 dances	dances
 dancing	dancing
-dandelion	dandelion
 Dane	Dane
 danger	danger
 dangerous	dangerous
@@ -5265,7 +5259,6 @@ despair	despair
 despatch	despatch
 desperate	desperate
 desperately	desperately
-desperation	desperation
 despise	despise
 despite	despite
 dessert	dessert
@@ -5739,8 +5732,6 @@ dog	dog
 doge	doge
 dogg	dogg
 dogs	dogs
-dogsbody	dogsbody
-dogsleep	dogsleep
 # doi	doi
 doing	doing
 Dolby	Dolby
@@ -5980,7 +5971,6 @@ dune	dune
 dunes	dunes
 dungeon	dungeon
 dungeons	dungeons
-dunk	dunk
 Dunlop	Dunlop
 Dunn	Dunn
 dunno	dunno
@@ -6316,7 +6306,7 @@ Emerson	Emerson
 # emi	emi
 emigrate	emigrate
 Emily	Emily
-Eminem	Eminem
+eminem	eminem
 eminent	eminent
 emirates	emirates
 emission	emission
@@ -6392,7 +6382,6 @@ encouraged	encouraged
 encouragement	encouragement
 encourages	encourages
 encouraging	encouraging
-encrypt	encrypt
 encrypted	encrypted
 encryption	encryption
 encyclopedia	encyclopedia
@@ -6539,7 +6528,6 @@ epic	epic
 epidemic	epidemic
 epidemiology	epidemiology
 epilepsy	epilepsy
-epilogue	epilogue
 epinions	epinions
 episcopal	episcopal
 episode	episode
@@ -7933,6 +7921,9 @@ Gambia	Gambia
 gamble	gamble
 gambling	gambling
 game	game
+gameboy	gameboy
+gamecube	gamecube
+GameFAQs	GameFAQs
 gameplay	gameplay
 gamer	gamer
 gamers	gamers
@@ -8152,7 +8143,6 @@ Gina	Gina
 ginger	ginger
 Giorgio	Giorgio
 Giovanni	Giovanni
-giraffe	giraffe
 girl	girl
 girlfriend	girlfriend
 girls	girls
@@ -8225,6 +8215,7 @@ gnaw	gnaw
 gnome	gnome
 gnu	gnu
 GNU	GNU
+Go	Go
 go	go
 # goa	goa
 goal	goal
@@ -8548,6 +8539,7 @@ gyms	gyms
 gypsy	gypsy
 Gypsy	Gypsy
 # gz	gz
+Gzip	Gzip
 # h	h
 # ha	ha
 # haas	haas
@@ -9327,6 +9319,7 @@ Ian	Ian
 Ibiza	Ibiza
 IBM	IBM
 ibn	ibn
+iBook	iBook
 # ic	ic
 ICANN	ICANN
 # icc	icc
@@ -9972,9 +9965,6 @@ intimidate	intimidate
 # intl	intl
 into	into
 intonation	intonation
-intoxicate	intoxicate
-intoxicated	intoxicated
-intoxicating	intoxicating
 intra	intra
 intracellular	intracellular
 intranet	intranet
@@ -10065,6 +10055,7 @@ IP	IP
 IPC	IPC
 IPO	IPO
 iPod	iPod
+# ipods	ipods
 # ips	ips
 IPSec	IPSec
 Ipswich	Ipswich
@@ -10227,6 +10218,7 @@ jasmine	jasmine
 Jason	Jason
 jasper	jasper
 Java	Java
+JavaScript	JavaScript
 jaw	jaw
 jaws	jaws
 jay	jay
@@ -10378,6 +10370,8 @@ JPEG	JPEG
 JPG	JPG
 # jpy	jpy
 # jr	jr
+# js	js
+JSP	JSP
 # jt	jt
 # ju	ju
 Juan	Juan
@@ -11019,6 +11013,7 @@ lex	lex
 Lexar	Lexar
 lexicon	lexicon
 Lexington	Lexington
+LexisNexis	LexisNexis
 lexmark	lexmark
 lexus	lexus
 # lf	lf
@@ -11307,7 +11302,6 @@ LOL	LOL
 Lola	Lola
 Lolita	Lolita
 # lolitas	lolitas
-lollipop	lollipop
 # lon	lon
 London	London
 lone	lone
@@ -11333,7 +11327,6 @@ loops	loops
 loose	loose
 loosely	loosely
 loosen	loosen
-loot	loot
 Lopez	Lopez
 lord	lord
 lords	lords
@@ -11469,7 +11462,7 @@ Mack	Mack
 Mackay	Mackay
 Mackenzie	Mackenzie
 Macmillan	Macmillan
-macon	macon
+Macon	Macon
 macOS	macOS
 Macquarie	Macquarie
 macro	macro
@@ -11832,7 +11825,7 @@ maximize	maximize
 maximizing	maximizing
 maximum	maximum
 Maxtor	Maxtor
-Maxwell	Maxwell
+maxwell	maxwell
 may	may
 May	May
 maya	maya
@@ -12004,7 +11997,7 @@ menu	menu
 menus	menus
 meow	meow
 # mer	mer
-Mercedes	Mercedes
+mercedes	mercedes
 mercer	mercer
 merchandise	merchandise
 merchandising	merchandising
@@ -12210,7 +12203,6 @@ miniature	miniature
 miniatures	miniatures
 minimal	minimal
 minimize	minimize
-minimized	minimized
 minimizing	minimizing
 minimum	minimum
 mining	mining
@@ -12573,7 +12565,7 @@ MSNBC	MSNBC
 # mt	mt
 # mta	mta
 MTV	MTV
-mu	mu
+# mu	mu
 much	much
 mud	mud
 muddy	muddy
@@ -12648,7 +12640,7 @@ mutually	mutually
 muze	muze
 # mv	mv
 MVC	MVC
-MVP	MVP
+# mvp	mvp
 # mw	mw
 # mx	mx
 my	my
@@ -12674,7 +12666,6 @@ myths	myths
 # n	n
 # na	na
 # nabble	nabble
-nabla	nabla
 # nach	nach
 # nacional	nacional
 # nad	nad
@@ -12833,7 +12824,6 @@ Nepal	Nepal
 nephew	nephew
 Neptune	Neptune
 nerd	nerd
-nerf	nerf
 nerve	nerve
 nerves	nerves
 nervous	nervous
@@ -12935,10 +12925,9 @@ niece	niece
 Nielsen	Nielsen
 nifty	nifty
 Nigel	Nigel
-Niger	Niger
+niger	niger
 Nigeria	Nigeria
 Nigerian	Nigerian
-nigger	nigger
 night	night
 nightclub	nightclub
 nightlife	nightlife
@@ -13630,7 +13619,6 @@ oversight	oversight
 oversized	oversized
 overstock	overstock
 overtake	overtake
-overtaken	overtaken
 overthrow	overthrow
 overtime	overtime
 overture	overture
@@ -13962,6 +13950,8 @@ PCMCIA	PCMCIA
 # PDA	PDA
 # PDAS	PDAS
 # pdb	pdb
+PDF	PDF
+PDFs	PDFs
 # pdp	pdp
 # PDT	PDT
 # pe	pe
@@ -14165,6 +14155,7 @@ Pfizer	Pfizer
 # pg	pg
 # pga	pga
 # pgp	pgp
+# pgSQL	pgSQL
 # ph	ph
 phantom	phantom
 # phantomnode	phantomnode
@@ -14233,6 +14224,7 @@ photos	photos
 Photoshop	Photoshop
 # photosmart	photosmart
 PHP	PHP
+phpBB	phpBB
 phrase	phrase
 phrases	phrases
 # phs	phs
@@ -17707,7 +17699,6 @@ snorkeling	snorkeling
 snow	snow
 snowboard	snowboard
 snowboarding	snowboarding
-snowflake	snowflake
 snowmobile	snowmobile
 snowstorm	snowstorm
 snowy	snowy
@@ -17834,8 +17825,6 @@ sorts	sorts
 SOS	SOS
 sought	sought
 soul	soul
-soulmate	soulmate
-soulmates	soulmates
 souls	souls
 sound	sound
 sounded	sounded
@@ -18169,7 +18158,6 @@ startle	startle
 starts	starts
 startup	startup
 starve	starve
-stash	stash
 stat	stat
 state	state
 stated	stated
@@ -19092,7 +19080,6 @@ tense	tense
 tensile	tensile
 tension	tension
 tensions	tensions
-tensor	tensor
 tent	tent
 tentative	tentative
 tenth	tenth
@@ -19243,6 +19230,7 @@ thing	thing
 things	things
 think	think
 thinking	thinking
+ThinkPad	ThinkPad
 thinks	thinks
 third	third
 thirds	thirds
@@ -19510,7 +19498,6 @@ tor	tor
 Torah	Torah
 torch	torch
 torches	torches
-torchlight	torchlight
 tori	tori
 Torino	Torino
 torment	torment
@@ -20217,7 +20204,6 @@ upward	upward
 upwards	upwards
 # ur	ur
 uranium	uranium
-Uranus	Uranus
 urban	urban
 Urbana	Urbana
 urge	urge
@@ -20229,6 +20215,8 @@ urging	urging
 URI	URI
 urinary	urinary
 urine	urine
+URL	URL
+URLs	URLs
 urn	urn
 urology	urology
 Uruguay	Uruguay
@@ -20878,6 +20866,7 @@ weber	weber
 # webhosting	webhosting
 # webinar	webinar
 weblog	weblog
+# weblogic	weblogic
 weblogs	weblogs
 # webmail	webmail
 webmaster	webmaster
@@ -20891,7 +20880,7 @@ webshots	webshots
 website	website
 websites	websites
 WebSphere	WebSphere
-Webster	Webster
+webster	webster
 wed	wed
 Wed.	Wed.
 wedding	wedding
@@ -21031,8 +21020,6 @@ whose	whose
 why	why
 # wi	wi
 Wichita	Wichita
-Wick	Wick
-wick	wick
 wicked	wicked
 wicker	wicker
 wide	wide
@@ -21096,7 +21083,7 @@ wind	wind
 winding	winding
 windmill	windmill
 window	window
-Windows	Windows
+windows	windows
 winds	winds
 windshield	windshield
 Windsor	Windsor
@@ -21359,7 +21346,7 @@ XXL	XXL
 # ya	ya
 yacht	yacht
 yachts	yachts
-yahoo	yahoo
+Yahoo	Yahoo
 Yakima	Yakima
 Yale	Yale
 Yamaha	Yamaha
@@ -21445,7 +21432,7 @@ zeal	zeal
 Zealand	Zealand
 zebra	zebra
 Zelda	Zelda
-zen	zen
+Zen	Zen
 zenith	zenith
 zeppelin	zeppelin
 zero	zero
@@ -21474,6 +21461,7 @@ zoofilia	zoofilia
 zoology	zoology
 zoom	zoom
 zoophilia	zoophilia
+Zope	Zope
 # zshops	zshops
 # zu	zu
 # zum	zum
