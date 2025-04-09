@@ -50,7 +50,7 @@ fallback_colors:
   hilited_candidate_text_color: color_bw_opposite
   # 候选区注释文本颜色
   comment_text_color: color_m_level2
-  hilited_comment_text_color: color_m_level2
+  hilited_comment_text_color: color_bw_opposite
   # 候选区背景
   back_color: keyboard_back_color
   hilited_back_color: color_m_level2
@@ -153,8 +153,8 @@ style:
   latin_locale: en_US
   proximity_correction: true
   reset_ascii_mode: true
-  round_corner: 10
-  shadow_radius: 0.0
+  round_corner: 15
+  shadow_radius: 2.0
   speech_opencc_config: s2t.json
   vertical_correction: -10
   window:
@@ -192,9 +192,9 @@ preset_color_schemes:
     # c_color_l1: 0x98d5e3
     # c_color_l2: 0x6f9ca5
     # c_color_l3: 0x2c7380
-    #c_color_l1: 0xe3c5c2
-    #c_color_l2: 0xe3938c
-    #c_color_l3: 0xb54648
+    # c_color_l1: 0xe3c5c2
+    # c_color_l2: 0xe3938c
+    # c_color_l3: 0xb54648
     #c_color_l3: 0x88642b
     #c_color_l2: 0xe3c7a4
     #c_color_l1: 0xdcd8d2
