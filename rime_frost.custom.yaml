@@ -22,3 +22,5 @@ patch:
   key_binder:
     bindings:
       - { when: always, toggle: ascii_mode, accept: Shift+space }             # 切换中英
+  spellers/auto_select: true
+  spellers/auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}
