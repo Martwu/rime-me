@@ -23,7 +23,7 @@ rsync -av ${RIMEBAISHUANG_PATH}/t9.schema.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/symbols_*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/default.yaml ${CURRENT_PATH}/
 
-rsync -av ${RIMEBAISHUANG_PATH}/rime.lua ${CURRENT_PATH}/
+# rsync -av ${RIMEBAISHUANG_PATH}/rime.lua ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/lua/ ${CURRENT_PATH}/lua
 
 rsync -av ${RIMEBAISHUANG_PATH}/opencc/ ${CURRENT_PATH}/opencc
