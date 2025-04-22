@@ -18,7 +18,6 @@ rsync -av ${RIMEBAISHUANG_PATH}/rime_frost*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/melt_eng.*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/radical_pinyin.*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/luna_pinyin.*.yaml ${CURRENT_PATH}/
-rsync -av ${RIMEBAISHUANG_PATH}/double_pinyin*.schema.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/t9.schema.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/symbols_*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEBAISHUANG_PATH}/default.yaml ${CURRENT_PATH}/
