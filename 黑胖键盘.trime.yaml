@@ -212,7 +212,7 @@ preset_color_schemes:
     c_color_l3: 0x395d64
     b_color_main: 0x171d1e
     b_color_mid: 0x2f3435
-    b_color_back: 0xa6acae
+    b_color_back: 0xedf6f9
 
     color_m_level1: c_color_l1
     color_m_level2: c_color_l2
