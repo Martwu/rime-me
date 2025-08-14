@@ -1,7 +1,7 @@
 patch:
   style:
     color_scheme: flat_light
-    color_scheme_dark: mint_dark_blue
+    color_scheme_dark: flat_dark
 
     # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
     # # stacked | linear | tabled 候选项排列方向(如果希望水平，设置linear)
