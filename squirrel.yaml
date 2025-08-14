@@ -30,20 +30,20 @@ style:
   color_scheme_dark: mint_dark_blue
 
   # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
-  
+
   # 自 0.36(Squirrel 0.15) 起已弃用。覆写为横向，建议使用 candidate_list_layout
   horizontal: false
   # # stacked | linear | tabled 候选项排列方向(如果希望水平，设置linear)
   # candidate_list_layout: stacked  # stacked | linear | tabled
-  
+
   text_orientation: horizontal  # horizontal | vertical
   # 内嵌预编辑
   inline_preedit: true
   inline_candidate: false
-  
+
   # 展示分页
   show_paging : false
-  
+
   # 记住面板大小后,它朝向屏幕中心扩展,而不是远离屏幕中心。
   remember_size: false
 
@@ -51,10 +51,10 @@ style:
   corner_radius: 10
   # 色彩空间： srgb | display_p3
   color_space: srgb
-  
+
   # 选中框 圆角半径
   hilited_corner_radius: 0
-  
+
   # 窗口边界高度，大于圆角半径才生效
   border_height: 0
   # 窗口边界宽度，大于圆角半径才生效
@@ -101,7 +101,7 @@ preset_color_schemes:
     hilited_comment_text_color: 0xefefef    # 选中注颜色
     text_color: 0x6495ed                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
-    
+
   mint_dark_blue:
     name: 黑水鸭／Mint Dark Blue
     author: Mintimate <"Mintimate's Blog">
@@ -122,7 +122,7 @@ preset_color_schemes:
     hilited_comment_text_color: 0xffffff    # 选中注颜色
     text_color: 0x6495ed                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xc6c01a            # 选中拼音颜色 （inline_preedit: false）
-    
+
   mint_light_green:
     name: "碧皓青／Mint Light Green"
     author: Mintimate <"Mintimate's Blog">
@@ -140,7 +140,7 @@ preset_color_schemes:
     text_color: 0x7BAE4F                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
-    
+
   mint_dark_green:
     name: "碧月青／Mint Dark Green"
     author: Mintimate <"Mintimate's Blog">
@@ -158,8 +158,36 @@ preset_color_schemes:
     text_color: 0x83C81C                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
+  flat_light:
+    name: "扁平明／Flat Light"
+    font_point: 18.0
+    candidate_list_layout: linear #
+    text_orientation: horizontal #
+    # inline_preedit: false #
+    horizontal: true
+    translucency: true
+    mutual_exclusive: true
+    corner_radius: 12.0
+    hilited_corner_radius: 12.0
+    border_height: -1.0
+    border_width: -1.0
+    line_spacing: 4.0
+    spacing: 10.0
+    alpha: 80
+    shadow_size: 1.0
+    color_space: display_p3
+    back_color: 0x1AFFFFFF
+    candidate_text_color: 0xB3000000
+    comment_text_color: 0x80333333
+    label_color: 0xBB333333
+    hilited_candidate_back_color: 0x4DFFFFFF
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0xBF333333
+    hilited_candidate_label_color: 0x000000
+    preedit_back_color: 0x1A000000
+    text_color: 0xBF323232
+    hilited_text_color: 0xBF1A1A1A
 
-    
   # 下面是内置的皮肤 https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
 
   native:

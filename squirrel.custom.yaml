@@ -1,6 +1,6 @@
 patch:
   style:
-    color_scheme: mint_light_blue
+    color_scheme: flat_light
     color_scheme_dark: mint_dark_blue
 
     # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
