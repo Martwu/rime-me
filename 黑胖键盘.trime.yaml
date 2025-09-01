@@ -105,7 +105,7 @@ style:
   comment_height: 12
   comment_on_top: true
   comment_text_size: 8
-  hanb_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
+  hanb_font: "LXGWWenKai-Bold.ttf"
   key_font: "PatuaOne-Regular.ttf"
   key_height: 44
   key_long_text_border: "1"
@@ -113,14 +113,14 @@ style:
   key_text_size: 28
   label_font: "LXGWWenKai-Bold.ttf"
   label_text_size: 14
-  long_text_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
+  long_text_font: "LXGWWenKai-Bold.ttf"
   preview_font: "PatuaOne-Regular.ttf"
   preview_height: 60
   preview_offset: -12
   preview_text_size: 40
   symbol_font: "PatuaOne-Regular.ttf"
   symbol_text_size: 10
-  text_font: "AlibabaPuHuiTi-3-55-RegularL3.ttf"
+  text_font: "LXGWWenKai-Bold.ttf"
   text_size: 14
   enter_label_mode: 0
   enter_labels:
