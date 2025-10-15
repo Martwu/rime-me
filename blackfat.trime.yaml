@@ -1,6 +1,93 @@
 author: "Martwu <martin.wu2dream@gmail.com>"
 name: "胖子传说"
 
+style:
+  color_scheme: default
+  auto_caps: false
+  background_dim_amount: 0.5
+  candidate_padding: 10
+  candidate_spacing: 0.5
+  candidate_text_size: 24
+  candidate_use_cursor: true
+  candidate_view_height: 28
+  comment_height: 12
+  comment_on_top: true
+  comment_text_size: 8
+  key_height: 44
+  key_long_text_border: "1"
+  key_long_text_size: 14
+  key_text_size: 28
+  label_text_size: 14
+  preview_height: 60
+  preview_offset: -12
+  preview_text_size: 40
+  symbol_text_size: 10
+  text_size: 14
+  enter_label_mode: 0
+  enter_labels:
+    default: "↵"
+    done: "☑"
+    go: "➪"
+    next: "⤵"
+    pre: "⤴"
+    search: "⌕"
+    send: "✉"
+  horizontal: true
+  horizontal_gap: 10
+  vertical_gap: 4
+  key_width: 10.0
+  keyboard_height: 280
+  keyboard_height_land: 180
+  keyboard_padding: 10
+  keyboard_padding_bottom: 5
+  keyboard_padding_land: 20
+  keyboard_padding_land_bottom: 0
+  keyboard_padding_left: 0
+  keyboard_padding_right: 40
+  keyboards:
+    - .default
+    - editor
+    - number
+    - symbols
+    - mini
+  locale: zh_CN
+  latin_locale: en_US
+  proximity_correction: true
+  reset_ascii_mode: true
+  round_corner: 10.0
+  shadow_radius: 2.0
+  speech_opencc_config: s2t.json
+  vertical_correction: -10
+  window:
+    - {end: "", move: "ϟ ", start: ""}
+    - {composition: "%s", end: "", letter_spacing: 0, start: ""}
+    - {candidate: "%s", comment: " %s", end: "", label: "%s.", sep: " ", start: "\n"}
+  layout:
+    all_phrases: true
+    alpha: 0xff
+    border: 0
+    elevation: 5
+    line_spacing: 0
+    line_spacing_multiplier: 1.0
+    margin_bottom: 0
+    margin_x: 5
+    margin_y: 5
+    max_entries: 1
+    max_height: 400
+    max_length: 10
+    max_width: 230
+    min_check: 3
+    min_height: 0
+    min_length: 5
+    min_width: 40
+    movable: false
+    position: fixed
+    real_margin: 3
+    round_corner: 5.0
+    spacing: 1
+    sticky_lines: 0
+    sticky_lines_land: 0
+
 style_custom:
   key_editor_touchpad:
     key_back_color: color_m_level3
@@ -1066,99 +1153,3 @@ preset_keys:
   PK_LiquidKB_yanwenzi: { command: liquid_keyboard, label: "^_^", option: "^_^", send: function }
   PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
   PK_LiquidKB_term_snippet: { command: liquid_keyboard, label: ">_", option: ">_", send: function }
-
-style:
-  color_scheme: default
-  auto_caps: false
-  background_dim_amount: 0.5
-  #candidate_font: "LXGWWenKai-Bold.ttf"
-  candidate_padding: 10
-  candidate_spacing: 0.5
-  candidate_text_size: 24
-  candidate_use_cursor: true
-  candidate_view_height: 28
-  #comment_font: "NotoEmoji-Bold.ttf"
-  comment_height: 12
-  comment_on_top: true
-  comment_text_size: 8
-  #hanb_font: "LXGWWenKai-Bold.ttf"
-  #key_font: "PatuaOne-Regular.ttf"
-  key_height: 44
-  key_long_text_border: "1"
-  key_long_text_size: 14
-  key_text_size: 28
-  #label_font: "LXGWWenKai-Bold.ttf"
-  label_text_size: 14
-  #long_text_font: "LXGWWenKai-Bold.ttf"
-  #preview_font: "PatuaOne-Regular.ttf"
-  preview_height: 60
-  preview_offset: -12
-  preview_text_size: 40
-  #symbol_font: "PatuaOne-Regular.ttf"
-  symbol_text_size: 10
-  #text_font: "LXGWWenKai-Bold.ttf"
-  text_size: 14
-  enter_label_mode: 0
-  enter_labels:
-    default: "↵"
-    done: "☑"
-    go: "➪"
-    next: "⤵"
-    pre: "⤴"
-    search: "⌕"
-    send: "✉"
-  horizontal: true
-  horizontal_gap: 10
-  vertical_gap: 4
-  key_width: 10.0
-  keyboard_height: 280
-  keyboard_height_land: 180
-  keyboard_padding: 10
-  keyboard_padding_bottom: 5
-  keyboard_padding_land: 20
-  keyboard_padding_land_bottom: 0
-  keyboard_padding_left: 0
-  keyboard_padding_right: 40
-  keyboards:
-    - .default
-    - editor
-    - number
-    - symbols
-    - mini
-  locale: zh_CN
-  latin_locale: en_US
-  proximity_correction: true
-  reset_ascii_mode: true
-  round_corner: 10.0
-  shadow_radius: 2.0
-  speech_opencc_config: s2t.json
-  vertical_correction: -10
-  window:
-    - {end: "", move: "ϟ ", start: ""}
-    - {composition: "%s", end: "", letter_spacing: 0, start: ""}
-    - {candidate: "%s", comment: " %s", end: "", label: "%s.", sep: " ", start: "\n"}
-  layout:
-    all_phrases: true
-    alpha: 0xff
-    border: 0
-    elevation: 5
-    line_spacing: 0
-    line_spacing_multiplier: 1.0
-    margin_bottom: 0
-    margin_x: 5
-    margin_y: 5
-    max_entries: 1
-    max_height: 400
-    max_length: 10
-    max_width: 230
-    min_check: 3
-    min_height: 0
-    min_length: 5
-    min_width: 40
-    movable: false
-    position: fixed
-    real_margin: 3
-    round_corner: 5.0
-    spacing: 1
-    sticky_lines: 0
-    sticky_lines_land: 0
