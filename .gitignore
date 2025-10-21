@@ -1,6 +1,7 @@
 # syncthing
 .stfolder
 .stignore
+*sync-conflict*
 
 # rime
 user.yaml
