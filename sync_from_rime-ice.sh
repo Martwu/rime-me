@@ -25,9 +25,9 @@ rsync -av ${RIMEICE_PATH}/default.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/rime.lua ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/lua/ ${CURRENT_PATH}/lua
 
-rsync -av ${RIMEICE_PATH}/opencc/ ${CURRENT_PATH}/opencc
-rsync -av ${RIMEICE_PATH}/cn_dicts/ ${CURRENT_PATH}/cn_dicts
-rsync -av ${RIMEICE_PATH}/en_dicts/ ${CURRENT_PATH}/en_dicts
+rsync -av --delete ${RIMEICE_PATH}/opencc/ ${CURRENT_PATH}/opencc
+rsync -av --delete ${RIMEICE_PATH}/cn_dicts/ ${CURRENT_PATH}/cn_dicts
+rsync -av --delete ${RIMEICE_PATH}/en_dicts/ ${CURRENT_PATH}/en_dicts
 
 (cd ${RIMECAN_PATH} && proxychains git pull)
 rsync -av ${RIMECAN_PATH}/opencc/ ${CURRENT_PATH}/opencc
