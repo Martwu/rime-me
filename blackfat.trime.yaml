@@ -626,11 +626,11 @@ tool_bar:
   button_spacing: 5
   buttons:
     - {action: PK_Hide, foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}}
-    - {action: PK_LiquidKB_emoji, foreground: {style: "ic@emoticon"}}
+    # - {action: PK_LiquidKB_emoji, foreground: {style: "ic@emoticon"}}
     - {action: PK_LiquidKB_clipboard, foreground: {style: "ic@clipboard"}}
-    - {action: PK_toKB_number, foreground: {style: "ic@cursor_text"}}
-    - {action: PK_Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
+    - {action: PK_toKB_editor, foreground: {style: "ic@cursor_text"}}
     - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_new", "ic@moon_full"]}}
+    - {action: PK_Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
   primary_button:
     action: PK_menu_keyboard
     background: {bg_highlight: hilited_candidate_button_color, bg_normal: 0x00, corner_radius: 10, horizontal_inset: 0, type: circle, vertical_inset: 4}
