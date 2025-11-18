@@ -616,6 +616,10 @@ preset_keys:
     send: Mode_switch
     states: ["半角", "全角"]
     toggle: full_shape
+  PK_menu_keyboard:
+    command: menu_keyboard
+    label: "菜单"
+    send: function
 
 tool_bar:
   button_font: iconfont.ttf
@@ -646,6 +650,6 @@ tool_bar:
     action: PK_Hide
     foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}
   primary_button:
-    action: menu_keyboard
+    action: PK_menu_keyboard
     background: {bg_highlight: hilited_candidate_button_color, bg_normal: 0x00, corner_radius: 10, horizontal_inset: 0, type: circle, vertical_inset: 4}
     foreground: {fg_normal: candidate_text_color, padding: 10, style: "ic@dots_horizontal"}
