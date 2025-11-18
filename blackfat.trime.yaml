@@ -606,3 +606,36 @@ preset_keys:
   PK_LiquidKB_yanwenzi: { command: liquid_keyboard, label: "^_^", option: "颜文字", send: function }
   PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
   PK_LiquidKB_term_snippet: { command: liquid_keyboard, label: ">_", option: "终端预设", send: function }
+
+tool_bar:
+  button_font: iconfont.ttf
+  button_spacing: 5
+  buttons:
+    - {action: PK_Hide, foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}}
+    - {action: PK_LiquidKB_emoji, foreground: {style: "ic@emoticon"}}
+    - {action: PK_LiquidKB_clipboard, foreground: {style: "ic@clipboard"}}
+    - {action: PK_toKB_number, foreground: {style: "ic@cursor_text"}}
+    - {action: Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
+    - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}}
+  ascii_mode_button:
+    action: Mode_switch
+    foreground: {font_size: 18, option_styles: ["中", En], padding: 10}
+  clipboard_button:
+    action: PK_LiquidKB_clipboard
+    foreground: {style: "ic@clipboard"}
+  edit_button:
+    action: PK_toKB_number
+    foreground: {style: "ic@cursor_text"}
+  emoji_button:
+    action: PK_LiquidKB_emoji
+    foreground: {style: "ic@emoticon"}
+  full_shape_button:
+    action: Zenkaku_Hankaku
+    foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}
+  hide_button:
+    action: PK_Hide
+    foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}
+  primary_button:
+    action: menu_keyboard
+    background: {bg_highlight: hilited_candidate_button_color, bg_normal: 0x00, corner_radius: 10, horizontal_inset: 0, type: circle, vertical_inset: 4}
+    foreground: {fg_normal: candidate_text_color, padding: 10, style: "ic@dots_horizontal"}
