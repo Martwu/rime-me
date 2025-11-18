@@ -607,6 +607,16 @@ preset_keys:
   PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
   PK_LiquidKB_term_snippet: { command: liquid_keyboard, label: ">_", option: "终端预设", send: function }
 
+  PK_Mode_switch:
+    functional: false
+    send: Mode_switch
+    states: ["中文", "西文"]
+    toggle: ascii_mode
+  Zenkaku_Hankaku:
+    send: Mode_switch
+    states: ["半角", "全角"]
+    toggle: full_shape
+
 tool_bar:
   button_font: iconfont.ttf
   button_spacing: 5
@@ -615,10 +625,10 @@ tool_bar:
     - {action: PK_LiquidKB_emoji, foreground: {style: "ic@emoticon"}}
     - {action: PK_LiquidKB_clipboard, foreground: {style: "ic@clipboard"}}
     - {action: PK_toKB_number, foreground: {style: "ic@cursor_text"}}
-    - {action: Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
-    - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}}
+    - {action: PK_Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}
+    - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_new", "ic@moon_full"]}}
   ascii_mode_button:
-    action: Mode_switch
+    action: PK_Mode_switch
     foreground: {font_size: 18, option_styles: ["中", En], padding: 10}
   clipboard_button:
     action: PK_LiquidKB_clipboard
@@ -631,7 +641,7 @@ tool_bar:
     foreground: {style: "ic@emoticon"}
   full_shape_button:
     action: Zenkaku_Hankaku
-    foreground: {option_styles: ["ic@moon_full", "ic@moon_new"]}
+    foreground: {option_styles: ["ic@moon_new", "ic@moon_full"]}
   hide_button:
     action: PK_Hide
     foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}
