@@ -36,8 +36,8 @@ style:
   horizontal_gap: 10
   vertical_gap: 4
   key_width: 10.0
-  keyboard_height: 270
-  keyboard_height_land: 170
+  keyboard_height: 300
+  keyboard_height_land: 190
   keyboard_padding: 10
   keyboard_padding_bottom: 5
   keyboard_padding_land: 20
@@ -118,11 +118,14 @@ style_custom:
     key_back_color: color_m_level2
     key_text_color: color_bw_main
   key_occupy:
-    height: 12
+    height: 16
     key_back_color: color_bw_mid
     hilited_key_back_color: key_back_color
     key_text_color: color_bw_opposite
     hilited_key_text_color: color_bw_opposite
+  key_empty:
+    height: 16
+    width: 100
   editor_conf:
     height: 71
     round_corner: 0
@@ -216,7 +219,6 @@ liquid_keyboard:
     - term_snippet
     - table
     - history
-    - clipboard
     - collection
     - draft
     - candidate
@@ -341,7 +343,7 @@ preset_keyboards:
       - {click: z}
       - {click: x}
       - {click: c}
-      - {click: v, long_click: PK_LiquidKB_clipboard, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
+      - {click: v, long_click: PK_clipboard_window, swipe_up: PK_clipboard_window}
       - {click: b}
       - {click: n, long_click: "=", swipe_up: "="}
       - {click: m}
@@ -356,6 +358,7 @@ preset_keyboards:
       - {click: ",", width: 8}
       - {click: ".", width: 8}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+      - {__include: style_custom/key_empty}
     label_transform: uppercase
     lock: false
     width: 10
@@ -409,7 +412,7 @@ preset_keyboards:
       - {click: z, long_click: PK_toKB_editor, swipe_down: PK_Undo, hint: "撤销"}
       - {click: x, long_click: PK_Cut}
       - {click: c, long_click: PK_Copy}
-      - {click: v, long_click: PK_Paste, swipe_up: PK_LiquidKB_clipboard, swipe_down: PK_LiquidKB_collection, hint: "收藏夹"}
+      - {click: v, long_click: PK_Paste, swipe_up: PK_clipboard_window }
       - {click: b, swipe_down: "\"", hint: "\""}
       - {click: n, swipe_down: "'", hint: "'"}
       - {click: m, long_click: "+",swipe_up: "+",swipe_down: "-", hint: "-"}
@@ -421,6 +424,7 @@ preset_keyboards:
       - {click: PK_SpaceBar, long_click: PK_Menu, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+      - {__include: style_custom/key_empty}
     label_transform: uppercase
     lock: false
     width: 10
@@ -436,7 +440,7 @@ preset_keyboards:
            # 第2行
            {click: PK_Shift_L}, {click: PK_toKB_symbols, long_click: PK_toKB_number}, {click: "'", long_click: "\""}, {click: "-", long_click: _}, {click: "=", long_click: "+"},
            {click: ",", long_click: "<"}, {click: ., long_click: ">"}, {click: "/", long_click: "?"}, {click: PK_Menu},
-           {click: PK_Return, composing: PK_Return1}
+           {click: PK_Return, composing: PK_Return1}, {__include: style_custom/key_empty}
            ]
     lock: true
     width: 10
@@ -447,7 +451,7 @@ preset_keyboards:
     __include: style_custom/editor_conf
     keys:
       - { __include: style_custom/key_occupy , width: 100}
-      - { __include: style_custom/key_editor_menu, click: PK_LiquidKB_clipboard }
+      - { __include: style_custom/key_editor_menu, click: PK_clipboard_window }
       - { __include: style_custom/key_editor_touchpad, click: PK_Cut }
       - { __include: style_custom/key_editor_touchpad, click: "" }
       - { __include: style_custom/key_editor_touchpad, click: PK_Up }
@@ -471,6 +475,7 @@ preset_keyboards:
       - { __include: style_custom/key_editor_touchpad, click: PK_Home }
       - { __include: style_custom/key_editor_touchpad, click: PK_End }
       - { __include: style_custom/key_editor_touchpad, click: PK_Return, composing: PK_Return1}
+      - {__include: style_custom/key_empty}
   number:
     name: "数字键盘"
     ascii_mode: 1
@@ -513,6 +518,7 @@ preset_keyboards:
       - {click: 0,long_click: "0000", __include: style_custom/key_num}
       - {click: .}
       - {click: PK_Return, __include: style_custom/key_enter}
+      - {__include: style_custom/key_empty}
     reset_ascii_mode: true
     width: 16
   symbols:
@@ -537,7 +543,7 @@ preset_keyboards:
           {click: "+"}, {click: "-", long_click: _}, {click: "="}, {click: "<", long_click: "《"}, {click: ">", long_click: "》"}, {click: "\"", long_click: "'"},
           {click: ",", long_click: "，"}, {click: ".", long_click: "。"}, {click: "?", long_click: "？"}, {click: PK_BackSpace, swipe_left: PK_Clear},
           {click: PK_toKB_default, long_click: PK_Menu, width: 15}, {click: PK_toKB_number},
-          {click: PK_SpaceBarNoName, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+          {click: PK_SpaceBarNoName, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}, {__include: style_custom/key_empty}
           ]
     width: 10
   jyut6ping3:
@@ -599,13 +605,14 @@ preset_keys:
   PK_SpaceBar: {functional: false, repeatable: true, send: space, preview: "␣", ascii: "␣"}
   PK_SpaceBarNoName: {functional: false, repeatable: true, send: space, preview: "␣", ascii: "␣", label: "␣"}
 
-  PK_LiquidKB_clipboard: { command: liquid_keyboard, label: "粘贴板", option: "粘贴板", send: function}
+  PK_clipboard_window: { command: clipboard_window, label: "粘贴板", send: function }
   PK_LiquidKB_emoji: { command: liquid_keyboard, label: "😄", option: "emoji", send: function}
   PK_LiquidKB_math: { command: liquid_keyboard, label: "数学符号", option: "数学", send: function}
   PK_LiquidKB_symbol: { command: liquid_keyboard, label: "特殊符号", option: "殊", send: function }
   PK_LiquidKB_yanwenzi: { command: liquid_keyboard, label: "^_^", option: "颜文字", send: function }
   PK_LiquidKB_collection: { command: liquid_keyboard, label: "收藏夹", option: "收藏", send: function }
   PK_LiquidKB_term_snippet: { command: liquid_keyboard, label: ">_", option: "终端预设", send: function }
+
 
   PK_Mode_switch:
     functional: false
@@ -627,7 +634,7 @@ tool_bar:
   buttons:
     - {action: PK_Hide, foreground: {fg_normal: candidate_text_color, style: "ic@keyboard_close"}}
     # - {action: PK_LiquidKB_emoji, foreground: {style: "ic@emoticon"}}
-    - {action: PK_LiquidKB_clipboard, foreground: {style: "ic@clipboard"}}
+    - {action: PK_clipboard_window, foreground: {style: "ic@clipboard"}}
     - {action: PK_toKB_editor, foreground: {style: "ic@cursor_text"}}
     - {action: Zenkaku_Hankaku, foreground: {option_styles: ["ic@moon_new", "ic@moon_full"]}}
     - {action: PK_Mode_switch, foreground: {font_size: 18, option_styles: ["中", En], padding: 10}}

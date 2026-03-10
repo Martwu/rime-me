@@ -12,3 +12,7 @@ tongwenfeng.trime.yaml
 
 # rime 用户输入习惯
 *.userdb/**
+
+# macos
+.DS_Store
+._*
