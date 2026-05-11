@@ -13,7 +13,7 @@ style:
   comment_height: 12
   comment_on_top: true
   comment_text_size: 8
-  key_height: 42
+  key_height: 24
   key_long_text_border: "1"
   key_long_text_size: 13
   key_text_size: 26
@@ -36,9 +36,9 @@ style:
   horizontal_gap: 10
   vertical_gap: 4
   key_width: 10.0
-  keyboard_height: 300
+  keyboard_height: 276
   keyboard_height_land: 190
-  keyboard_padding: 10
+  keyboard_padding: 4
   keyboard_padding_bottom: 5
   keyboard_padding_land: 20
   keyboard_padding_land_bottom: 0
@@ -200,7 +200,7 @@ fallback_colors:
   candidate_text_color: text_color
 
 liquid_keyboard:
-  key_height: 30
+  key_height: 24
   key_height_land: 30
   vertical_gap: 1
   margin_x: 2
@@ -358,7 +358,6 @@ preset_keyboards:
       - {click: ",", width: 8}
       - {click: ".", width: 8}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
-      - {__include: style_custom/key_empty}
     label_transform: uppercase
     lock: false
     width: 10
@@ -424,7 +423,6 @@ preset_keyboards:
       - {click: PK_SpaceBar, long_click: PK_Menu, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
-      - {__include: style_custom/key_empty}
     label_transform: uppercase
     lock: false
     width: 10
@@ -440,7 +438,7 @@ preset_keyboards:
            # 第2行
            {click: PK_Shift_L}, {click: PK_toKB_symbols, long_click: PK_toKB_number}, {click: "'", long_click: "\""}, {click: "-", long_click: _}, {click: "=", long_click: "+"},
            {click: ",", long_click: "<"}, {click: ., long_click: ">"}, {click: "/", long_click: "?"}, {click: PK_Menu},
-           {click: PK_Return, composing: PK_Return1}, {__include: style_custom/key_empty}
+           {click: PK_Return, composing: PK_Return1}
            ]
     lock: true
     width: 10
@@ -475,7 +473,6 @@ preset_keyboards:
       - { __include: style_custom/key_editor_touchpad, click: PK_Home }
       - { __include: style_custom/key_editor_touchpad, click: PK_End }
       - { __include: style_custom/key_editor_touchpad, click: PK_Return, composing: PK_Return1}
-      - {__include: style_custom/key_empty}
   number:
     name: "数字键盘"
     ascii_mode: 1
@@ -518,7 +515,6 @@ preset_keyboards:
       - {click: 0,long_click: "0000", __include: style_custom/key_num}
       - {click: .}
       - {click: PK_Return, __include: style_custom/key_enter}
-      - {__include: style_custom/key_empty}
     reset_ascii_mode: true
     width: 16
   symbols:
@@ -543,7 +539,7 @@ preset_keyboards:
           {click: "+"}, {click: "-", long_click: _}, {click: "="}, {click: "<", long_click: "《"}, {click: ">", long_click: "》"}, {click: "\"", long_click: "'"},
           {click: ",", long_click: "，"}, {click: ".", long_click: "。"}, {click: "?", long_click: "？"}, {click: PK_BackSpace, swipe_left: PK_Clear},
           {click: PK_toKB_default, long_click: PK_Menu, width: 15}, {click: PK_toKB_number},
-          {click: PK_SpaceBarNoName, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}, {__include: style_custom/key_empty}
+          {click: PK_SpaceBarNoName, long_click: PK_Menu, width: 55}, {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
           ]
     width: 10
   jyut6ping3:
