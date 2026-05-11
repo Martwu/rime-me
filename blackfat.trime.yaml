@@ -5,22 +5,22 @@ style:
   color_scheme: default
   auto_caps: false
   background_dim_amount: 0.5
-  candidate_padding: 10
-  candidate_spacing: 0.5
-  candidate_text_size: 24
+  candidate_padding: 8
+  candidate_spacing: 2
+  candidate_text_size: 22
   candidate_use_cursor: true
-  candidate_view_height: 28
-  comment_height: 12
-  comment_on_top: true
-  comment_text_size: 8
-  key_height: 24
+  candidate_view_height: 36
+  comment_height: 16
+  comment_on_top: false
+  comment_text_size: 12
+  key_height: 28
   key_long_text_border: "1"
   key_long_text_size: 13
-  key_text_size: 26
-  label_text_size: 13
-  preview_height: 60
+  key_text_size: 22
+  label_text_size: 16
+  preview_height: 48
   preview_offset: -12
-  preview_text_size: 40
+  preview_text_size: 32
   symbol_text_size: 10
   text_size: 13
   enter_label_mode: 0
@@ -33,17 +33,17 @@ style:
     search: "⌕"
     send: "✉"
   horizontal: true
-  horizontal_gap: 10
-  vertical_gap: 4
+  horizontal_gap: 8
+  vertical_gap: 7
   key_width: 10.0
-  keyboard_height: 276
-  keyboard_height_land: 190
+  keyboard_height: 295
+  keyboard_height_land: 240
   keyboard_padding: 4
   keyboard_padding_bottom: 5
   keyboard_padding_land: 20
   keyboard_padding_land_bottom: 0
-  keyboard_padding_left: 0
-  keyboard_padding_right: 40
+  keyboard_padding_left: 10
+  keyboard_padding_right: 10
   keyboards:
     - .default
     - editor
@@ -55,7 +55,7 @@ style:
   proximity_correction: true
   reset_ascii_mode: true
   round_corner: 8.0
-  shadow_radius: 2.0
+  shadow_radius: 3.0
   speech_opencc_config: s2t.json
   vertical_correction: -10
   window:
@@ -135,19 +135,64 @@ style_custom:
 preset_color_schemes:
   default_dark:
     author: "Blackfat <martin.wu2dream@gmail.com>"
-    back_color: 0xff171614
-    border_color: 0xff383635
-    candidate_text_color: 0xffffffff
-    comment_text_color: 0xffa9a7a7
-    hilited_back_color: 0xff171614
-    hilited_candidate_back_color: 0xff314259
+    back_color: 0xff1a1a1a
+    border_color: 0xff2a2a2a
+    candidate_separator_color: 0xff2a2a2a
+    candidate_text_color: 0xffe8e8e8
+    comment_text_color: 0xff8a8a8a
+    hilited_back_color: 0xff1a1a1a
+    hilited_candidate_back_color: 0xff3a6ba5
     hilited_candidate_text_color: 0xffffffff
-    hilited_comment_text_color: 0xffa9a7a7
-    hilited_text_color: 0xffd1cfc9
-    label_color: 0xffffffff
+    hilited_comment_text_color: 0xffb0b0b0
+    hilited_key_back_color: 0xff3a6ba5
+    hilited_key_symbol_color: 0xffffffff
+    hilited_key_text_color: 0xffffffff
+    hilited_off_key_back_color: 0xff2a2a2a
+    hilited_off_key_text_color: 0xffcccccc
+    hilited_text_color: 0xffe0e0e0
+    key_back_color: 0xff2a2a2a
+    key_symbol_color: 0xff999999
+    key_text_color: 0xffe8e8e8
+    keyboard_back_color: 0xff121212
+    label_color: 0xff999999
     light_scheme: default
-    name: "暗黑配色！"
-    text_color: 0xff528ccd
+    name: "暗黑配色"
+    off_key_back_color: 0xff1f1f1f
+    off_key_text_color: 0xff888888
+    preview_back_color: 0xff3a3a3a
+    preview_text_color: 0xffffffff
+    text_back_color: 0xff1a1a1a
+    text_color: 0xff5c9edc
+  amoled:
+    author: "Blackfat <martin.wu2dream@gmail.com>"
+    name: "AMOLED纯黑"
+    back_color: 0xff000000
+    border_color: 0xff1a1a1a
+    candidate_separator_color: 0xff1a1a1a
+    candidate_text_color: 0xffe0e0e0
+    comment_text_color: 0xff777777
+    hilited_back_color: 0xff000000
+    hilited_candidate_back_color: 0xff1e5a9e
+    hilited_candidate_text_color: 0xffffffff
+    hilited_comment_text_color: 0xff999999
+    hilited_key_back_color: 0xff1e5a9e
+    hilited_key_symbol_color: 0xffffffff
+    hilited_key_text_color: 0xffffffff
+    hilited_off_key_back_color: 0xff111111
+    hilited_off_key_text_color: 0xffcccccc
+    hilited_text_color: 0xffd0d0d0
+    key_back_color: 0xff111111
+    key_symbol_color: 0xff888888
+    key_text_color: 0xffe0e0e0
+    keyboard_back_color: 0xff000000
+    label_color: 0xff888888
+    light_scheme: default_dark
+    off_key_back_color: 0xff0a0a0a
+    off_key_text_color: 0xff777777
+    preview_back_color: 0xff222222
+    preview_text_color: 0xffffffff
+    text_back_color: 0xff000000
+    text_color: 0xff4a8ed4
   default:
     author: "Blackfat <martin.wu2dream@gmail.com>"
     back_color: 0xffffffff
