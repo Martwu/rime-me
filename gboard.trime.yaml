@@ -45,7 +45,7 @@ style:
   keyboard_padding_left: 10
   keyboard_padding_right: 10
   keyboards:
-    - gboard
+    - .default
     - editor
     - number
     - symbols
@@ -467,11 +467,11 @@ preset_keyboards:
     label_transform: uppercase
     lock: false
     width: 10
-  default:
-    name: "36全键盘"
+  legacy_default:
+    name: "Gboard 风格"
     ascii_mode: 0
     reset_ascii_mode: true
-    columns: 30
+    columns: 10
     key_hint_offset_x: -2
     key_hint_offset_y: -2
     key_press_offset_x: 2
@@ -481,7 +481,7 @@ preset_keyboards:
     key_text_offset_x: 0
     key_text_offset_y: 2
     keys:
-      - {click: 1, height: 16, key_text_size: 13}
+      - {click: q, long_click: PK_Escape}
       - {click: 2, height: 16, key_text_size: 13}
       - {click: 3, height: 16, key_text_size: 13}
       - {click: 4, height: 16, key_text_size: 13}
@@ -532,7 +532,7 @@ preset_keyboards:
     label_transform: uppercase
     lock: false
     width: 10
-  gboard:
+  default:
     name: "Gboard 风格"
     ascii_mode: 0
     reset_ascii_mode: true
@@ -566,7 +566,7 @@ preset_keyboards:
       - {click: k, long_click: ":", swipe_down: "/", hint: "/"}
       - {click: l, long_click: "^", swipe_down: "_", hint: "_"}
       - {width: 0.5}
-      - {click: PK_Shift_L, width: 1.35}
+      - {click: PK_Shift_L, width: 1.5}
       - {click: z}
       - {click: x, long_click: PK_Cut}
       - {click: c, long_click: PK_Copy}
@@ -574,13 +574,13 @@ preset_keyboards:
       - {click: b}
       - {click: n}
       - {click: m}
-      - {click: PK_BackSpace, swipe_left: PK_Clear, width: 1.35}
-      - {click: PK_toKB_symbols, long_click: PK_toKB_number, width: 1.2}
-      - {click: PK_LiquidKB_emoji, long_click: PK_LiquidKB_yanwenzi, width: 1.0}
-      - {click: ",", label: "，", long_click: "!", width: 0.8}
+      - {click: PK_BackSpace, swipe_left: PK_Clear, width: 1.5}
+      - {click: PK_toKB_symbols, long_click: PK_toKB_number, width: 1.5}
+      - {click: PK_LiquidKB_emoji, long_click: PK_LiquidKB_yanwenzi, width: 1.2}
+      - {click: ",", label: "，", long_click: "!", width: 1.0}
       - {click: PK_SpaceBar, long_click: PK_Menu, width: 3.8}
-      - {click: ".", label: "。", long_click: "?", width: 0.8}
-      - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter, width: 1.25}
+      - {click: ".", label: "。", long_click: "?", width: 1.0}
+      - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter, width: 1.5}
     label_transform: uppercase
     lock: false
     width: 10
@@ -728,7 +728,7 @@ preset_keys:
   PK_Left: { label: '←', send: Left }
   PK_Right: { label: '→', send: Right }
 
-  PK_toKB_default: { label: "返回", select: gboard, send: Eisu_toggle}
+  PK_toKB_default: { label: "返回", select: .default, send: Eisu_toggle}
   PK_toKB_editor: { label: "编辑", select: editor, send: Eisu_toggle}
   PK_toKB_number: { label: "🔢", select: number, send: Eisu_toggle}
   PK_toKB_symbols: { label: "🔣", select: symbols, send: Eisu_toggle}
