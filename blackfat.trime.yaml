@@ -136,8 +136,8 @@ preset_color_schemes:
   default_dark:
     author: "Blackfat <martin.wu2dream@gmail.com>"
     back_color: 0xff1a1a1a
-    border_color: 0xff2a2a2a
-    candidate_separator_color: 0xff2a2a2a
+    border_color: 0xff353535
+    candidate_separator_color: 0xff353535
     candidate_text_color: 0xffe8e8e8
     comment_text_color: 0xff8a8a8a
     hilited_back_color: 0xff1a1a1a
@@ -150,14 +150,14 @@ preset_color_schemes:
     hilited_off_key_back_color: 0xff2a2a2a
     hilited_off_key_text_color: 0xffcccccc
     hilited_text_color: 0xffe0e0e0
-    key_back_color: 0xff2a2a2a
+    key_back_color: 0xff303030
     key_symbol_color: 0xff999999
     key_text_color: 0xffe8e8e8
-    keyboard_back_color: 0xff121212
+    keyboard_back_color: 0xff101010
     label_color: 0xff999999
     light_scheme: default
     name: "暗黑配色"
-    off_key_back_color: 0xff1f1f1f
+    off_key_back_color: 0xff242424
     off_key_text_color: 0xff888888
     preview_back_color: 0xff3a3a3a
     preview_text_color: 0xffffffff
@@ -181,13 +181,13 @@ preset_color_schemes:
     hilited_off_key_back_color: 0xff111111
     hilited_off_key_text_color: 0xffcccccc
     hilited_text_color: 0xffd0d0d0
-    key_back_color: 0xff111111
+    key_back_color: 0xff161616
     key_symbol_color: 0xff888888
     key_text_color: 0xffe0e0e0
     keyboard_back_color: 0xff000000
     label_color: 0xff888888
     light_scheme: default_dark
-    off_key_back_color: 0xff0a0a0a
+    off_key_back_color: 0xff0e0e0e
     off_key_text_color: 0xff777777
     preview_back_color: 0xff222222
     preview_text_color: 0xffffffff
@@ -222,12 +222,12 @@ preset_color_schemes:
     key_back_color: 0xffffffff
     key_symbol_color: 0xff838383
     key_text_color: 0xff000000
-    keyboard_back_color: 0xffe1e3e7
+    keyboard_back_color: 0xffd6d9df
     label_color: 0xff3266a0
     name: "标准配色！"
-    off_key_back_color: 0xffacb2c2
+    off_key_back_color: 0xffa4abbc
     off_key_text_color: 0xff838383
-    preview_back_color: 0xffacb2c2
+    preview_back_color: 0xffa4abbc
     preview_text_color: 0xff3266a0
     taoe: 0xff3266a0
     tbs: 0xffffffff
