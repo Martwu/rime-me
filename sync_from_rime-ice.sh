@@ -22,7 +22,7 @@ rsync -av ${RIMEICE_PATH}/t9.schema.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/symbols_*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/default.yaml ${CURRENT_PATH}/
 
-rsync -av ${RIMEICE_PATH}/rime.lua ${CURRENT_PATH}/
+# rsync -av ${RIMEICE_PATH}/rime.lua ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/lua/ ${CURRENT_PATH}/lua
 
 rsync -av --delete ${RIMEICE_PATH}/opencc/ ${CURRENT_PATH}/opencc
