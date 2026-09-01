@@ -46,6 +46,7 @@ style:
   keyboard_padding_right: 10
   keyboards:
     - .default
+    - gboard
     - editor
     - number
     - symbols
@@ -240,6 +241,67 @@ preset_color_schemes:
     th3: 0xff000000
     th4: 0xff000000
     tkg: 0xff000000
+
+  gboard_light:
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "Gboard 浅色"
+    back_color: 0xffffffff
+    border_color: 0xffdadce0
+    candidate_separator_color: 0xffdadce0
+    candidate_text_color: 0xff202124
+    comment_text_color: 0xff5f6368
+    hilited_back_color: 0xffffffff
+    hilited_candidate_back_color: 0xffd2e3fc
+    hilited_candidate_text_color: 0xff174ea6
+    hilited_comment_text_color: 0xff5f6368
+    hilited_key_back_color: 0xffd2e3fc
+    hilited_key_symbol_color: 0xff174ea6
+    hilited_key_text_color: 0xff174ea6
+    hilited_off_key_back_color: 0xffc8cdd3
+    hilited_off_key_text_color: 0xff5f6368
+    hilited_text_color: 0xff202124
+    key_back_color: 0xffffffff
+    key_symbol_color: 0xff5f6368
+    key_text_color: 0xff202124
+    keyboard_back_color: 0xfff1f3f4
+    label_color: 0xff5f6368
+    dark_scheme: gboard_dark
+    off_key_back_color: 0xffdadce0
+    off_key_text_color: 0xff80868b
+    preview_back_color: 0xffdadce0
+    preview_text_color: 0xff202124
+    text_back_color: 0xffffffff
+    text_color: 0xff1a73e8
+  gboard_dark:
+    author: "Martwu <martin.wu2dream@gmail.com>"
+    name: "Gboard 深色"
+    back_color: 0xff202124
+    border_color: 0xff5f6368
+    candidate_separator_color: 0xff3c4043
+    candidate_text_color: 0xffe8eaed
+    comment_text_color: 0xffbdc1c6
+    hilited_back_color: 0xff202124
+    hilited_candidate_back_color: 0xff5f8fcc
+    hilited_candidate_text_color: 0xffffffff
+    hilited_comment_text_color: 0xffe8eaed
+    hilited_key_back_color: 0xff5f8fcc
+    hilited_key_symbol_color: 0xffffffff
+    hilited_key_text_color: 0xffffffff
+    hilited_off_key_back_color: 0xff5f6368
+    hilited_off_key_text_color: 0xffe8eaed
+    hilited_text_color: 0xffe8eaed
+    key_back_color: 0xff3c4043
+    key_symbol_color: 0xffbdc1c6
+    key_text_color: 0xffe8eaed
+    keyboard_back_color: 0xff202124
+    label_color: 0xffbdc1c6
+    light_scheme: gboard_light
+    off_key_back_color: 0xff303134
+    off_key_text_color: 0xff9aa0a6
+    preview_back_color: 0xff5f6368
+    preview_text_color: 0xffffffff
+    text_back_color: 0xff202124
+    text_color: 0xff8ab4f8
 
 fallback_colors:
   candidate_text_color: text_color
@@ -468,6 +530,58 @@ preset_keyboards:
       - {click: PK_SpaceBar, long_click: PK_Menu, width: 35}
       - {click: ".",label: "。", long_click: "?", width: 10}
       - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter}
+    label_transform: uppercase
+    lock: false
+    width: 10
+  gboard:
+    name: "Gboard 风格"
+    ascii_mode: 0
+    reset_ascii_mode: true
+    columns: 10
+    key_hint_offset_x: -2
+    key_hint_offset_y: -2
+    key_press_offset_x: 2
+    key_press_offset_y: 2
+    key_symbol_offset_x: 4
+    key_symbol_offset_y: 2
+    key_text_offset_y: 2
+    keys:
+      - {click: q, long_click: PK_Escape}
+      - {click: w}
+      - {click: e}
+      - {click: r}
+      - {click: t}
+      - {click: y}
+      - {click: u}
+      - {click: i, swipe_up: PK_Page_Up, swipe_down: PK_Page_Down, hint: "翻页"}
+      - {click: o, swipe_up: PK_Up, swipe_down: PK_Down, swipe_left: PK_Left, swipe_right: PK_Right, hint: "方向"}
+      - {click: p}
+      - {width: 0.5}
+      - {click: a, long_click: PK_SelectAll}
+      - {click: s}
+      - {click: d}
+      - {click: f, long_click: "~", swipe_up: "~"}
+      - {click: g, long_click: "(){Left}", swipe_left: "(", swipe_right: ")"}
+      - {click: h, long_click: "[]{Left}", swipe_left: "[", swipe_right: "]"}
+      - {click: j, long_click: "{}{Left}", swipe_left: "{", swipe_right: "}"}
+      - {click: k, long_click: ":", swipe_down: "/", hint: "/"}
+      - {click: l, long_click: "^", swipe_down: "_", hint: "_"}
+      - {width: 0.5}
+      - {click: PK_Shift_L, width: 1.35}
+      - {click: z}
+      - {click: x, long_click: PK_Cut}
+      - {click: c, long_click: PK_Copy}
+      - {click: v, long_click: PK_Paste, swipe_up: PK_clipboard_window}
+      - {click: b}
+      - {click: n}
+      - {click: m}
+      - {click: PK_BackSpace, swipe_left: PK_Clear, width: 1.35}
+      - {click: PK_toKB_symbols, long_click: PK_toKB_number, width: 1.2}
+      - {click: PK_LiquidKB_emoji, long_click: PK_LiquidKB_yanwenzi, width: 1.0}
+      - {click: ",", label: "，", long_click: "!", width: 0.8}
+      - {click: PK_SpaceBar, long_click: PK_Menu, width: 3.8}
+      - {click: ".", label: "。", long_click: "?", width: 0.8}
+      - {click: PK_Return, composing: PK_Return1, __include: style_custom/key_enter, width: 1.25}
     label_transform: uppercase
     lock: false
     width: 10
