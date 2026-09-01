@@ -13,7 +13,7 @@ if [ -z "$RIMECAN_PATH" ]; then
 fi
 echo "Sync from: ${RIMEICE_PATH}"
 
-(cd ${RIMEICE_PATH} && proxychains git pull)
+(cd ${RIMEICE_PATH} && git pull)
 rsync -av ${RIMEICE_PATH}/rime_ice.*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/melt_eng.*.yaml ${CURRENT_PATH}/
 rsync -av ${RIMEICE_PATH}/radical_pinyin.*.yaml ${CURRENT_PATH}/
